@@ -17,18 +17,21 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "邮件咨询",
       "url": "mailto:rdmclin2@gmail.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Start Now",
+    "name": "立即开始",
     "url": "https://vidol.lobehub.com/"
+  },
+  "primaryTab": {
+    "name": "使用文档"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "MMD 使用手册",
+      "url": "mmd-manual"
     }
   ],
   "anchors": [
@@ -38,19 +41,19 @@
       "url": "https://github.com/lobehub/lobe-vidol"
     },
     {
-      "name": "Community",
+      "name": "社区",
       "icon": "discord",
       "url": "https://discord.gg/AYFPHvv2jT"
     },
     {
-      "name": "Buy Me a Coffee",
+      "name": "买杯咖啡支持一下",
       "icon": "mug-saucer",
       "url": "https://ko-fi.com/Q5Q214AGLQ"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "立即开始",
       "pages": ["introduction", "quickstart", "development"]
     },
     {
@@ -65,20 +68,12 @@
       ]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "关于 MMD",
+      "pages": ["mmd-manual/introduction", "mmd-manual/resources"]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
+    "x": "https://x.com/njuxdroid",
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   }
