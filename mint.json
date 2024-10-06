@@ -70,6 +70,10 @@
     {
       "group": "关于 MMD",
       "pages": ["mmd-manual/introduction", "mmd-manual/resources"]
+    },
+    {
+      "group": "疑难问题",
+      "pages": ["mmd-manual/encoding-problem"]
     }
   ],
   "footerSocials": {
