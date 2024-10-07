@@ -1,0 +1,30 @@
+---
+title: "文件审核与合并"
+icon: "user-magnifying-glass"
+---
+
+## Github Issue
+
+在舞蹈文件上传完成后会自动往 [lobe-vidol-market
+](https://github.com/lobehub/lobe-vidol-market) 提交一条包含当前舞蹈文件信息的 `issue` 并打上 `💃 Dance PR`的标签，系统会自动检查表单内容是否符合参数规范。
+
+![](https://oss.vidol.chat/dance-manual-github-issue.png)
+
+若校验成功，系统会自动给该 `issue` 打上 `✅ Auto Check Pass` 标签代表校验通过。
+
+若校验失败，系统会去掉`💃 Dance PR`，你可以根据错误提示信息修改 Issue，完成后自行添加 `💃 Dance PR`标签，系统会重新运行校验流程。
+
+
+## Github PR
+
+重复上述过程直至校验通过，通过后系统会根据 issue 内容生成一个 PR 合并请求，我们会尽快审批该 PR，请耐心等待。
+
+![](https://oss.vidol.chat/dance-manual-pr.png)
+
+## 舞蹈市场列表
+
+PR 合并后系统会自动运行构建指令生成[舞蹈列表](https://vidol-market.lobehub.com/dances/index.json)的静态数据，LobeVidol 通过读取该数据展示舞蹈市场：
+
+![](https://oss.vidol.chat/dance-manual-list.png)
+
+
