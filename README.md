@@ -1,32 +1,30 @@
-# Mintlify Starter Kit
+# 文档目录结构
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+# 用户指南
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+## 总览介绍
 
-### Development
+    ## 功能特性
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+        ### 语音会话
 
-```
-npm i -g mintlify
-```
+        ### 角色市场
 
-Run the following command at the root of your documentation (where mint.json is)
+        ### 舞蹈市场
 
-```
-mintlify dev
-```
+        ### OpenAI 服务商接入
 
-### Publishing Changes
+## 使用指南
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+### 基本功能
 
-#### Troubleshooting
+### 配置模型 API
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+### 分享会话
+
+### 语音转换
+
+# 可参考
+
+- [Lobehub](https://lobehub.com/zh/docs/usage/agents/concepts)
+- [SillyTavern](https://docs.sillytavern.app/usage/core-concepts/worldinfo/)

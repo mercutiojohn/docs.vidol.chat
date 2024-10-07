@@ -26,12 +26,12 @@
     "url": "https://vidol.lobehub.com/"
   },
   "primaryTab": {
-    "name": "使用文档"
+    "name": "用户指南"
   },
   "tabs": [
     {
-      "name": "MMD 使用手册",
-      "url": "mmd-manual"
+      "name": "舞蹈创作",
+      "url": "dance-manual"
     }
   ],
   "anchors": [
@@ -54,26 +54,19 @@
   "navigation": [
     {
       "group": "立即开始",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["introduction"]
     },
     {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
+      "group": "基础使用",
+      "pages": ["essentials/introduction"]
     },
     {
       "group": "关于 MMD",
-      "pages": ["mmd-manual/introduction", "mmd-manual/resources"]
+      "pages": ["dance-manual/introduction", "dance-manual/resources"]
     },
     {
       "group": "疑难问题",
-      "pages": ["mmd-manual/encoding-problem"]
+      "pages": ["dance-manual/FAQ/encoding-problem"]
     }
   ],
   "footerSocials": {
