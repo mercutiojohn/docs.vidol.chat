@@ -46,7 +46,7 @@
       "url": "https://discord.gg/AYFPHvv2jT"
     },
     {
-      "name": "买杯咖啡支持一下",
+      "name": "买杯咖啡支持一下作者",
       "icon": "mug-saucer",
       "url": "https://ko-fi.com/Q5Q214AGLQ"
     }
@@ -61,12 +61,20 @@
       "pages": ["essentials/introduction"]
     },
     {
+      "group": "快速开始",
+      "pages": [
+        "dance-manual/qucikstart/prepare-files",
+        "dance-manual/qucikstart/upload-dance",
+        "dance-manual/qucikstart/dance-fields"
+      ]
+    },
+    {
       "group": "关于 MMD",
       "pages": ["dance-manual/introduction", "dance-manual/resources"]
     },
     {
-      "group": "疑难问题",
-      "pages": ["dance-manual/FAQ/encoding-problem"]
+      "group": "FAQ",
+      "pages": ["dance-manual/FAQ/encoding-problem", "dance-manual/FAQ/vmd"]
     }
   ],
   "footerSocials": {
