@@ -32,6 +32,10 @@
     {
       "name": "舞蹈创作",
       "url": "dance-manual"
+    },
+      {
+      "name": "角色创作",
+      "url": "role-manual"
     }
   ],
   "anchors": [
@@ -75,6 +79,14 @@
     {
       "group": "FAQ",
       "pages": ["dance-manual/FAQ/encoding-problem", "dance-manual/FAQ/vmd"]
+    },
+     {
+      "group": "快速开始",
+      "pages": [
+        "role-manual/qucikstart/prepare-files",
+        "role-manual/qucikstart/upload-role",
+        "role-manual/qucikstart/role-review"
+      ]
     }
   ],
   "footerSocials": {
