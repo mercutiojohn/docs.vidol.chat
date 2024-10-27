@@ -98,6 +98,16 @@
         "role-manual/attributes/touch",
         "role-manual/attributes/3d-model"
       ]
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "role-manual/faq/how-to-use-vroid-hub",
+        "role-manual/faq/how-to-get-vrma",
+        "role-manual/faq/vrm-resources",
+        "role-manual/faq/convert-fbx-to-vrm",
+        "role-manual/faq/what-is-vrma-file"
+      ]
     }
   ],
   "footerSocials": {
