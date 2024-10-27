@@ -83,8 +83,8 @@
     {
       "group": "快速开始",
       "pages": [
-        "role-manual/quickstart/prepare-files",
-        "role-manual/quickstart/upload-role",
+        "role-manual/quickstart/role-create",
+        "role-manual/quickstart/role-upload",
         "role-manual/quickstart/role-review"
       ]
     }
