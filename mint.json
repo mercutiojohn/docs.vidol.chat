@@ -87,6 +87,17 @@
         "role-manual/quickstart/role-upload",
         "role-manual/quickstart/role-review"
       ]
+    },
+    {
+      "group": "角色属性",
+      "pages": [
+        "role-manual/attributes/basic",
+        "role-manual/attributes/system-role",
+        "role-manual/attributes/tts",
+        "role-manual/attributes/llm",
+        "role-manual/attributes/touch",
+        "role-manual/attributes/3d-model"
+      ]
     }
   ],
   "footerSocials": {
