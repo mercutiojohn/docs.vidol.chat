@@ -45,8 +45,12 @@ const getExtension = (type: string) => mimeToExtensions?.[type] || ".png";
 
 export const fetchImageAsFile = async (url: string, width: number) => {
   try {
-    // Step 1: Fetch the image
-    const response = await fetch(url);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 30000);
+
+    const response = await fetch(url, { signal: controller.signal });
+    clearTimeout(timeoutId);
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

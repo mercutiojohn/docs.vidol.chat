@@ -1,12 +1,12 @@
 ---
-title: '语言模型'
-description: '配置角色的大语言模型参数'
+title: 语言模型
+description: 配置角色的大语言模型参数
 ---
 
 大语言模型是角色的大脑，角色的具体表现也取决于不同模型和相关参数设定。如果你不清楚如何设定，那么保持默认预设即可：
 
 <Frame>
-  <img src="https://cdn.nlark.com/yuque/0/2024/png/85418/1729948382053-9c2ae0c4-2afb-409c-8164-e834e597bd02.png" />
+  <img src="https://oss.vidol.chat/assets/b06dd07d8e75cbc2e64e2d0c445429c5.webp" />
 </Frame>
 
 ## 模型 `model`
@@ -16,7 +16,7 @@ description: '配置角色的大语言模型参数'
 当前 LobeVidol 支持 OpenAI API 调用：
 
 <Frame>
-  <img src="https://cdn.nlark.com/yuque/0/2024/png/85418/1729948447469-5d4a24d2-1f02-483c-9638-605c093638e7.png" />
+  <img src="https://oss.vidol.chat/assets/9af319fc4c0efadfa618717f0b288efb.webp" />
 </Frame>
 
 ## 随机性 `temperature`
@@ -24,7 +24,7 @@ description: '配置角色的大语言模型参数'
 这个参数控制着回复的随机性程度。当值较大时，模型在生成回答时会更加随机，可能会给出更多不同寻常、富有创意的回答，但也可能会导致回答的准确性有所降低。相反，当值较小时，模型的回答会更加确定和保守，更倾向于给出常见的、较为可靠的答案。
 
 <Frame>
-  <img src="https://cdn.nlark.com/yuque/0/2024/png/85418/1729948614200-67c90fb3-41c0-4a96-909f-28c83625c860.png" />
+  <img src="https://oss.vidol.chat/assets/6b77fecaccb3197109f2452be32296ec.webp" />
 </Frame>
 
 ## 核采样 `top_p`
@@ -32,7 +32,7 @@ description: '配置角色的大语言模型参数'
 与随机性类似，它也影响着模型生成回答的多样性和不确定性。不过，不要和随机性参数一起更改，因为它们的作用有一定的重叠，同时调整可能会导致不可预测的结果。
 
 <Frame>
-  <img src="https://cdn.nlark.com/yuque/0/2024/png/85418/1729948645536-77026d2d-8abf-403a-b6be-9c0065941d24.png" />
+  <img src="https://oss.vidol.chat/assets/08745c737fed9b2aa0cba328a991872a.webp" />
 </Frame>
 
 ## 话题新鲜度 `presence_penalty`
@@ -40,7 +40,7 @@ description: '配置角色的大语言模型参数'
 这个参数控制着模型在回答问题时拓展到新话题的倾向。当值较大时，模型更有可能引入新的话题或观点，使回答更加丰富和多样化。然而，如果值设置得过大，可能会导致回答偏离问题的核心。
 
 <Frame>
-  <img src="https://cdn.nlark.com/yuque/0/2024/png/85418/1729948702020-868a760e-2ced-40c8-acb9-0239928188b6.png" />
+  <img src="https://oss.vidol.chat/assets/e0db6bf8da7992325748741eb12db0df.webp" />
 </Frame>
 
 ## 频率惩罚度 `frequency_penalty`

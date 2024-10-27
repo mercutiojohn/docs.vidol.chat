@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "docs for lobevidol",
   "main": "index.js",
+  "private": true,
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mintlify dev",
-    "workflow:cdn": "ts-node scripts/mdxWorkflow/autoCDN.ts"
+    "workflow:cdn": "tsx scripts/mdxWorkflow/autoCDN.ts"
   },
   "repository": {
     "type": "git",
@@ -30,13 +31,17 @@
   "devDependencies": {
     "@types/node": "^22.8.1",
     "consola": "^3.2.3",
+    "dotenv": "^16.4.5",
+    "glob": "^10.4.5",
     "gray-matter": "^4.0.3",
     "p-map": "^7.0.2",
     "sharp": "^0.33.5",
+    "@types/crypto-js": "^4.2.2",
+    "mime": "^4.0.4",
     "typescript": "^5.5.4",
-    "glob": "^10.4.5"
-  },
-  "pnpm": {
-    "lockfile": false
+    "tsx": "^4.19.0", 
+    "crypto-js": "^4.2.0",
+    "@aws-sdk/s3-request-presigner": "^3.645.0",
+    "@aws-sdk/client-s3": "^3.645.0"
   }
 }
