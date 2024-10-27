@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "mintlify dev"
+    "dev": "mintlify dev",
+    "workflow:cdn": "ts-node scripts/mdxWorkflow/autoCDN.ts"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,17 @@
   "bugs": {
     "url": "https://github.com/v-idol/docs.vidol.chat/issues"
   },
-  "homepage": "https://github.com/v-idol/docs.vidol.chat#readme"
+  "homepage": "https://github.com/v-idol/docs.vidol.chat#readme",
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "consola": "^3.2.3",
+    "gray-matter": "^4.0.3",
+    "p-map": "^7.0.2",
+    "sharp": "^0.33.5",
+    "typescript": "^5.5.4",
+    "glob": "^10.4.5"
+  },
+  "pnpm": {
+    "lockfile": false
+  }
 }
