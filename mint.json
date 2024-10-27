@@ -101,11 +101,17 @@
       ]
     },
     {
+      "group": "资源",
+      "pages": [
+        "role-manual/resources/vrm-official-doc",
+        "role-manual/resources/vrm-resources"
+      ]
+    },
+    {
       "group": "FAQ",
       "pages": [
         "role-manual/faq/how-to-use-vroid-hub",
         "role-manual/faq/how-to-get-vrma",
-        "role-manual/faq/vrm-resources",
         "role-manual/faq/convert-fbx-to-vrm",
         "role-manual/faq/what-is-vrma-file"
       ]
