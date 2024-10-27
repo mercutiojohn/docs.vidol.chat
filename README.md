@@ -1,28 +1,27 @@
-# 文档目录结构
+# LobeVidol 用户指南
 
-# 用户指南
+## 文档贡献方式
 
-## 总览介绍
+1. 克隆仓库
 
-    ## 功能特性
+```bash
+git clone git@github.com:v-idol/docs.vidol.chat.git
+```
 
-        ### 语音会话
+2. 安装依赖
 
-        ### 角色市场
+```bash
+pnpm install
+pnpm i -g mintlify
+```
 
-        ### 舞蹈市场
+3. 启动文档
 
-        ### OpenAI 服务商接入
+```bash
+mintlify dev
+```
 
-## 使用指南
-
-### 基本功能
-
-### 配置模型 API
-
-### 分享会话
-
-### 语音转换
+4. 提交 PR
 
 # 可参考
 

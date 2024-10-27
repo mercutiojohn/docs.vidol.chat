@@ -1,0 +1,29 @@
+{
+  "name": "docs.vidol.chat",
+  "version": "1.0.0",
+  "description": "docs for lobevidol",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mintlify dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/v-idol/docs.vidol.chat.git"
+  },
+  "keywords": [
+    "docs",
+    "vidol",
+    "lobe",
+    "ai"
+  ],
+  "author": "rdmclin2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v-idol/docs.vidol.chat/issues"
+  },
+  "homepage": "https://github.com/v-idol/docs.vidol.chat#readme"
+}
