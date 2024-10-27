@@ -81,8 +81,9 @@
       "pages": ["dance-manual/FAQ/encoding-problem", "dance-manual/FAQ/vmd"]
     },
     {
-      "group": "快速开始",
+      "group": "角色创作",
       "pages": [
+        "role-manual/quickstart/introduction",
         "role-manual/quickstart/role-create",
         "role-manual/quickstart/role-upload",
         "role-manual/quickstart/role-review"
