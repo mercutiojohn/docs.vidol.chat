@@ -14,8 +14,6 @@ import {
   root,
 } from "./utils";
 
-// 定义常量
-const GITHUB_CDN = "https://github.com/lobehub/lobe-vidol/assets/";
 const CHECK_CDN = [
   "https://cdn.nlark.com/yuque/0/",
   "https://s.imtccdn.com/",
@@ -23,6 +21,8 @@ const CHECK_CDN = [
   "https://www.anthropic.com/_next/image",
   "https://miro.medium.com/v2/",
   "https://images.unsplash.com/",
+  "https://github.com/lobehub/lobe-vidol/assets/",
+  "https://github.com/user-attachments/assets/",
 ];
 
 const CACHE_FILE = resolve(root, ".cdn.cache.json");
@@ -66,9 +66,7 @@ class ImageCDNUploader {
       // 过滤出有效的 CDN 链接
       return inlineLinks.filter(
         (link) =>
-          (link.startsWith(GITHUB_CDN) ||
-            CHECK_CDN.some((cdn) => link.startsWith(cdn))) &&
-          !this.cache[link]
+          CHECK_CDN.some((cdn) => link.startsWith(cdn)) && !this.cache[link]
       );
     });
 
@@ -106,10 +104,7 @@ class ImageCDNUploader {
     file: File,
     link: string
   ): Promise<string | undefined> {
-    if (link.startsWith(GITHUB_CDN)) {
-      const filename = link.replace(new RegExp(`^${GITHUB_CDN}`), "");
-      return uploader(file, filename);
-    } else if (CHECK_CDN.some((cdn) => link.startsWith(cdn))) {
+    if (CHECK_CDN.some((cdn) => link.startsWith(cdn))) {
       const buffer = await file.arrayBuffer();
       const hash = createHash("md5").update(Buffer.from(buffer)).digest("hex");
       return uploader(file, hash);
