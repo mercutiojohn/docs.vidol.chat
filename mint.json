@@ -58,7 +58,13 @@
   "navigation": [
     {
       "group": "开始使用",
-      "pages": ["introduction"]
+      "pages": [
+        "introduction",
+        {
+          "group": "功能特性",
+          "pages": ["essentials/features/ui-design"]
+        }
+      ]
     },
     {
       "group": "基础使用",
