@@ -62,7 +62,14 @@
         "introduction",
         {
           "group": "功能特性",
-          "pages": ["essentials/features/ui-design"]
+          "pages": [
+            "essentials/features/role-play",
+            "essentials/features/dance-play",
+            "essentials/features/ui-design",
+            "essentials/features/tts",
+            "essentials/features/role-market",
+            "essentials/features/dance-market"
+          ]
         }
       ]
     },
