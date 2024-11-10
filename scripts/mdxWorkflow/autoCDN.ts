@@ -19,9 +19,11 @@ const CHECK_CDN = [
   "https://s.imtccdn.com/",
   "https://oss.home.imtc.top/",
   "https://www.anthropic.com/_next/image",
+  "https://github-production-user-asset",
   "https://miro.medium.com/v2/",
   "https://images.unsplash.com/",
   "https://github.com/lobehub/lobe-vidol/assets/",
+  "https://github.com/lobehub/lobe-chat",
   "https://github.com/user-attachments/assets/",
 ];
 
