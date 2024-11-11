@@ -57,12 +57,20 @@
   ],
   "navigation": [
     {
-      "group": "立即开始",
-      "pages": ["introduction"]
+      "group": "功能特性",
+      "pages": [
+        "usage/introduction",
+        "usage/features/role-play",
+        "usage/features/dance-play",
+        "usage/features/ui-design",
+        "usage/features/tts",
+        "usage/features/role-market",
+        "usage/features/dance-market"
+      ]
     },
     {
-      "group": "基础使用",
-      "pages": ["essentials/introduction"]
+      "group": "模型支持",
+      "pages": ["usage/providers/openai", "usage/providers/openrouter"]
     },
     {
       "group": "快速开始",
@@ -81,7 +89,7 @@
       "pages": ["dance-manual/FAQ/encoding-problem", "dance-manual/FAQ/vmd"]
     },
     {
-      "group": "角色创作",
+      "group": "快速开始",
       "pages": [
         "role-manual/quickstart/introduction",
         "role-manual/quickstart/role-create",
