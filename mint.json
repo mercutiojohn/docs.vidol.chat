@@ -69,12 +69,8 @@
       ]
     },
     {
-      "group": "多模型支持",
-      "pages": [
-        "usage/providers/openai",
-        "usage/providers/anthropic",
-        "usage/providers/openrouter"
-      ]
+      "group": "模型支持",
+      "pages": ["usage/providers/openai", "usage/providers/openrouter"]
     },
     {
       "group": "快速开始",
