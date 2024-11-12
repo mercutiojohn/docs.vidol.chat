@@ -19,6 +19,10 @@
     {
       "name": "邮件咨询",
       "url": "mailto:rdmclin2@gmail.com"
+    },
+    {
+      "name": "文档贡献",
+      "url": "https://github.com/v-idol/docs.vidol.chat"
     }
   ],
   "topbarCtaButton": {
@@ -127,7 +131,7 @@
   ],
   "footerSocials": {
     "x": "https://x.com/njuxdroid",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/lobehub/lobe-vidol",
+    "discord": "https://discord.gg/RbpdWkzw"
   }
 }
