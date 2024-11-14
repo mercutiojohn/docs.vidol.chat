@@ -32,14 +32,37 @@
   "primaryTab": {
     "name": "用户指南"
   },
+  "versions": [
+    {
+      "name": "中文",
+      "locale": "cn",
+      "default": true
+    },
+    {
+      "name": "English",
+      "locale": "en"
+    }
+  ],
   "tabs": [
     {
+      "name": "User Guide",
+      "url": "en/usage",
+      "version": "en"
+    },
+    {
+      "name": "用户指南",
+      "url": "cn/usage",
+      "version": "cn"
+    },
+    {
       "name": "舞蹈创作",
-      "url": "dance-manual"
+      "url": "cn/dance-manual",
+      "version": "cn"
     },
     {
       "name": "角色创作",
-      "url": "role-manual"
+      "url": "cn/role-manual",
+      "version": "cn"
     }
   ],
   "anchors": [
@@ -63,69 +86,72 @@
     {
       "group": "功能特性",
       "pages": [
-        "usage/introduction",
-        "usage/features/role-play",
-        "usage/features/dance-play",
-        "usage/features/ui-design",
-        "usage/features/tts",
-        "usage/features/role-market",
-        "usage/features/dance-market"
+        "cn/usage/introduction",
+        "cn/usage/features/role-play",
+        "cn/usage/features/dance-play",
+        "cn/usage/features/ui-design",
+        "cn/usage/features/tts",
+        "cn/usage/features/role-market",
+        "cn/usage/features/dance-market"
       ]
     },
     {
       "group": "模型支持",
-      "pages": ["usage/providers/openai", "usage/providers/openrouter"]
+      "pages": ["cn/usage/providers/openai", "cn/usage/providers/openrouter"]
     },
     {
       "group": "快速开始",
       "pages": [
-        "dance-manual/qucikstart/prepare-files",
-        "dance-manual/qucikstart/upload-dance",
-        "dance-manual/qucikstart/dance-review"
+        "cn/dance-manual/qucikstart/prepare-files",
+        "cn/dance-manual/qucikstart/upload-dance",
+        "cn/dance-manual/qucikstart/dance-review"
       ]
     },
     {
       "group": "关于 MMD",
-      "pages": ["dance-manual/introduction", "dance-manual/resources"]
+      "pages": ["cn/dance-manual/introduction", "cn/dance-manual/resources"]
     },
     {
       "group": "FAQ",
-      "pages": ["dance-manual/FAQ/encoding-problem", "dance-manual/FAQ/vmd"]
+      "pages": [
+        "cn/dance-manual/FAQ/encoding-problem",
+        "cn/dance-manual/FAQ/vmd"
+      ]
     },
     {
       "group": "快速开始",
       "pages": [
-        "role-manual/quickstart/introduction",
-        "role-manual/quickstart/role-create",
-        "role-manual/quickstart/role-upload",
-        "role-manual/quickstart/role-review"
+        "cn/role-manual/quickstart/introduction",
+        "cn/role-manual/quickstart/role-create",
+        "cn/role-manual/quickstart/role-upload",
+        "cn/role-manual/quickstart/role-review"
       ]
     },
     {
       "group": "角色属性",
       "pages": [
-        "role-manual/attributes/basic",
-        "role-manual/attributes/system-role",
-        "role-manual/attributes/tts",
-        "role-manual/attributes/llm",
-        "role-manual/attributes/touch",
-        "role-manual/attributes/3d-model"
+        "cn/role-manual/attributes/basic",
+        "cn/role-manual/attributes/system-role",
+        "cn/role-manual/attributes/tts",
+        "cn/role-manual/attributes/llm",
+        "cn/role-manual/attributes/touch",
+        "cn/role-manual/attributes/3d-model"
       ]
     },
     {
       "group": "资源",
       "pages": [
-        "role-manual/resources/vrm-official-doc",
-        "role-manual/resources/vrm-resources"
+        "cn/role-manual/resources/vrm-official-doc",
+        "cn/role-manual/resources/vrm-resources"
       ]
     },
     {
       "group": "FAQ",
       "pages": [
-        "role-manual/faq/how-to-use-vroid-hub",
-        "role-manual/faq/how-to-get-vrma",
-        "role-manual/faq/convert-fbx-to-vrm",
-        "role-manual/faq/what-is-vrma-file"
+        "cn/role-manual/faq/how-to-use-vroid-hub",
+        "cn/role-manual/faq/how-to-get-vrma",
+        "cn/role-manual/faq/convert-fbx-to-vrm",
+        "cn/role-manual/faq/what-is-vrma-file"
       ]
     }
   ],
