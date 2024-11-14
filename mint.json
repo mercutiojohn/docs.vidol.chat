@@ -29,9 +29,6 @@
     "name": "立即开始",
     "url": "https://vidol.lobehub.com/"
   },
-  "primaryTab": {
-    "name": "用户指南"
-  },
   "versions": [
     {
       "name": "中文",
@@ -45,24 +42,16 @@
   ],
   "tabs": [
     {
-      "name": "User Guide",
-      "url": "en/usage",
-      "version": "en"
-    },
-    {
       "name": "用户指南",
-      "url": "cn/usage",
-      "version": "cn"
+      "url": "cn/usage"
     },
     {
       "name": "舞蹈创作",
-      "url": "cn/dance-manual",
-      "version": "cn"
+      "url": "cn/dance-manual"
     },
     {
       "name": "角色创作",
-      "url": "cn/role-manual",
-      "version": "cn"
+      "url": "cn/role-manual"
     }
   ],
   "anchors": [
