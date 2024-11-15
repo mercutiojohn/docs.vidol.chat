@@ -43,15 +43,18 @@
   "tabs": [
     {
       "name": "用户指南",
-      "url": "cn/usage"
+      "url": "cn/usage",
+      "version": "中文"
     },
     {
       "name": "舞蹈创作",
-      "url": "cn/dance-manual"
+      "url": "cn/dance-manual",
+      "version": "中文"
     },
     {
       "name": "角色创作",
-      "url": "cn/role-manual"
+      "url": "cn/role-manual",
+      "version": "English"
     }
   ],
   "anchors": [
@@ -60,14 +63,29 @@
       "icon": "github",
       "url": "https://github.com/lobehub/lobe-vidol"
     },
+
     {
       "name": "社区",
       "icon": "discord",
+      "version": "中文",
+      "url": "https://discord.gg/RbpdWkzw"
+    },
+    {
+      "name": "Community",
+      "icon": "discord",
+      "version": "English",
       "url": "https://discord.gg/RbpdWkzw"
     },
     {
       "name": "买杯咖啡支持一下作者",
       "icon": "mug-saucer",
+      "version": "中文",
+      "url": "https://ko-fi.com/Q5Q214AGLQ"
+    },
+    {
+      "name": "Buy me a coffee",
+      "icon": "mug-saucer",
+      "version": "English",
       "url": "https://ko-fi.com/Q5Q214AGLQ"
     }
   ],
@@ -145,7 +163,7 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/njuxdroid",
+    "x": "https://x.com/rdmclin",
     "github": "https://github.com/lobehub/lobe-vidol",
     "discord": "https://discord.gg/RbpdWkzw"
   }

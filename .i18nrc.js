@@ -7,13 +7,8 @@ module.exports = defineConfig({
   experimental: {
     jsonMode: true,
   },
-  // 后续说明文档、技术文档等所需的国际化配置（暂时不需要）
   markdown: {
-    entry: [
-      "./dance-manual/**/*.mdx",
-      "./role-manual/**/*.mdx",
-      "./usage/**/*.mdx",
-    ],
+    entry: ["./cn/**/*.mdx"],
     entryLocale: "zh-CN",
     outputLocales: ["en-US"],
     exclude: [],
