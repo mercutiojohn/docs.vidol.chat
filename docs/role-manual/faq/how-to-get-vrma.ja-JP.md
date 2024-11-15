@@ -1,0 +1,50 @@
+---
+title: .vrma アニメーションの取得方法
+description: VRM アニメーションリソースの取得方法とプラットフォームの紹介
+keywords: VRM アニメーション, リソース, プラットフォーム
+icon: question
+---
+
+以下は、VRM アニメーションリソースを取得するためのウェブサイトとプラットフォームのいくつかです：
+
+## 1. VRoid Hub
+
+VRoid Hub では「Photo Booth」機能が提供されており、VRM アニメーションの再生をサポートしています。
+
+- ユーザーは自分の .vrma ファイルをアップロードし、さまざまなアニメーションを適用できます。
+- このプラットフォームでは、いくつかの無料の VRM アニメーションファイルもダウンロード可能です\[1\]。
+
+## 2. BOOTH
+
+BOOTH はクリエイターに特化したマーケットプレイスで、「3D Motion/Animation」サブカテゴリーが新たに追加されました。
+
+- ユーザーは VRM アニメーションファイル（.vrma）を共有および販売できます。
+- ここでは、さまざまなクリエイターのアニメーションリソースを見つけることができ、無料のアニメーションファイルも含まれています\[1\]。
+
+## 3. VRM Posing Desktop
+
+VRM Posing Desktop は、VRM アニメーションを作成およびエクスポートするためのソフトウェアです。
+
+- .vrma ファイルをインポートし、動画形式（.mp4 など）でエクスポートすることができます。
+- このソフトウェアは Steam で購入でき、その強力な機能を使用してアニメーション制作が可能です\[2\]\[4\]。
+
+## 4. GitHub VRM Specification
+
+VRM Animation の公式ドキュメントと仕様は GitHub で入手できます。
+
+- VRM アニメーションの使用方法に関する詳細情報が提供されています。
+- アニメーションファイルのインポートおよびエクスポートに関するガイドも含まれています\[5\]。
+
+これらのリソースは、VRM アニメーションを取得し、作成するための豊富なツールとプラットフォームを提供します。
+
+<Accordion title="参考資料">
+  [1] https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW  
+  [2] https://elvcatdev.com/posts/vrma-vpd-effect/  
+  [3] https://docs.vrcd.org.cn/books/vrm-vrm/export/html  
+  [4] https://www.youtube.com/watch?v=GCXln4SX-7I  
+  [5] https://vrm.dev/en/vrma/  
+  [6] https://developer.vive.com/resources/openxr/unreal/unreal-tutorials/facialexpressionmaker/vrm/?site=cn  
+  [7] https://aws.amazon.com/cn/getting-started/hands-on/build-a-vtubing-app-with-amazon-ivs-and-vroid/  
+  [8] https://blog.csdn.net/qq_58047420/article/details/129674085
+</Accordion>
+

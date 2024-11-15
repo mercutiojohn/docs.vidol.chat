@@ -40,7 +40,7 @@
       "locale": "en"
     },
     {
-      "name": "日文",
+      "name": "日本語",
       "locale": "jp"
     },
     {
@@ -62,7 +62,52 @@
     {
       "name": "角色创作",
       "url": "cn/role-manual",
+      "version": "中文"
+    },
+    {
+      "name": "User Guide",
+      "url": "en/usage",
       "version": "English"
+    },
+    {
+      "name": "Dance Creation",
+      "url": "en/dance-manual",
+      "version": "English"
+    },
+    {
+      "name": "Character Creation",
+      "url": "en/role-manual",
+      "version": "English"
+    },
+    {
+      "name": "ユーザーガイド",
+      "url": "jp/usage",
+      "version": "日本語"
+    },
+    {
+      "name": "ダンス作成",
+      "url": "jp/dance-manual",
+      "version": "日本語"
+    },
+    {
+      "name": "キャラクター作成",
+      "url": "jp/role-manual",
+      "version": "日本語"
+    },
+    {
+      "name": "Guide d'utilisation",
+      "url": "fr/usage",
+      "version": "Français"
+    },
+    {
+      "name": "Création de danse",
+      "url": "fr/dance-manual",
+      "version": "Français"
+    },
+    {
+      "name": "Création de personnage",
+      "url": "fr/role-manual",
+      "version": "Français"
     }
   ],
   "anchors": [
@@ -95,9 +140,273 @@
       "icon": "mug-saucer",
       "version": "English",
       "url": "https://ko-fi.com/Q5Q214AGLQ"
+    },
+    {
+      "name": "コミュニティ",
+      "icon": "discord",
+      "version": "日本語",
+      "url": "https://discord.gg/RbpdWkzw"
+    },
+    {
+      "name": "コーヒーを買って作者を応援する",
+      "icon": "mug-saucer",
+      "version": "日本語",
+      "url": "https://ko-fi.com/Q5Q214AGLQ"
+    },
+    {
+      "name": "Communauté",
+      "icon": "discord",
+      "version": "Français",
+      "url": "https://discord.gg/RbpdWkzw"
+    },
+    {
+      "name": "Offrez-moi un café",
+      "icon": "mug-saucer",
+      "version": "Français",
+      "url": "https://ko-fi.com/Q5Q214AGLQ"
     }
   ],
   "navigation": [
+    {
+      "group": "Features",
+      "pages": [
+        "en/usage/introduction",
+        "en/usage/features/role-play",
+        "en/usage/features/dance-play",
+        "en/usage/features/ui-design",
+        "en/usage/features/tts",
+        "en/usage/features/role-market",
+        "en/usage/features/dance-market"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "Model Support",
+      "pages": ["en/usage/providers/openai", "en/usage/providers/openrouter"],
+      "version": "English"
+    },
+    {
+      "group": "Quick Start",
+      "pages": [
+        "en/dance-manual/qucikstart/prepare-files",
+        "en/dance-manual/qucikstart/upload-dance",
+        "en/dance-manual/qucikstart/dance-review"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "About MMD",
+      "pages": ["en/dance-manual/introduction", "en/dance-manual/resources"],
+      "version": "English"
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "en/dance-manual/FAQ/encoding-problem",
+        "en/dance-manual/FAQ/vmd"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "Quick Start",
+      "pages": [
+        "en/role-manual/quickstart/introduction",
+        "en/role-manual/quickstart/role-create",
+        "en/role-manual/quickstart/role-upload",
+        "en/role-manual/quickstart/role-review"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "Character Attributes",
+      "pages": [
+        "en/role-manual/attributes/basic",
+        "en/role-manual/attributes/system-role",
+        "en/role-manual/attributes/tts",
+        "en/role-manual/attributes/llm",
+        "en/role-manual/attributes/touch",
+        "en/role-manual/attributes/3d-model"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "en/role-manual/resources/vrm-official-doc",
+        "en/role-manual/resources/vrm-resources"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "en/role-manual/faq/how-to-use-vroid-hub",
+        "en/role-manual/faq/how-to-get-vrma",
+        "en/role-manual/faq/convert-fbx-to-vrm",
+        "en/role-manual/faq/what-is-vrma-file"
+      ],
+      "version": "English"
+    },
+    {
+      "group": "機能",
+      "pages": [
+        "jp/usage/introduction",
+        "jp/usage/features/role-play",
+        "jp/usage/features/dance-play",
+        "jp/usage/features/ui-design",
+        "jp/usage/features/tts",
+        "jp/usage/features/role-market",
+        "jp/usage/features/dance-market"
+      ],
+      "version": "日本語"
+    },
+    {
+      "group": "モデルサポート",
+      "pages": ["jp/usage/providers/openai", "jp/usage/providers/openrouter"],
+      "version": "日本語"
+    },
+    {
+      "group": "クイックスタート",
+      "pages": [
+        "jp/dance-manual/qucikstart/prepare-files",
+        "jp/dance-manual/qucikstart/upload-dance",
+        "jp/dance-manual/qucikstart/dance-review"
+      ],
+      "version": "日本語"
+    },
+    {
+      "group": "MMDについて",
+      "pages": ["jp/dance-manual/introduction", "jp/dance-manual/resources"],
+      "version": "日本語"
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "jp/dance-manual/FAQ/encoding-problem",
+        "jp/dance-manual/FAQ/vmd"
+      ],
+      "version": "日本語"
+    },
+    {
+      "group": "クイックスタート",
+      "pages": [
+        "jp/role-manual/quickstart/introduction",
+        "jp/role-manual/quickstart/role-create",
+        "jp/role-manual/quickstart/role-upload",
+        "jp/role-manual/quickstart/role-review"
+      ],
+      "version": "日本語"
+    },
+    {
+      "group": "キャラクター属性",
+      "pages": [
+        "jp/role-manual/attributes/basic",
+        "jp/role-manual/attributes/system-role",
+        "jp/role-manual/attributes/tts",
+        "jp/role-manual/attributes/llm",
+        "jp/role-manual/attributes/touch",
+        "jp/role-manual/attributes/3d-model"
+      ],
+      "version": "日本語"
+    },
+    {
+      "group": "リソース",
+      "pages": [
+        "jp/role-manual/resources/vrm-official-doc",
+        "jp/role-manual/resources/vrm-resources"
+      ],
+      "version": "日本語"
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "jp/role-manual/faq/how-to-use-vroid-hub",
+        "jp/role-manual/faq/how-to-get-vrma",
+        "jp/role-manual/faq/convert-fbx-to-vrm",
+        "jp/role-manual/faq/what-is-vrma-file"
+      ],
+      "version": "日本語"
+    },
+    {
+      "group": "Fonctionnalités",
+      "pages": [
+        "fr/usage/introduction",
+        "fr/usage/features/role-play",
+        "fr/usage/features/dance-play",
+        "fr/usage/features/ui-design",
+        "fr/usage/features/tts",
+        "fr/usage/features/role-market",
+        "fr/usage/features/dance-market"
+      ],
+      "version": "Français"
+    },
+    {
+      "group": "Support des modèles",
+      "pages": ["fr/usage/providers/openai", "fr/usage/providers/openrouter"],
+      "version": "Français"
+    },
+    {
+      "group": "Démarrage rapide",
+      "pages": [
+        "fr/dance-manual/qucikstart/prepare-files",
+        "fr/dance-manual/qucikstart/upload-dance",
+        "fr/dance-manual/qucikstart/dance-review"
+      ],
+      "version": "Français"
+    },
+    {
+      "group": "À propos de MMD",
+      "pages": ["fr/dance-manual/introduction", "fr/dance-manual/resources"],
+      "version": "Français"
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "fr/dance-manual/FAQ/encoding-problem",
+        "fr/dance-manual/FAQ/vmd"
+      ],
+      "version": "Français"
+    },
+    {
+      "group": "Démarrage rapide",
+      "pages": [
+        "fr/role-manual/quickstart/introduction",
+        "fr/role-manual/quickstart/role-create",
+        "fr/role-manual/quickstart/role-upload",
+        "fr/role-manual/quickstart/role-review"
+      ],
+      "version": "Français"
+    },
+    {
+      "group": "Attributs du personnage",
+      "pages": [
+        "fr/role-manual/attributes/basic",
+        "fr/role-manual/attributes/system-role",
+        "fr/role-manual/attributes/tts",
+        "fr/role-manual/attributes/llm",
+        "fr/role-manual/attributes/touch",
+        "fr/role-manual/attributes/3d-model"
+      ],
+      "version": "Français"
+    },
+    {
+      "group": "Ressources",
+      "pages": [
+        "fr/role-manual/resources/vrm-official-doc",
+        "fr/role-manual/resources/vrm-resources"
+      ],
+      "version": "Français"
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "fr/role-manual/faq/how-to-use-vroid-hub",
+        "fr/role-manual/faq/how-to-get-vrma",
+        "fr/role-manual/faq/convert-fbx-to-vrm",
+        "fr/role-manual/faq/what-is-vrma-file"
+      ],
+      "version": "Français"
+    },
     {
       "group": "功能特性",
       "pages": [
@@ -108,11 +417,13 @@
         "cn/usage/features/tts",
         "cn/usage/features/role-market",
         "cn/usage/features/dance-market"
-      ]
+      ],
+      "version": "中文"
     },
     {
       "group": "模型支持",
-      "pages": ["cn/usage/providers/openai", "cn/usage/providers/openrouter"]
+      "pages": ["cn/usage/providers/openai", "cn/usage/providers/openrouter"],
+      "version": "中文"
     },
     {
       "group": "快速开始",
@@ -120,18 +431,21 @@
         "cn/dance-manual/qucikstart/prepare-files",
         "cn/dance-manual/qucikstart/upload-dance",
         "cn/dance-manual/qucikstart/dance-review"
-      ]
+      ],
+      "version": "中文"
     },
     {
       "group": "关于 MMD",
-      "pages": ["cn/dance-manual/introduction", "cn/dance-manual/resources"]
+      "pages": ["cn/dance-manual/introduction", "cn/dance-manual/resources"],
+      "version": "中文"
     },
     {
       "group": "FAQ",
       "pages": [
         "cn/dance-manual/FAQ/encoding-problem",
         "cn/dance-manual/FAQ/vmd"
-      ]
+      ],
+      "version": "中文"
     },
     {
       "group": "快速开始",
@@ -140,7 +454,8 @@
         "cn/role-manual/quickstart/role-create",
         "cn/role-manual/quickstart/role-upload",
         "cn/role-manual/quickstart/role-review"
-      ]
+      ],
+      "version": "中文"
     },
     {
       "group": "角色属性",
@@ -151,14 +466,16 @@
         "cn/role-manual/attributes/llm",
         "cn/role-manual/attributes/touch",
         "cn/role-manual/attributes/3d-model"
-      ]
+      ],
+      "version": "中文"
     },
     {
       "group": "资源",
       "pages": [
         "cn/role-manual/resources/vrm-official-doc",
         "cn/role-manual/resources/vrm-resources"
-      ]
+      ],
+      "version": "中文"
     },
     {
       "group": "FAQ",
@@ -167,7 +484,8 @@
         "cn/role-manual/faq/how-to-get-vrma",
         "cn/role-manual/faq/convert-fbx-to-vrm",
         "cn/role-manual/faq/what-is-vrma-file"
-      ]
+      ],
+      "version": "中文"
     }
   ],
   "footerSocials": {

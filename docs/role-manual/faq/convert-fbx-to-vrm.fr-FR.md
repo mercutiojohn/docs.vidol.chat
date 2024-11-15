@@ -1,0 +1,62 @@
+---
+title: Comment convertir un fichier FBX en fichier VRM ?
+description: Étapes détaillées pour convertir un modèle FBX au format VRM en utilisant Blender ou Unity
+keywords: FBX, VRM, Blender, Unity, modèle, conversion
+icon: question
+---
+
+La conversion d'un fichier FBX en fichier VRM peut être réalisée de plusieurs manières, principalement en utilisant Blender ou Unity.
+
+## Méthode 1 : Utiliser Blender
+
+1. **Installer Blender**
+   Téléchargez et installez Blender (compatible avec Windows, MacOS et Linux).
+
+2. **Installer le plugin VRM**
+   - Téléchargez le plugin VRM (comme le VRM Addon pour Blender).
+   - Dans Blender, ouvrez le menu "Édition", sélectionnez "Préférences", puis dans l'onglet "Plugins", cliquez sur "Installer" et choisissez le fichier du plugin téléchargé.
+
+3. **Importer le fichier FBX**
+   - Dans Blender, utilisez le menu "Fichier" pour sélectionner "Importer", puis choisissez le format FBX, trouvez et importez votre modèle FBX.
+
+4. **Configurer les squelettes et les formes**
+   - Ajoutez les squelettes nécessaires et les clés de forme (Blendshapes) selon vos besoins.
+
+5. **Exporter au format VRM**
+   - Sélectionnez "Fichier" dans le menu, puis "Exporter", et choisissez le format VRM. Configurez les options d'exportation et enregistrez le fichier\[1]\[2].
+
+## Méthode 2 : Utiliser Unity
+
+1. **Installer Unity**
+   Téléchargez et installez Unity (il est recommandé d'utiliser la version 2019.4.x).
+
+2. **Importer UniVRM**
+   - Téléchargez la dernière version d'UniVRM (fichier .unitypackage) et créez un nouveau projet Unity.
+   - Faites glisser le package UniVRM téléchargé dans Unity pour l'importer.
+
+3. **Importer le modèle FBX**
+   - Faites glisser le modèle FBX dans le dossier Assets de Unity.
+
+4. **Configurer le type d'animation**
+   - Sélectionnez le modèle importé, dans la fenêtre Inspector, définissez "Type d'animation" sur "Humanoïde", puis cliquez sur "Appliquer".
+
+5. **Vérifier la configuration des squelettes**
+   - Cliquez sur le bouton "Configurer…", vérifiez si les squelettes sont correctement configurés. Assurez-vous qu'il n'y a pas de squelettes marqués en rouge, et corrigez-les si nécessaire.
+
+6. **Exporter au format VRM**
+   - Dans la fenêtre Hiérarchie, sélectionnez le modèle, puis dans le menu, choisissez `VRM > UniVRM > Exporter humanoïde`.
+   - Remplissez les informations sur l'auteur, puis cliquez sur "Exporter", choisissez l'emplacement de sauvegarde et terminez l'exportation\[5].
+
+Ces deux méthodes permettent de convertir efficacement un fichier FBX en format VRM. Selon vos préférences personnelles et la disponibilité des outils, vous pouvez choisir la méthode qui vous convient le mieux pour effectuer la conversion.
+
+<Accordion title="Références">
+  [1] https://www.reddit.com/r/vtubertech/comments/17lw64t/i_need_help_with_converting_fbx_model_to_vrm/  
+  [2] https://www.modelo.io/damf/article/2024/05/25/0425/the-easy-way-to-convert-fbx-to-vrm  
+  [3] https://www.youtube.com/watch?v=ieqmaNdNTCw  
+  [4] https://www.youtube.com/watch?v=ZKn8pusdkRo  
+  [5] https://styly.cc/tips/unity-fbx2vrm/  
+  [6] https://hackmd.io/@metamike/fbx-vrm-webaverse  
+  [7] https://www.youtube.com/watch?v=k0rj_JDIfJE  
+  [8] https://github.com/vrm-c/UniVRM/issues/1929
+</Accordion>
+

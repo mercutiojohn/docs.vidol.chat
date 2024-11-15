@@ -1,0 +1,75 @@
+---
+title: UI デザイン
+description: '私たちのユーザーインターフェースデザインは、美しさと実用性を融合させ、ユーザーに優れた使用体験を提供します。'
+keywords: UI, デザイン, 美しさ, 実用性, 使用体験
+---
+
+import { Card, CardGroup, Frame } from '@mintlify/components'
+
+<CardGroup cols={2}>
+  <Card title="エレガントなインターフェース" icon="palette">
+    綿密にデザインされたインターフェースは、エレガントな外観とスムーズなインタラクション効果を持っています。
+  </Card>
+  <Card title="テーマサポート" icon="moon">
+    明るいテーマと暗いテーマをサポートし、さまざまなシーンでの使用ニーズに応えます。
+  </Card>
+  <Card title="PWA サポート" icon="mobile">
+    PWAをサポートし、ネイティブアプリに近い体験を提供します。
+  </Card>
+  <Card title="モバイル対応" icon="mobile">
+    モバイル端末に対応し、より便利な使用体験を提供します。
+  </Card>
+</CardGroup>
+
+## エレガントなインターフェースデザイン
+
+綿密にデザインされたインターフェースは、エレガントな外観とスムーズなインタラクション効果を持っています:
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/64672af6bfb7a9100cd03d7aaa8e1299.webp" 
+    alt="UI インターフェースプレビュー"
+  />
+</Frame>
+
+## 明るいテーマと暗いテーマのサポート
+
+明るいテーマと暗いテーマをサポートし、さまざまなシーンでの使用ニーズに応えます:
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/8bff962b07daa4c8a69233fa9465aef5.png" 
+    alt="UI インターフェースプレビュー"
+  />
+</Frame>
+
+## PWA サポート
+
+PWAをサポートし、ネイティブアプリに近い体験を提供します:
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/31a33f5a8f3a53a5bd4687f6393f2605.png" 
+    alt="PWA サポート"
+  />
+</Frame>
+
+## モバイル対応
+
+モバイル端末に対応し、より便利な使用体験を提供します:
+
+<Warning>
+  モバイル端末のインターフェースはまだ最適化中であり、一部の機能に互換性の問題がある可能性があります。私たちはモバイル端末の使用体験を改善するために努力しています。
+</Warning>
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/343cb3215fbbb61e814288366856601f.png" 
+    alt="モバイル対応"
+  />  
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/352368c4cd1c81a3184bea72ad8aa4e3.png" 
+    alt="モバイル対応"
+  />
+</Frame>
+

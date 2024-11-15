@@ -1,0 +1,45 @@
+---
+title: .vrma ファイルとは？
+description: .vrma ファイル形式の紹介とその特徴
+keywords: .vrma, VRM, アニメーション, ファイル形式
+icon: question
+---
+
+`.vrma` ファイルは、VRM（バーチャルリアリティモデル）アニメーションを記述するためのファイル形式です。これは glTF 標準に基づいており、人型モデルに対してクロスプラットフォームのアニメーションサポートを提供することを目的としています。このファイル形式は比較的新しく、2024 年 2 月に発表されました：
+
+<Card title="VRoid Hub 新機能リリース" icon="newspaper">
+  VRoid Hub はアニメーション再生のためのフォトブース機能を導入しました！「VRM Animation (.vrma)」が BOOTH に登場し、7 つの無料アニメーションファイルを提供しています！
+
+[ニュースの全文を読む](https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW) </Card>
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/edfe7d13f6f2edb342219ffeaf37a294.webp" alt=".vrma ファイルの例" />
+</Frame>
+
+## .vrma ファイルの特徴
+
+1. **アニメーションの記述**：
+   - .vrma ファイルは glTF アニメーション形式を使用しており、VRM モデルに関連するアニメーション情報（ボーンアニメーション、表情アニメーション、視線制御など）を記述できます。
+
+2. **クロスプラットフォームの互換性**：
+   - この形式は、複数のアプリケーションやプラットフォーム間で使用できるように設計されており、ユーザーが異なる環境で同じアニメーションデータを共有し、適用できることを保証します。
+
+3. **標準化された実装**：
+   - UniVRM プラグインは、Unity における .vrma ファイルのインポートとエクスポートの標準ソリューションを提供しており、開発者がこれらのアニメーションをプロジェクトに簡単に統合できるようにしています。
+
+4. **カスタム表現のサポート**：
+   - 予め設定された表情に加えて、.vrma ファイルはカスタム表情もサポートしており、対象の VRM モデルがそれに対応する表現能力を持っている限り、自由に表情を設定できます。
+
+.vrma ファイルを使用することで、ユーザーはさまざまな VR アプリケーションやゲームで複雑なキャラクターアニメーションを簡単に実現し、バーチャルリアリティ体験を向上させることができます。
+
+<Accordion title="参考資料">
+  [1] https://docs.vrcd.org.cn/books/vrm-vrm  
+  [2] https://docs.vrcd.org.cn/books/vrm-vrm/export/html  
+  [3] https://vrm.dev/en/vrma/  
+  [4] https://vocus.cc/article/65dc15f1fd89780001f80eb7  
+  [5] https://elvcatdev.com/posts/vrma-vpd-effect/  
+  [6] https://hime.xdrv.cn/blog/animation-convert.html  
+  [7] https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW  
+  [8] https://developer.vive.com/resources/openxr/unreal/unreal-tutorials/facialexpressionmaker/vrm/?site=cn
+</Accordion>
+

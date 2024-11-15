@@ -1,0 +1,105 @@
+---
+title: Anthropic Claudeの使用
+description: >-
+  Anthropic Claude APIは現在、全面的に利用可能です。本ドキュメントでは、LobeVidolで[Anthropic Claude](https://www.anthropic.com/api)を設定し、使用する方法を詳しく説明します。
+keywords: Anthropic, Claude, API, LobeVidol, 会話, 強化
+---
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/3d2c8df14b2aaf1b98ad2706e6573e46.png"
+    alt="LobeVidolでAnthropic Claudeを使用"
+  />
+</Frame>
+
+## 設定手順
+
+### 手順1：Anthropic Claude APIキーを取得する
+
+1. [Anthropic Claude API](https://www.anthropic.com/api)のアカウントを登録して作成します。
+2. コンソールで[APIキー](https://console.anthropic.com/settings/keys)を取得します。
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/ec6bd7ee7851ae4d9289dc9af7f73c1c.webp"
+    alt="APIキーの作成"
+  />
+</Frame>
+
+<Warning>
+  Claude APIは現在、特定の国/地域に対して5ドルの無料クレジットを提供しています。自分の地域で利用可能かどうかは、ダッシュボードの「クレーム」で確認できます。
+  利用できない場合は、他の支払い方法を検討することもできます。
+</Warning>
+
+3. <https://console.anthropic.com/settings/plans>で請求情報を設定します（「生成」プランを選択して従量課金モードを有効にします）。
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/66b784fffe7573242d86f4f73f177ce0.webp"
+    alt="請求情報の設定"
+  />
+</Frame>
+
+### 手順2：LobeVidolでAnthropic Claudeを設定する
+
+1. LobeVidolの`設定`ページを開きます。
+2. `AIモデル設定`セクションの下にある`Anthropic Claude`の設定項目を見つけます。
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/feb270dee460367739857f028f2f617e.webp"
+    alt="APIキーを入力"
+  />
+</Frame>
+
+3. APIキーを入力します。
+4. 利用可能なAnthropic Claudeモデルから、ニーズに合ったバージョンを選択します：
+   - Claude 3 Opus：最も強力なモデルで、複雑なビデオスクリプト生成に適しています。
+   - Claude 3.5 Sonnet：パフォーマンスとコストのバランスが取れた理想的な選択です。
+   - Claude 3 Haiku：最も応答速度が速く、迅速なアイデア構想に適しています。
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/4f9af602892219fa812b4321b1b2cdcd.webp"
+    alt="Anthropic Claudeモデルを選択して創作を開始"
+  />
+</Frame>
+
+<Warning>
+  APIサービスの利用には相応の料金が発生します。具体的な料金については、Anthropic Claudeの公式価格ポリシーを参照してください。使用前に各モデルの料金基準を詳しく理解することをお勧めします。
+</Warning>
+
+### 手順3：使用を開始する
+
+設定が完了したら、Anthropic Claudeの強力な機能を使用して：
+
+- 創造的なビデオスクリプトを生成する
+- ビデオのタイトルと説明を最適化する
+- スマートな編集提案を得る
+- 字幕とナレーションテキストを生成する
+- 多言語コンテンツを作成する
+
+## よくある質問
+
+<AccordionGroup>
+  <Accordion title="適切なClaudeモデルを選択するには？">
+    - Claude 3 Opus：深い思考と複雑な創造が必要なプロジェクトに適しています。
+    - Claude 3.5 Sonnet：日常的な創作に最適な選択です。
+    - Claude 3 Haiku：迅速な反復と簡単なタスクに適しています。
+  </Accordion>
+
+  <Accordion title="APIキーが使えない場合はどうすればよいですか？">
+    1. 請求情報が正しく設定されているか確認します。
+    2. APIキーが有効化されているか確認します。
+    3. アカウントの残高が十分か確認します。
+    4. 地域制限がないか確認します。
+  </Accordion>
+
+  <Accordion title="API使用コストを最適化するには？">
+    1. モデルバージョンを適切に選択します。
+    2. より正確なプロンプトを使用します。
+    3. 類似のタスクをバッチ処理します。
+    4. 定期的に使用量を監視します。
+  </Accordion>
+</AccordionGroup>
+

@@ -1,0 +1,108 @@
+---
+title: VRoid Hubを使用してVRMモデルを作成または取得する方法
+description: VRoid HubでVRMモデルを作成および取得するための詳細なガイド
+keywords: VRoid Hub, 作成, 取得, VRMモデル, ガイド
+icon: question
+---
+
+## 1. VRoid HubとVRMフォーマットを理解する
+
+### 1.1 VRoid Hubとは？
+
+[VRoid Hub](https://hub.vroid.com/)は、Pixivが作成したオンラインプラットフォームで、主に3Dバーチャルキャラクターモデルのホスティングと共有に使用されます。ユーザーはこのプラットフォームでバーチャルアバターを閲覧、ダウンロード、アップロードでき、V-Tubingやバーチャルソーシャルなど、さまざまなアプリケーションシーンをサポートしています。
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/37456b9e3567f181dc8decf8c4d0bb1e.webp" alt="VRoid Hubのインターフェース" />
+</Frame>
+
+### 1.2 VRMフォーマットとは？
+
+VRMは3Dキャラクターモデルを処理するためのファイルフォーマットで、以下の特徴があります：
+
+- **クロスプラットフォームサポート**：VRMモデルはさまざまなアプリケーションで使用できます。
+- **豊富なデータを含む**：3Dメッシュ、テクスチャ、スケルトン、メタデータなどを含みます。
+- **アニメーションをサポート**：自然で滑らかなキャラクターアニメーションや表情を実現できます。
+
+## 2. 自分のバーチャルアバターを作成する
+
+### 2.1 VRoid Studioをダウンロード
+
+自分のバーチャルアバターを作成するには、まず[VRoid Studio](https://vroid.com/studio)をダウンロードする必要があります。これは無料の3Dキャラクター作成ツールです。公式ウェブサイトでソフトウェアを見つけてダウンロードできます。
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/7b278f1684abe31781fefa2b7568ec55.webp" alt="VRoid Studioのダウンロードページ" />
+</Frame>
+
+### 2.2 バーチャルアバターを作成
+
+1. **VRoid Studioをインストールして開く**：インストールが完了したら、ソフトウェアを起動します。
+2. **新しいモデルを作成**：
+   - 「新しいモデル」ボタンをクリックします。
+   - 性別（男性または女性）やその他の基本設定を選択します。
+3. **外観をカスタマイズ**：
+   - **顔の設定**：目、鼻、口などを調整します。
+   - **髪型の設定**：髪型を選択またはカスタマイズします。
+   - **服装の設定**：服装スタイルを選択し、色や詳細を調整します。
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/73fe774a8c070dac944cd5cebac5209a.webp" alt="VRoid Studioのインターフェース" />
+</Frame>
+
+### 2.3 モデルをエクスポート
+
+カスタマイズが完了したら、モデルをVRMフォーマットでエクスポートできます：
+
+- 「エクスポート」ボタンをクリックし、保存先を選択してエクスポートを確認します。
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/9352bc01fd290c0eb8b6c186c53d6aac.webp" alt="VRoid Studioのエクスポートインターフェース" />
+</Frame>
+
+## 3. VRoid Hubにアップロード
+
+### 3.1 VRoid Hubアカウントを登録
+
+まだアカウントをお持ちでない場合は、[VRoid Hub](https://hub.vroid.com/)で無料アカウントを登録する必要があります。登録後、アカウントにログインします。
+
+### 3.2 モデルをアップロード
+
+1. **アップロードページに移動**：ログイン後、ページ上の「アップロード」ボタンをクリックします。
+2. **ファイルを選択**：先ほどエクスポートしたVRMファイルを選択してアップロードします。
+3. **情報を入力**：
+   - モデル名、説明、タグを追加します。
+   - 適切なライセンス契約を選択し、モデルが商業利用できることを確認します。
+
+### 3.3 アップロードを確認
+
+以上の手順が完了したら、アップロードを確認します。モデルはあなたのプロフィールに追加され、他のユーザーが閲覧およびダウンロードできるようになります。
+
+## 4. 無料のバーチャルアバターを検索してダウンロード
+
+### 4.1 VRoid Hubをブラウズ
+
+VRoid Hubのホームページでは、検索ボックスやカテゴリブラウジング機能を使用して利用可能なバーチャルアバターを探すことができます。「無料」と「商業利用可能」のオプションを選択して、条件に合ったモデルを見つけることを確認してください。
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/5bfeb0c69a8dcf0033f2a17f0d29ff72.webp" alt="VRoid Hubのブラウジングインターフェース" />
+</Frame>
+
+### 4.2 モデルをダウンロード
+
+1. **モデルを選択**：興味のあるバーチャルアバターを見つけたら、その詳細ページにクリックします。
+2. **ライセンス契約を確認**：そのモデルが「商業利用可能」とマークされていることを確認します。
+3. **ダウンロードをクリック**：ダウンロードボタンを見つけて、モデルをコンピュータに保存します。
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/a62bc4011f73d9dc8f3cdc6ef5f0dcb9.webp" alt="VRoid Hubのダウンロードインターフェース" />
+</Frame>
+
+<Accordion title="参考資料">
+  [1] https://www.douyin.com/shipin/7291539323123173432  
+  [2] https://www.douyin.com/shipin/7357720781213747226  
+  [3] https://aws.amazon.com/cn/getting-started/hands-on/build-a-vtubing-app-with-amazon-ivs-and-vroid/  
+  [4] https://avatar.viverse.com/zh-TW/avatar/what-is-vrm  
+  [5] https://tips.clip-studio.com/zh-tw/articles/3388  
+  [6] https://www.87g.com/az/81153.html  
+  [7] https://docs.vrcd.org.cn/books/vrm-vrm/export/html
+</Accordion>
+

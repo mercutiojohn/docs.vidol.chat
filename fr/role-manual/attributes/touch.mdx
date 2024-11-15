@@ -1,0 +1,81 @@
+---
+title: Réaction au toucher
+description: Configurer la réaction des personnages au toucher de différentes parties du corps
+keywords: réaction au toucher, personnage, partie du corps, réponse
+icon: hand-wave
+---
+
+## Introduction
+
+Dans la configuration du système, nous avons par défaut défini un ensemble de réactions au toucher des personnages en fonction du sexe. Lorsque les utilisateurs interagissent avec les personnages et touchent des parties spécifiques du corps telles que la tête, la poitrine, les fesses, l'abdomen, les jambes, etc., les personnages réagissent par des expressions, des mouvements, des textes, etc. Vous pouvez modifier ces paramètres par défaut selon vos besoins, ou activer la fonction `Activer le toucher personnalisé` pour personnaliser les réactions au toucher.
+
+## Liste des Touchers
+
+Dans l'onglet de toucher, sur le côté gauche, se trouvent les zones de toucher configurables, y compris `Tête`, `Bras`, `Poitrine`, `Fesses`, `Abdomen`, `Jambes`, etc. :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/04e7bd63b38b889c3fecae2b429b7f84.webp" />
+</Frame>
+
+Au-dessus de la zone se trouve le commutateur de la fonction `Activer le toucher personnalisé`, qui est désactivé par défaut. Dans ce cas, le système adoptera les définitions de toucher par défaut. Vous pouvez modifier les paramètres par défaut dans `Paramètres du système` -> `Paramètres de toucher` :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/fe4e1ebe1207970d1db972eb14f54b0a.webp" />
+</Frame>
+
+## Ajouter
+
+Sélectionnez la zone corporelle à gauche, par exemple `Tête`, puis cliquez sur `+` à droite pour ajouter l'action correspondante :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/d69c9bda9aea809939ee123ad8e75ee6.webp" />
+</Frame>
+
+Dans la fenêtre modale, configurez le texte de réponse du personnage lors du déclenchement, l'expression et l'émotion lors de la réponse, ainsi que les mouvements corporels correspondants :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/6efb76428fa6b9ec47a41b66b2b8ca12.webp" />
+</Frame>
+
+Une fois l'ajout terminé, un élément sera ajouté à la configuration de toucher. Lorsque la réaction au toucher est déclenchée, le système choisira aléatoirement un élément à jouer :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/8b19fd7b5db496b3d4ce66f26231e036.webp" />
+</Frame>
+
+## Lecture
+
+Cliquez sur le bouton de lecture à gauche de l'élément de la liste des réactions au toucher pour prévisualiser la réaction du personnage lorsqu'il est touché :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/9e5697aa4b5746f14f96ac3dbf11eb76.webp" />
+</Frame>
+
+## Modifier
+
+Cliquez sur le bouton d'édition à droite de l'élément de la liste des réactions au toucher pour modifier l'action de réponse :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/c41f2d25fc45115ac079ec5b3d2ba930.webp" />
+</Frame>
+
+Une fois ouvert, les champs de configuration pertinents seront remplis :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/d7f0ab6433a5362e7a70cb80c1b29cf1.webp" />
+</Frame>
+
+## Supprimer
+
+Cliquez sur le bouton de suppression à droite de l'élément de la liste des réactions au toucher pour supprimer la réponse au toucher :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/857b4776fa200e47a29da11087931ce3.webp" />
+</Frame>
+
+Confirmez ensuite la suppression :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/87ce90373b76a9a168242a0b1dd27358.webp" />
+</Frame>
+

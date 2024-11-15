@@ -1,0 +1,71 @@
+---
+title: 概要紹介
+description: 誰でもアクセスできるバーチャルアイドルを作成
+keywords: バーチャルアイドル, 対話, ツール, 3Dレンダリング技術
+---
+
+<img
+className="block dark:hidden"
+src="/images/intro.png"
+alt="Lobe Vidol Light"
+/> <img
+className="hidden dark:block"
+src="/images/intro.png"
+alt="Lobe Vidol Dark"
+/>
+
+## 機能特性
+
+<CardGroup cols={2}>
+  <Card title="音声変換" icon="microphone">
+    テキストから音声への変換(TTS)と音声からテキストへの変換(STT)技術をサポート
+  </Card>
+  <Card title="多様な音源" icon="volume-high">
+    高品質な音声オプションを提供（OpenAI Audio、Microsoft Edge Speech）
+  </Card>
+  <Card title="動作ポーズ" icon="person-walking">
+    内蔵のMixamoアクションライブラリにより、豊かなボディランゲージ表現をサポート
+  </Card>
+  <Card title="キャラクター編集" icon="user-pen">
+    カスタマイズ可能なキャラクターの外見、性格、行動特性をサポート
+  </Card>
+  <Card title="背景設定" icon="image">
+    様々なシーン背景を提供し、対話をより状況に合ったものに
+  </Card>
+  <Card title="ストリーミング応答" icon="comments">
+    リアルタイムのストリーミング対話応答で、スムーズなインタラクション体験を提供
+  </Card>
+  <Card title="タッチインタラクション" icon="hand-pointer">
+    カスタマイズ可能なタッチ反応をサポートし、インタラクションの楽しさを増加
+  </Card>
+  <Card title="キャラクターマーケット" icon="store">
+    ユーザーがキャラクターを共有・ダウンロードできるキャラクターマーケットを提供
+  </Card>
+  <Card title="ダンスマーケット" icon="music">
+    ユーザーがダンスを共有・ダウンロードできるダンスマーケットを提供
+  </Card>
+  <Card title="キャラクターアニメーション" icon="film">
+    VRMAアニメーションファイルのインポートをサポートし、キャラクターの動作をより豊かに
+  </Card>
+</CardGroup>
+
+## その他の特性
+
+<CardGroup cols={2}>
+  <Card title="エレガントなインターフェース" icon="palette">
+    精巧にデザインされたインターフェースで、エレガントな外観とスムーズなインタラクション効果を持つ
+  </Card>
+  <Card title="テーマサポート" icon="moon">
+    明るいテーマと暗いテーマをサポート
+  </Card>
+  <Card title="多言語" icon="language">
+    中国語、英語など多言語インターフェースをサポート
+  </Card>
+  <Card title="PWAサポート" icon="mobile">
+    PWAをサポートし、ネイティブアプリに近い体験を提供
+  </Card>
+  <Card title="モバイル適応" icon="mobile">
+    モバイル端末に適応し、より便利な体験を提供
+  </Card>
+</CardGroup>
+

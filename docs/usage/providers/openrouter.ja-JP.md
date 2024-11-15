@@ -1,0 +1,124 @@
+---
+title: OpenRouterの使用
+description: LobeVidolでの登録、APIキーの作成、クレジットのチャージ、OpenRouterの設定方法を学び、さまざまな優れた大規模言語モデルAPIを利用開始しましょう。
+keywords: OpenRouter, API, LobeVidol, 言語モデル, 対話, 強化
+---
+
+<Frame>
+  <img src="https://oss.vidol.chat/docs/2024/11/e3701e1f3dffaf245196ed683ede29d0.png" alt="LobeVidolでのOpenRouterの使用" />
+</Frame>
+
+## 概要
+
+OpenRouterは、GPT-4、Claude 2、LLaMA 2などのさまざまなトップモデルをサポートする強力なAIモデル集約プラットフォームです。このガイドを通じて、LobeVidolでこれらのモデルを簡単に接続できます。OpenRouterはモデル集約サービスプラットフォームとして、ユーザーに以下の利点を提供します：
+
+- 複数のトップAIモデルをサポート：
+  - OpenAIシリーズ (GPT-3.5/4)
+  - Anthropicシリーズ (Claude2、Claude Instant)
+  - MetaのLLaMA 2
+  - GoogleのPaLMシリーズ
+- 統一されたAPIインターフェース
+- 柔軟な課金方式
+- 一部のモデルは無料枠を提供
+
+## 設定手順
+
+### 1. OpenRouterアカウントの登録とログイン
+
+- [OpenRouter.ai](https://openrouter.ai/)にアクセスし、アカウントを作成します。
+- 2つのログイン方法をサポート：
+  - Googleアカウントでのログイン
+  - MetaMaskウォレットでのログイン
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/4dc5f7b6823b2836c4e69dd692889a9d.webp" alt="OpenRouterの登録" />
+</Frame>
+
+### 2. APIキーの作成
+
+1. `Keys`メニューに移動するか、直接[OpenRouter Keys](https://openrouter.ai/keys)にアクセスします。
+2. `Create Key`ボタンをクリックします。
+3. ポップアップで以下を設定します：
+   - APIキーに名前を付ける（例："LobeVidol Key"）
+   - `Credit limit`は任意で入力（空白の場合は制限なし）
+
+<Note type="warning">
+  作成に成功したら、APIキーをすぐにコピーして安全に保存してください。表示は一度だけです。失くした場合は新しいキーを再作成する必要があります。
+</Note>
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/914d26be0d8dd7e2bce85ecad8192a53.webp" alt="OpenRouter Keyの作成" />
+</Frame>
+
+### 3. クレジットのチャージ
+
+1. `Credit`メニューに移動するか、[OpenRouter Credit](https://openrouter.ai/credits)にアクセスします。
+2. `Manage Credits`をクリックしてチャージします。
+3. [モデル価格ページ](https://openrouter.ai/models)で各モデルの具体的な料金を確認します。
+
+<Note>
+  OpenRouterは一部の無料モデルを提供しており、チャージなしで使用できます。まずは無料モデルを試してみて、慣れてから有料モデルを検討することをお勧めします。
+</Note>
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/307d22deca37827f552eebe22bccb19b.webp" alt="OpenRouterクレジットのチャージ" />
+</Frame>
+
+### 4. LobeVidolでのOpenRouterの設定
+
+<Note>
+  現在のプロジェクトはOpenAIモデルのみをサポートしており、他のモデルは今後のバージョンで順次サポートされる予定です。
+</Note>
+
+1. 設定を開きます：
+   - LobeVidolの`設定`画面にアクセスします。
+   - `言語モデル`の部分を見つけます。
+   - `OpenAI`の設定項目を選択します。
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/65be98b535abfdf1de172f90f1f4d087.png"
+    alt="APIキーを入力"
+  />
+</Frame>
+
+2. サービスを設定します：
+   - 取得したAPIキーを対応する入力ボックスに入力します。
+   - 使用したいOpenAIモデルを選択します。
+   - カスタムAPIプロキシアドレスを`https://openrouter.ai/api/v1`に設定します。
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/337b8df7091c4a261979de943d1474cf.png"
+    alt="OpenAIモデルを選択して対話を開始"
+  />
+</Frame>
+
+<Warning>
+  OpenAIサービスの使用には料金が発生します。モデルによって価格が異なるため、詳細は[OpenAIの料金ページ](https://openai.com/pricing)を参照してください。
+</Warning>
+
+## 使用の提案
+
+### モデル選択
+
+- 無料モデルから試すことをお勧めします。
+- 具体的なニーズに応じて適切なモデルを選択します。
+- モデルごとの課金基準に注意してください。
+
+### 費用管理
+
+- 妥当なクレジット制限を設定します。
+- 使用量を定期的に確認します。
+- 請求の変動に注意を払います。
+
+### パフォーマンス最適化
+
+- レイテンシの低いモデルを選択します。
+- コンテキストの長さを適切に調整します。
+- 効率を高めるためにプロンプトを最適化します。
+
+<Card>
+  使用中に問題が発生した場合は、[OpenRouterのドキュメント](https://openrouter.ai/docs)を確認するか、カスタマーサポートに連絡して助けを求めてください。
+</Card>
+

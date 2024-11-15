@@ -20,6 +20,7 @@ export const moveFiles = () => {
   // 递归遍历 cn 目录
   const walkDir = (dir: string, locale: Locale) => {
     const files = fs.readdirSync(dir);
+    consola.info(`Walking ${dir} with locale ${locale}`);
 
     files.forEach((file) => {
       const filePath = path.join(dir, file);
@@ -27,10 +28,10 @@ export const moveFiles = () => {
 
       if (stat.isDirectory()) {
         walkDir(filePath, locale);
-      } else if (file.endsWith(`.${locale}.mdx`)) {
-        const relativePath = path.relative(localeMap[locale], dir);
+      } else if (file.endsWith(`.${locale}.md`)) {
+        const relativePath = path.relative("docs", dir);
         const targetDir = path.join(localeMap[locale], relativePath);
-        const newFileName = file.replace(`.${locale}.mdx`, ".mdx");
+        const newFileName = file.replace(`.${locale}.md`, ".mdx");
         const targetPath = path.join(targetDir, newFileName);
 
         // 创建目标目录
@@ -46,7 +47,7 @@ export const moveFiles = () => {
   };
 
   // 从 i.18n 的 outputLocales 目录分别遍历
-  pkg.i18n.markdown.outputLocales.forEach((locale: string) => {
+  Object.keys(localeMap).forEach((locale: string) => {
     walkDir("docs", locale as Locale);
   });
 };
