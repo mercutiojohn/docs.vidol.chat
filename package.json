@@ -11,6 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mintlify dev --port 7001",
     "docs:i18n": "lobe-i18n md",
+    "move:en": "tsx scripts/i18nWorkflow/moveFile.ts",
     "workflow:cdn": "tsx scripts/mdxWorkflow/autoCDN.ts"
   },
   "repository": {
@@ -27,6 +28,29 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/v-idol/docs.vidol.chat/issues"
+  },
+  "i18n": {
+    "temperature": 0,
+    "modelName": "gpt-4o-mini",
+    "splitToken": 2048,
+    "experimental": {
+      "jsonMode": true
+    },
+    "markdown": {
+      "entry": [
+        "./docs/**/*.mdx"
+      ],
+      "entryExtension": ".mdx",
+      "entryLocale": "zh-CN",
+      "outputLocales": [
+        "en-US",
+        "zh-CN",
+        "ja-JP",
+        "fr-FR"
+      ],
+      "exclude": [],
+      "includeMatter": true
+    }
   },
   "homepage": "https://github.com/v-idol/docs.vidol.chat#readme",
   "devDependencies": {

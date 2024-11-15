@@ -1,0 +1,99 @@
+---
+title: Upload Dance Files
+description: "Learn how to upload dance files to the dance market"
+keywords: dance files, upload, dance market
+icon: upload
+---
+
+Once you have prepared the necessary files, you can upload the relevant dance files to the backend for review using the upload feature provided on the website.
+
+## Upload Steps
+
+<Steps>
+  <Step title="Open the Dance Interface">
+   After opening the Vidol interface, click the `Expand` button on the right side, switch to the `Dance` tab, and then click the `Dance Market` button, as shown in the image below:
+
+![](https://oss.vidol.chat/dance-manual-step-1.png)
+
+  </Step>
+  <Step title="Click Create Dance">
+   After opening the dance market, click the `Create Dance` button to open the dance creation form:
+
+```
+![](https://oss.vidol.chat/dance-manual-step-2.png)
+```
+
+  </Step>
+  <Step title="Fill in the Dance Form">
+    Next, upload the dance files you prepared in the previous step, add the dance ID, name, and corresponding description. For detailed explanations of the dance fields, refer to the [Dance Parameter Description](/dance-manual/qucikstart/dance-fields). Once completed, click the `Upload and Submit` button below:
+   ![](https://oss.vidol.chat/dance-manual-step-3.png)
+  </Step>
+</Steps>
+
+## Parameter Description
+
+<ParamField path="danceId" type="string" required>
+  The ID used to uniquely identify the dance.
+</ParamField>
+
+<ParamField path="name" type="string" required>
+  The name of the dance, should not exceed 64 characters.
+</ParamField>
+
+<ParamField path="src" type="string" required>
+  The address of the animation file.
+</ParamField>
+
+<ParamField path="audio" type="string" required>
+  The address of the audio file, currently supporting `.mp3` and `.wav` formats.
+</ParamField>
+
+<ParamField path="cover" type="string" required>
+  The dance cover, recommended size is `512*512`.
+</ParamField>
+
+<ParamField path="thumb" type="string">
+  The dance preview, automatically generated from the dance cover.
+</ParamField>
+
+<ParamField path="readme" type="string">
+  Description text, such as the address of the animation resources, usage notes, etc.
+</ParamField>
+
+<ParamField path="author" type="string">
+  The name of the creator, this field will automatically retrieve the GitHub account name after review is completed.
+</ParamField>
+
+<ParamField path="homepage" type="string">
+  The creator's homepage, this field will automatically retrieve the GitHub account address after review is completed.
+</ParamField>
+
+<ParamField path="createAt" type="string">
+  The creation date, this field will automatically generate the current date after review is completed.
+</ParamField>
+
+<RequestExample>
+
+```json
+{
+  "danceId": "suki-yuki-maji-magic",
+  "name": "のぶなが - 好き雪本気マジック",
+  "author": "rdmclin2",
+  "homepage": "https://github.com/rdmclin2",
+  "src": "https://r2.vidol.chat/files/2024/10/03/3a38ea2d-4ec9-493d-b49f-cf346b5f72d1.vmd",
+  "audio": "https://r2.vidol.chat/files/2024/10/03/bf8e8dcc-54b1-4038-820e-df97cb396ccf.mp3",
+  "cover": "https://r2.vidol.chat/files/2024/10/03/eee597e0-3ca1-46ad-8a1d-93768dc63601.webp",
+  "thumb": "https://r2.vidol.chat/files/2024/10/03/80ba70d0-4024-4b5b-b750-233dc145c752.webp",
+  "readme": "https://www.nicovideo.jp/watch/sm23692832",
+  "schemaVersion": 1,
+  "createAt": "2024-10-03"
+}
+```
+
+</RequestExample>
+
+## Next Steps
+
+After submission, the system will upload the local files to the remote server. Please be patient while the upload completes, and then proceed to the next step:
+
+[File Review and Merging](/dance-manual/qucikstart/dance-review)

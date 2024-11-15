@@ -1,0 +1,51 @@
+---
+title: Resolving Japanese Filename Corruption Issues During Extraction
+description: How to fix filename corruption issues when downloading zip files from foreign websites
+keywords: extraction, corruption, Japanese, zip, compressed files
+icon: question
+---
+
+## Problem Description
+
+When downloading zip files from foreign websites, it is common to encounter issues where the filenames appear corrupted after extraction. This is usually caused by a mismatch between the system language and the language used when the compressed file was created.
+
+<Frame caption="Example of Filename Corruption After Extraction">
+  ![Extraction Corruption Issue](https://oss.vidol.chat/compression-problem.png)
+</Frame>
+
+<Note>
+  This issue is particularly common when downloading MMD zip files from Japanese websites (such as Neconeco).
+</Note>
+
+## Solution
+
+You can resolve this issue by using the default code page language conversion feature in Bandzip software.
+
+<Steps>
+  <Step title="Open Bandzip">
+    Launch the Bandzip software.
+  </Step>
+  <Step title="Set Default Code Page">
+    Find the default code page option in Bandzip's settings.
+  </Step>
+  <Step title="Select the Correct Language">
+    Set the default code page to Japanese (or the appropriate language).
+  </Step>
+</Steps>
+
+<Frame caption="Bandzip Settings Interface">
+  ![Bandzip Settings](https://oss.vidol.chat/bandzip.png)
+</Frame>
+
+## Result Display
+
+After correctly setting it up, the extraction results should look like the image below:
+
+<Frame caption="Correctly Extracted Filenames">
+  ![Normal Extraction Result](https://oss.vidol.chat/compression-normal.png)
+</Frame>
+
+<Tip>
+  If you frequently download compressed files in different languages, consider using extraction software that supports multiple language encodings, such as 7-Zip or WinRAR.
+</Tip>
+

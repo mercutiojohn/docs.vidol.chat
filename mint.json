@@ -38,6 +38,14 @@
     {
       "name": "English",
       "locale": "en"
+    },
+    {
+      "name": "日文",
+      "locale": "jp"
+    },
+    {
+      "name": "Français",
+      "locale": "fr"
     }
   ],
   "tabs": [
