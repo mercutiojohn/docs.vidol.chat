@@ -1,0 +1,80 @@
+---
+title: Detailed Explanation of the VMD File Format
+description: VMD (Vocaloid Motion Data) files are an important file format used in MikuMikuDance (MMD) for storing animation data.
+keywords: VMD, Vocaloid Motion Data, MikuMikuDance, MMD, animation data, file format
+icon: file-video
+---
+
+VMD files are primarily used to record character movements, camera trajectories, and other animation information. This article will provide a detailed overview of the structure and usage of VMD files.
+
+## File Structure
+
+A VMD file is a binary stream file that contains multiple sections:
+
+<AccordionGroup>
+  <Accordion title="Header Information">
+    - The first 30 bytes contain version information:
+      - v1 version is identified as "Vocaloid Motion Data file"
+      - v2 version is identified as "Vocaloid Motion Data 0002"
+    - Model name (encoded in ShiftJIS):
+      - 10 bytes in v1
+      - 20 bytes in v2
+  </Accordion>
+
+  <Accordion title="Keyframe Data">
+    Each section begins with a `uint32_t` value that indicates the number of keyframes in that section. It includes the following records:
+    - Bone KeyFrame
+    - Morph KeyFrame
+    - Camera KeyFrame
+    - Light KeyFrame
+  </Accordion>
+</AccordionGroup>
+
+## Keyframe Record Details
+
+### Bone Keyframe Record
+
+<CodeGroup>
+  ```cpp Bone KeyFrame
+  struct BoneKeyFrame {
+    char BoneName[15];     // Bone name (ShiftJIS encoding)
+    uint32_t FrameTime;    // Keyframe time
+    float Translation[3];  // Position coordinates (X, Y, Z)
+    float Rotation[4];     // Rotation quaternion (X, Y, Z, W)
+    uint8_t Curve[64];     // Curve data for X, Y, Z directions (16 bytes each)
+  };
+  ```
+</CodeGroup>
+
+### Morph Keyframe Record
+
+<CodeGroup>
+  ```cpp Morph KeyFrame
+  struct MorphKeyFrame {
+    char MorphName[15];    // Morph name (ShiftJIS encoding)
+    uint32_t FrameTime;    // Keyframe time
+    float Weight;          // Weight value
+  };
+  ```
+</CodeGroup>
+
+<Note>
+  The structures for camera and light keyframes are similar but contain their specific parameters.
+</Note>
+
+## Usage and Compatibility
+
+VMD files are typically used in conjunction with MikuMikuDance software, supporting the import and export of motion data between different models.
+
+<Warning>
+  Due to the possibility of different skeletal structures in various models, it is essential to ensure compatibility between the model and the motion data when using VMD files to avoid unnatural animation effects.
+</Warning>
+
+## Conclusion
+
+The VMD file format is an indispensable part of MMD animation production. By accurately recording various parameters in animations, it allows users to create smooth and expressive animations. Understanding its structure and usage is crucial for producing high-quality MMD animations.
+
+<Card title="Learn More" icon="book-open" href="https://mikumikudance.fandom.com/wiki/VMD_file_format">
+  Visit the MMD Wiki for more information about the VMD file format.
+</Card>
+

@@ -1,0 +1,33 @@
+---
+title: Téléchargement de personnage
+description: "Une fois la création du personnage terminée, nous pouvons utiliser la fonction de téléchargement fournie par le site pour soumettre le fichier et la configuration du personnage à l'administration pour révision."
+keywords: fichier de personnage, téléchargement, révision
+icon: upload
+---
+
+## Étapes de téléchargement
+
+### Étape 1 : Ouvrir l'interface de personnage
+
+1. Cliquez sur l'onglet `Personnage`
+2. Dans la liste des personnages à gauche, sélectionnez le personnage à télécharger
+
+<Frame>
+  ![Ouvrir l'interface de personnage](https://oss.vidol.chat/assets/b8f35ef6504c9724ae7c402f9da24c11.webp)
+</Frame>
+
+### Étape 2 : Partager sur le marché des assistants
+
+1. Cliquez sur le bouton `Partager sur le marché des assistants`
+2. Dans la fenêtre modale qui s'ouvre, ajoutez un identifiant de personnage unique au niveau mondial
+   - Vous pouvez le spécifier manuellement
+   - Vous pouvez également le générer automatiquement en utilisant le bouton de génération aléatoire
+3. Cliquez sur le bouton `Soumettre l'assistant`, le système téléchargera les fichiers liés au modèle et à l'avatar
+
+<Frame>
+  ![Partager sur le marché des assistants](https://oss.vidol.chat/assets/e82d86015fdc8cec9f3da066119e11b4.webp)
+</Frame>
+
+<Note>
+  Veuillez vous assurer que votre identifiant de personnage est unique au niveau mondial pour éviter tout conflit avec d'autres personnages.
+</Note>

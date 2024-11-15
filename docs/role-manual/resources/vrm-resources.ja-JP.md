@@ -1,0 +1,69 @@
+---
+title: VRM リソースサイト
+description: おすすめの VRM モデルリソースサイト一覧
+keywords: VRM, モデル, リソースサイト
+icon: link
+---
+
+以下は、VRM モデルを探してダウンロードするユーザーに適したおすすめの VRM モデルリソースサイトです：
+
+## 1. VRoid Hub
+
+[https://hub.vroid.com](https://hub.vroid.com)
+
+これは VRM モデル専用に設計されたプラットフォームで、高品質な VRM モデルが多数提供されています。一部のモデルは無料でダウンロード可能です。ユーザーはここで自分の VRM モデルを作成することもできます\[4\]。
+
+## 2. Booth
+
+[https://booth.pm](https://booth.pm)
+
+これはオンラインストアで、さまざまな VRM モデルを提供しており、無料および有料のオプションがあります。品質はさまざまですが、ユニークなデザインを見つけることができます\[4\]。
+
+## 3. Live3D
+
+[https://live3d.io](https://live3d.io)
+
+無料の VTuber モデルをダウンロードできるサイトで、選択肢は少ないですが、迅速にリソースを取得したいユーザーに適しています\[4\]。
+
+## 4. Sketchfab
+
+[https://sketchfab.com](https://sketchfab.com)
+
+国際的に有名な 3D 素材プラットフォームで、数百万の 3D モデルがあり、VRM フォーマットも含まれています。ユーザーは異なる著作権カテゴリに基づいてリソースをフィルタリングでき、とても便利です\[1\]\[3\]。
+
+## 5. CGTrader
+
+[https://www.cgtrader.com](https://www.cgtrader.com)
+
+VRM フォーマットを含む豊富な 3D モデルを提供しており、ゲーム開発やアニメーション制作に適しています。サイト上にはさまざまなファイル形式が選べます\[1\]\[3\]。
+
+## 6. Free3D
+
+[https://free3d.com](https://free3d.com)
+
+16,000 以上の無料 3D モデルを提供しており、VRM フォーマットも含まれています。個人および商業プロジェクトに非常に適しています\[1\]\[3\]。
+
+## 7. 3DMetaHub
+
+[https://www.3dmetahub.com](https://www.3dmetahub.com)
+
+国内の新興 3D モデル共有プラットフォームで、1,000 万以上の無料 3D モデルを持ち、さまざまなタイプをカバーしています。キーワード検索機能もサポートしており、ユーザーが簡単に探せるようになっています\[1\]\[2\]。
+
+## 8. Pikbest
+
+[https://pikbest.com](https://pikbest.com)
+
+デザインリソースプラットフォームで、さまざまなタイプのクリエイティブアートや 3D モデルを提供しており、さまざまなデザインニーズに適しています\[3\]。
+
+これらのサイトはそれぞれ特徴があり、個人の創作や商業プロジェクトなど、さまざまなニーズに応じた VRM リソースを見つけることができます。
+
+<Accordion title="参考資料">
+  [1] https://blog.csdn.net/m0_51631403/article/details/139758372  
+  [2] http://www.vrja.cn/VRsoftware/15399.html  
+  [3] https://cn.eagle.cool/blog/post/best-websites-to-download-free-3d-model-with-high-quality  
+  [4] https://www.patreon.com/posts/vrm-models-and-86352020  
+  [5] https://blender.kim/71190.html  
+  [6] https://www.aigei.com/3d/model/vrm/  
+  [7] https://www.cguse.com  
+  [8] https://www.bilibili.com/video/BV12a411H7oV/
+</Accordion>

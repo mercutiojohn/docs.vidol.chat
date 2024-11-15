@@ -1,0 +1,50 @@
+---
+title: How to Obtain .vrma Animations?
+description: Introduction to methods and platforms for acquiring VRM animation resources
+keywords: VRM animation, resources, platforms
+icon: question
+---
+
+Here are some websites and platforms where you can obtain VRM animation resources:
+
+## 1. VRoid Hub
+
+VRoid Hub offers a "Photo Booth" feature that supports the playback of VRM animations.
+
+- Users can upload their own .vrma files and apply various animations.
+- The platform also provides some free VRM animation files for download\[1\].
+
+## 2. BOOTH
+
+BOOTH is a marketplace focused on creators, which has added a "3D Motion/Animation" subcategory.
+
+- It allows users to share and sell VRM animation files (.vrma).
+- You can find a variety of animation resources from different creators here, including free animation files\[1\].
+
+## 3. VRM Posing Desktop
+
+VRM Posing Desktop is software for creating and exporting VRM animations.
+
+- It supports importing .vrma files and exporting them in video formats (such as .mp4).
+- You can purchase this software on Steam and use its powerful features for animation production\[2\][4\].
+
+## 4. GitHub VRM Specification
+
+The official documentation and specifications for VRM Animation can be found on GitHub.
+
+- It provides detailed information on how to use VRM animations.
+- Includes guidelines on how to import and export animation files\[5\].
+
+These resources provide you with a wealth of tools and platforms to acquire and create VRM animations.
+
+<Accordion title="References">
+  [1] https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW  
+  [2] https://elvcatdev.com/posts/vrma-vpd-effect/  
+  [3] https://docs.vrcd.org.cn/books/vrm-vrm/export/html  
+  [4] https://www.youtube.com/watch?v=GCXln4SX-7I  
+  [5] https://vrm.dev/en/vrma/  
+  [6] https://developer.vive.com/resources/openxr/unreal/unreal-tutorials/facialexpressionmaker/vrm/?site=cn  
+  [7] https://aws.amazon.com/cn/getting-started/hands-on/build-a-vtubing-app-with-amazon-ivs-and-vroid/  
+  [8] https://blog.csdn.net/qq_58047420/article/details/129674085
+</Accordion>
+

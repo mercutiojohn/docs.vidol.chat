@@ -1,0 +1,79 @@
+---
+title: Démarrage rapide
+description: 'Découvrez comment créer et utiliser des personnages virtuels dans LobeVidol, réalisant ainsi la vision de "Rendre les Idoles Virtuelles Accessibles à Tous".'
+keywords: personnages virtuels, création, utilisation, outil de dialogue, technologie de rendu 3D
+icon: sparkles
+---
+
+## Qu'est-ce que LobeVidol
+
+LobeVidol est un outil de dialogue de type compagnon virtuel open source, basé sur des modèles de langage de grande taille (LLM) et des technologies de rendu 3D. Ce guide a pour but de vous aider à créer vos propres personnages virtuels et à les amener dans le monde réel.
+
+<Info>
+  LobeVidol est livré avec un assistant par défaut nommé "Lilia". Vous pouvez discuter avec elle dans la fenêtre de chat pour expérimenter les effets de dialogue du personnage final.
+</Info>
+
+<Frame caption="Exemple de dialogue avec Lilia">
+  ![Exemple de dialogue avec Lilia](https://oss.vidol.chat/assets/98d94bbe545cbcf53fcced8ca015a893.webp)
+</Frame>
+
+Sur la page de découverte, vous pouvez parcourir tous les personnages créés sur notre plateforme. Grâce à ce manuel, vous apprendrez à devenir le créateur de ces personnages.
+
+<Frame caption="Affichage de la page de découverte">
+  ![Exemple de la page de découverte](https://oss.vidol.chat/assets/ce6edc35b93f1ff2d7bf7c0b36a44a03.webp)
+</Frame>
+
+## Méthodes de création de personnages
+
+Nous proposons deux méthodes différentes pour créer des personnages :
+
+### Téléchargement de personnages via la plateforme
+
+<Steps>
+  <Step title="Accéder à la page de configuration du personnage">
+    Dans la fenêtre des personnages, cliquez sur la liste des personnages à gauche pour accéder à la page de configuration de l'assistant que vous souhaitez soumettre.
+  </Step>
+  <Step title="Partager sur le marché des assistants">
+    Une fois la configuration terminée, cliquez sur le bouton "Partager sur le marché des assistants" en haut à droite.
+  </Step>
+</Steps>
+
+<Frame caption="Téléchargement de personnages via la plateforme">
+  ![Téléchargement de personnages via la plateforme](https://oss.vidol.chat/assets/f40f749e1376c668943d635de8bbd9e7.webp)
+</Frame>
+
+### Soumission via Github
+
+Si vous souhaitez ajouter un personnage à l'index, veuillez suivre les étapes suivantes :
+
+<Steps>
+  <Step title="Créer une entrée">
+    Dans le répertoire `src/roles`, créez une nouvelle entrée en utilisant `template/agent.json`.
+  </Step>
+  <Step title="Rédiger une description">
+    Rédigez une brève description de votre personnage et ajoutez des balises appropriées.
+  </Step>
+  <Step title="Soumettre une demande de tirage">
+    Créez une demande de tirage pour soumettre les informations de votre personnage.
+  </Step>
+</Steps>
+
+<Frame caption="Soumission via Github">
+  ![Soumission via Github](https://oss.vidol.chat/assets/b0982330fcf461aaf359400bd7e3a3cb.webp)
+</Frame>
+
+<Card title="Aller sur Github" icon="github" href="https://github.com/lobehub/lobe-vidol-market">
+  Accédez au dépôt Github de LobeVidol
+</Card>
+
+## Éléments de définition des personnages
+
+Actuellement, la plateforme dispose de deux principaux facteurs influençant les réactions des personnages :
+
+1. **Définition des attributs du personnage** : Cela inclut les paramètres système du personnage, la voix, le modèle 3D, les paramètres LLM, etc.
+2. **Contexte de dialogue** : C'est-à-dire la situation actuelle de la conversation.
+
+<Note>
+  Ce guide se concentrera sur la manière de définir les attributs des personnages et sur la façon de les télécharger sur le marché.
+</Note>
+

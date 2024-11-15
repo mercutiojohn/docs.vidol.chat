@@ -1,0 +1,71 @@
+---
+title: Overview Introduction
+description: Making Virtual Idols Accessible for Everyone
+keywords: virtual idols, dialogue, tools, 3D rendering technology
+---
+
+<img
+className="block dark:hidden"
+src="/images/intro.png"
+alt="Lobe Vidol Light"
+/> <img
+className="hidden dark:block"
+src="/images/intro.png"
+alt="Lobe Vidol Dark"
+/>
+
+## Features
+
+<CardGroup cols={2}>
+  <Card title="Voice Conversion" icon="microphone">
+    Supports Text-to-Speech (TTS) and Speech-to-Text (STT) technologies
+  </Card>
+  <Card title="Multiple Voice Sources" icon="volume-high">
+    Offers a variety of high-quality voice options (OpenAI Audio, Microsoft Edge Speech)
+  </Card>
+  <Card title="Motion Poses" icon="person-walking">
+    Built-in Mixamo motion library supports rich body language expressions
+  </Card>
+  <Card title="Character Editing" icon="user-pen">
+    Allows customization of character appearance, personality, and behavior traits
+  </Card>
+  <Card title="Background Settings" icon="image">
+    Provides various scene backgrounds to make dialogues more contextually relevant
+  </Card>
+  <Card title="Streaming Responses" icon="comments">
+    Real-time streaming dialogue responses for a smooth interactive experience
+  </Card>
+  <Card title="Touch Interaction" icon="hand-pointer">
+    Supports customizable touch responses to enhance interaction fun
+  </Card>
+  <Card title="Character Marketplace" icon="store">
+    Offers a character marketplace for users to share and download characters
+  </Card>
+  <Card title="Dance Marketplace" icon="music">
+    Provides a dance marketplace for users to share and download dances
+  </Card>
+  <Card title="Character Animation" icon="film">
+    Supports importing VRMA animation files for richer character movements
+  </Card>
+</CardGroup>
+
+## Additional Features
+
+<CardGroup cols={2}>
+  <Card title="Elegant Interface" icon="palette">
+    A meticulously designed interface with an elegant appearance and smooth interaction effects
+  </Card>
+  <Card title="Theme Support" icon="moon">
+    Supports light and dark themes
+  </Card>
+  <Card title="Multilingual" icon="language">
+    Supports multiple language interfaces, including Chinese and English
+  </Card>
+  <Card title="PWA Support" icon="mobile">
+    Supports PWA for a more native app-like experience
+  </Card>
+  <Card title="Mobile Adaptation" icon="mobile">
+    Optimized for mobile devices, providing a more convenient experience
+  </Card>
+</CardGroup>
+

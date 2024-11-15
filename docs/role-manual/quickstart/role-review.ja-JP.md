@@ -1,0 +1,51 @@
+---
+title: 役割の審査
+description: 役割ファイルのアップロードが完了すると、現在の役割ファイル情報を含む issue が自動的に Github に提出されます
+keywords: 役割ファイル, 審査, プロセス
+icon: user-magnifying-glass
+---
+
+# 役割の審査プロセス
+
+## Github Issue
+
+役割ファイルのアップロードが完了すると、システムは自動的に以下の操作を実行します:
+
+1. [lobe-vidol-market](https://github.com/lobehub/lobe-vidol-market) リポジトリに新しい issue を提出します
+2. この issue には現在の役割ファイルの詳細情報が含まれます
+3. 自動的に issue に `🤖 Agent PR` タグが追加されます
+4. システムは自動的にフォームの内容がパラメータの規範に合致しているかをチェックします
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/2661b4180f54479814db9869e7002b4d.webp" />
+</Frame>
+
+### 検証結果
+
+- **検証成功**: システムは自動的に `✅ Auto Check Pass` タグを追加します
+- **検証失敗**: システムは `🤖 Agent PR` タグを削除します。エラーメッセージに従って issue の内容を修正し、手動で `🤖 Agent PR` タグを再追加して再検証をトリガーする必要があります
+
+## Github PR
+
+<Steps>
+  1. 上記の検証プロセスを繰り返し、通過するまで続けます
+  2. 検証が通過した後、システムは issue の内容に基づいて自動的に PR (Pull Request) を生成します
+  3. 私たちのチームはできるだけ早くこの PR を審査します
+</Steps>
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/4888f12427cda62f41be145338d012f9.webp" />
+</Frame>
+
+## 役割市場リスト
+
+PR がマージされた後:
+
+1. システムは自動的にビルドコマンドを実行します
+2. [役割リスト](https://vidol-market.lobehub.com/agents/index.json) の静的データを生成します
+3. LobeVidol はこのデータを読み込んで役割市場を表示します
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/3847e36f58813089edd3fc48a6443554.webp" />
+</Frame>
+

@@ -1,0 +1,81 @@
+---
+title: Touch Response
+description: Configure character responses to touches on different body parts
+keywords: touch response, character, body parts, reaction
+icon: hand-wave
+---
+
+## Introduction
+
+In the system configuration, we have defined a set of general character touch responses based on gender by default. When users interact with characters and touch specific body parts such as the head, chest, buttocks, abdomen, and legs, the characters will respond with various reactions, including expressions, actions, and text. You can modify these presets as needed or enable the `Enable Custom Touch` feature to customize touch responses.
+
+## Touch List
+
+On the left side of the touch tab, you can configure touch areas, including `Head`, `Arms`, `Chest`, `Buttocks`, `Abdomen`, and `Legs`:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/04e7bd63b38b889c3fecae2b429b7f84.webp" />
+</Frame>
+
+Above the areas is the switch for the `Enable Custom Touch` feature, which is turned off by default. When disabled, the system will use the default touch response definitions. You can modify these presets in `System Settings` -> `Touch Settings`:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/fe4e1ebe1207970d1db972eb14f54b0a.webp" />
+</Frame>
+
+## Adding
+
+Select a body area on the left, such as `Head`, and then click `+` on the right to add the corresponding action:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/d69c9bda9aea809939ee123ad8e75ee6.webp" />
+</Frame>
+
+In the modal, configure the response text for the character's reaction, the expression and emotion during the response, and the corresponding body movements:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/6efb76428fa6b9ec47a41b66b2b8ca12.webp" />
+</Frame>
+
+Once added, an entry will be created in the touch configuration, and the system will randomly select one to play when the touch response is triggered:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/8b19fd7b5db496b3d4ce66f26231e036.webp" />
+</Frame>
+
+## Playback
+
+Clicking the play button on the left side of the touch response list item allows you to preview the character's reaction when touched:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/9e5697aa4b5746f14f96ac3dbf11eb76.webp" />
+</Frame>
+
+## Editing
+
+Clicking the edit button on the right side of the touch response list item allows you to modify the response action:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/c41f2d25fc45115ac079ec5b3d2ba930.webp" />
+</Frame>
+
+After clicking, the relevant configuration items will be filled in:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/d7f0ab6433a5362e7a70cb80c1b29cf1.webp" />
+</Frame>
+
+## Deleting
+
+Clicking the delete button on the right side of the touch response list item allows you to remove the touch response:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/857b4776fa200e47a29da11087931ce3.webp" />
+</Frame>
+
+Confirm to delete:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/87ce90373b76a9a168242a0b1dd27358.webp" />
+</Frame>
+

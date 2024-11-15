@@ -1,0 +1,112 @@
+---
+title: Préparation des fichiers MMD
+description: Avant de télécharger une danse, nous devons d'abord préparer les ressources liées à MMD. Ce guide vous aidera à comprendre quels fichiers préparer et comment les obtenir.
+keywords: MMD, fichiers de danse, ressources, préparation
+icon: music
+---
+
+## Introduction
+
+<Note>
+Le logiciel [MMD](/dance-manual/introduction) a été lancé le 24 février 2008 et a progressivement suscité un engouement sur Internet depuis sa création. Les utilisateurs ont été étonnés de pouvoir créer des œuvres de manière si simple, et le nombre d'animations MMD soumises, tant au niveau national qu'international, est incalculable. La manière la plus simple de visionner une animation MMD est de choisir des ressources partagées en ligne et de les assembler dans la forme de danse que vous préférez.
+</Note>
+
+## Recherche de ressources
+
+Après des années de développement, la communauté MMD dispose d'une riche collection de fichiers de danse. Vous pouvez trouver des ressources pertinentes aux endroits suivants :
+
+- Bilibili
+- Sites spécialisés de modèles
+
+<Warning>
+Lorsque vous utilisez des ressources en ligne, veillez à respecter les règles d'utilisation des auteurs.
+</Warning>
+
+Pour des sites de ressources connexes, consultez [« Récapitulatif des sites de ressources MMD »](/dance-manual/resources).
+
+<Frame>
+  ![Exemple de ressources MMD](https://oss.vidol.chat/dance-manual-mmd-bilibili.png)
+</Frame>
+
+## Préparation des fichiers
+
+En général, une performance de danse complète nécessite les fichiers suivants :
+
+<CardGroup cols={2}>
+  <Card title="Musique de fond" icon="music">
+    Fichier requis
+  </Card>
+  <Card title="Fichier de mouvement de danse" icon="person-walking">
+    Fichier requis
+  </Card>
+  <Card title="Image de couverture" icon="image">
+    Fichier requis
+  </Card>
+  <Card title="Trajectoire de la caméra" icon="video">
+    Fichier optionnel
+  </Card>
+  <Card title="Conception de la scène" icon="masks-theater">
+    Fichier optionnel
+  </Card>
+</CardGroup>
+
+### Fichier musical
+
+<Steps>
+  <Step title="Format de fichier">
+    Les formats de musique de danse MMD courants incluent les fichiers `.wav` et `.mp3`.
+  </Step>
+  <Step title="Méthode d'obtention">
+    Vous pouvez les télécharger sur des sites de musique ou des sites de ressources.
+  </Step>
+  <Step title="Remarques">
+    La durée du fichier musical doit correspondre à celle du fichier de danse, la fin de la danse est marquée par la fin de la lecture du fichier musical.
+  </Step>
+</Steps>
+
+### Fichier de danse
+
+<Steps>
+  <Step title="Format de fichier">
+    Actuellement, les fichiers de danse ne prennent en charge que le format de fichier `.vmd`.
+  </Step>
+  <Step title="Méthode d'utilisation">
+    Vous pouvez faire glisser le fichier `.vmd` sur le personnage pour lire l'animation correspondante et vérifier si le résultat est conforme à vos attentes.
+  </Step>
+  <Step title="En savoir plus">
+    Pour une introduction aux fichiers VMD, vous pouvez consulter [Fichiers VMD](/dance-manual/FAQ/vmd).
+  </Step>
+</Steps>
+
+### Couverture de danse
+
+Image de couverture du fichier de danse affichée sur le marché.
+
+<Info>
+L'image de couverture actuelle sera compressée en une image de couverture de taille `512*512` lors du téléchargement, et une image de prévisualisation de taille `256*256` sera également générée. Veuillez en tenir compte lors du téléchargement.
+</Info>
+
+Concernant le choix de la couverture de danse :
+
+- En général, le fichier musical inclura une couverture d'album. Par exemple, les fichiers musicaux téléchargés localement depuis NetEase Cloud Music contiendront la musique, et la couverture de danse peut utiliser l'image de prévisualisation du fichier musical.
+- Bien sûr, vous pouvez également choisir une image que vous aimez à télécharger, ou générer des images sans droits d'auteur via l'IA.
+
+<Warning>
+Veuillez ne pas télécharger d'images contenant des informations sensibles.
+</Warning>
+
+## Étape suivante
+
+Une fois que vous avez préparé les fichiers nécessaires, la prochaine étape consiste à utiliser la fonction de téléchargement du site pour soumettre les fichiers au système.
+
+<Card title="Télécharger le fichier de danse" icon="upload" href="/dance-manual/qucikstart/upload-dance">
+  Cliquez ici pour savoir comment télécharger un fichier de danse
+</Card>
+
+## Articles connexes
+
+<CardGroup cols={2}>
+  <Card title="Ressources MMD" icon="link" href="/dance-manual/resources">
+    En savoir plus sur les sites de ressources MMD
+  </Card>
+</CardGroup>

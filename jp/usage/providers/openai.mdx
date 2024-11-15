@@ -1,0 +1,119 @@
+---
+title: OpenAIの使用
+description: このドキュメントでは、LobeVidolで[OpenAI](https://openai.com/)のAIモデルサービスを設定し、使用する方法を説明します。OpenAIは、現在最も先進的な言語モデルであるGPT-4およびGPT-3.5シリーズを提供しています。
+keywords: OpenAI, API, LobeVidol, 言語モデル, 対話, 拡張
+
+---
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/14ac82e21ddf26a1c172cdb0027d998c.png"
+    alt="LobeVidolでのOpenAIの使用"
+  />
+</Frame>
+
+## 設定手順
+
+### 1. OpenAI APIキーの取得
+
+OpenAIのサービスを使用するには、以下の手順を行う必要があります：
+
+1. OpenAIアカウントの登録：
+   - [OpenAI登録ページ](https://platform.openai.com/signup)にアクセス
+   - 国際的な電話番号（中国本土以外）を使用
+   - 中国本土以外のメールアドレスを使用
+2. APIキーの作成：
+   - ログイン後、[API Keysページ](https://platform.openai.com/api-keys)にアクセス
+   - `Create new secret key`ボタンをクリック
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/24db23b1e193f3105f42e1c851900597.webp"
+    alt="作成ウィンドウを開く"
+  />
+</Frame>
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/876b70d34bd00241ba0bd5fe9ff76a06.webp"
+    alt="APIキーの作成"
+  />
+</Frame>
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/1f38a1ff0ce00e95f72fbaddac754bbd.webp"
+    alt="APIキーの取得"
+  />
+</Frame>
+
+<Warning>
+  新しく登録したOpenAIアカウントには通常5ドルの無料クレジットが付与されますが、このクレジットは3ヶ月間のみ有効です。期限が切れた後は、クレジットカードを登録して使用を続ける必要があります。
+</Warning>
+
+### プロキシサービスの推奨
+
+OpenAIサービスにアクセスする際に問題が発生した場合は、[OpenRouter](https://openrouter.ai/)や[AIHubMix](https://aihubmix.com?aff=NBh9)などの信頼できるプロキシサービスを利用することを検討してください。
+
+プロキシサービスの利点：
+
+- 安定したAPIアクセス
+- 手頃な価格
+- 便利なチャージ方法
+- 高品質なカスタマーサポート
+
+プロキシサービスを利用することで、特に特定の地理的な場所にいるユーザーにとって、OpenAIのサービスをよりスムーズに利用できるようになります。
+
+<Warning>
+  サードパーティのプロキシサービスを使用する際は、関連する法律や規制を遵守し、個人情報の安全を確保してください。
+</Warning>
+
+### 2. LobeVidolでのOpenAIの設定
+
+1. 設定を開く：
+   - LobeVidolの`設定`画面にアクセス
+   - `言語モデル`セクションを見つける
+   - `OpenAI`設定項目を選択
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/65be98b535abfdf1de172f90f1f4d087.png"
+    alt="APIキーを入力"
+  />
+</Frame>
+
+2. サービスを設定：
+   - 取得したAPIキーを対応する入力ボックスに入力
+   - 使用したいOpenAIモデルを選択
+   - オプション：カスタムAPIプロキシアドレスを設定（必要に応じて）
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/337b8df7091c4a261979de943d1474cf.png"
+    alt="OpenAIモデルを選択し、対話を開始"
+  />
+</Frame>
+
+<Warning>
+  OpenAIサービスの使用には料金が発生します。モデルによって価格が異なるため、詳細は[OpenAIの料金ページ](https://openai.com/pricing)を参照してください。
+</Warning>
+
+## よくある質問
+
+<Accordion title="APIキーが使用できない？">
+  - APIキーが正しくコピーされているか確認
+  - アカウントの残高が十分か確認
+  - OpenAIサービスが利用可能な地域にいるか確認
+</Accordion>
+
+<Accordion title="適切なモデルの選択方法は？">
+  - GPT-4シリーズ：性能が高く、複雑なタスクに適している
+  - GPT-3.5シリーズ：コストパフォーマンスが高く、一般的な対話に適している
+</Accordion>
+
+<Accordion title="請求に関する問題">
+  - 実際の使用量に基づいて請求
+  - モデルによって料金が異なる
+  - 定期的に使用量を確認することをお勧めします
+</Accordion>
+

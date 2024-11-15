@@ -1,0 +1,69 @@
+---
+title: Sites de ressources VRM
+description: Liste des sites recommandés pour les modèles VRM
+keywords: VRM, modèles, sites de ressources
+icon: link
+---
+
+Voici quelques sites recommandés pour les modèles VRM, idéaux pour les utilisateurs à la recherche et au téléchargement de modèles VRM :
+
+## 1. VRoid Hub
+
+[https://hub.vroid.com](https://hub.vroid.com)
+
+C'est une plateforme spécialement conçue pour les modèles VRM, offrant une grande variété de modèles VRM de haute qualité, dont certains peuvent être téléchargés gratuitement. Les utilisateurs peuvent également créer leurs propres modèles VRM\[4\].
+
+## 2. Booth
+
+[https://booth.pm](https://booth.pm)
+
+C'est une boutique en ligne qui propose divers modèles VRM, y compris des options gratuites et payantes. La qualité varie, mais il est possible de trouver des designs uniques\[4\].
+
+## 3. Live3D
+
+[https://live3d.io](https://live3d.io)
+
+Propose des téléchargements gratuits de modèles VTuber. Bien que le choix soit limité, cela convient aux utilisateurs qui ont besoin de ressources rapidement\[4\].
+
+## 4. Sketchfab
+
+[https://sketchfab.com](https://sketchfab.com)
+
+Une plateforme de ressources 3D reconnue internationalement, avec des millions de modèles 3D, y compris au format VRM. Les utilisateurs peuvent filtrer les ressources selon différentes catégories de droits d'auteur, ce qui est très pratique\[1\][3\].
+
+## 5. CGTrader
+
+[https://www.cgtrader.com](https://www.cgtrader.com)
+
+Offre une large gamme de modèles 3D, y compris au format VRM, adaptés au développement de jeux et à la production d'animations. Le site propose divers formats de fichiers à choisir\[1\][3\].
+
+## 6. Free3D
+
+[https://free3d.com](https://free3d.com)
+
+Propose plus de 16 000 modèles 3D gratuits, y compris au format VRM, parfaits pour des projets personnels et commerciaux\[1\][3\].
+
+## 7. 3DMetaHub
+
+[https://www.3dmetahub.com](https://www.3dmetahub.com)
+
+Une plateforme émergente de partage de modèles 3D en Chine, avec plus de dix millions de modèles 3D gratuits couvrant divers types, et prenant en charge la recherche par mots-clés, ce qui facilite la recherche pour les utilisateurs\[1\][2\].
+
+## 8. Pikbest
+
+[https://pikbest.com](https://pikbest.com)
+
+Une plateforme de ressources de design qui propose divers types d'œuvres d'art créatives et de modèles 3D, adaptée à divers besoins de conception\[3\].
+
+Ces sites ont chacun leurs particularités et peuvent répondre aux besoins variés des utilisateurs, que ce soit pour des créations personnelles ou des projets commerciaux, vous y trouverez des ressources VRM adaptées.
+
+<Accordion title="Références">
+  [1] https://blog.csdn.net/m0_51631403/article/details/139758372  
+  [2] http://www.vrja.cn/VRsoftware/15399.html  
+  [3] https://cn.eagle.cool/blog/post/best-websites-to-download-free-3d-model-with-high-quality  
+  [4] https://www.patreon.com/posts/vrm-models-and-86352020  
+  [5] https://blender.kim/71190.html  
+  [6] https://www.aigei.com/3d/model/vrm/  
+  [7] https://www.cguse.com  
+  [8] https://www.bilibili.com/video/BV12a411H7oV/
+</Accordion>

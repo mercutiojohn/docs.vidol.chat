@@ -1,0 +1,103 @@
+---
+title: Using Anthropic Claude
+description: >-
+  The Anthropic Claude API is now fully open for use. This documentation will guide you through the configuration and usage of [Anthropic Claude](https://www.anthropic.com/api) in LobeVidol to enhance your conversational experience.
+keywords: Anthropic, Claude, API, LobeVidol, conversation, enhancement
+---
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/3d2c8df14b2aaf1b98ad2706e6573e46.png"
+    alt="Using Anthropic Claude in LobeVidol"
+  />
+</Frame>
+
+## Configuration Steps
+
+### Step 1: Obtain Your Anthropic Claude API Key
+
+1. Register and create an account for the [Anthropic Claude API](https://www.anthropic.com/api).
+2. Retrieve your [API key](https://console.anthropic.com/settings/keys) from the console.
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/ec6bd7ee7851ae4d9289dc9af7f73c1c.webp"
+    alt="Create API Key"
+  />
+</Frame>
+
+<Warning>
+  The Claude API currently offers $5 in free credits, but this is only available in certain countries/regions. You can check if it applies to your area in Dashboard > Claim. If it does not apply, you may consider using other payment methods.
+</Warning>
+
+3. Set up your billing information at [https://console.anthropic.com/settings/plans](https://console.anthropic.com/settings/plans) (select the "Generate" plan to enable pay-as-you-go mode).
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/66b784fffe7573242d86f4f73f177ce0.webp"
+    alt="Set Up Your Billing"
+  />
+</Frame>
+
+### Step 2: Configure Anthropic Claude in LobeVidol
+
+1. Open the `Settings` page in LobeVidol.
+2. Locate the `Anthropic Claude` configuration option under the `AI Model Settings` section.
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/feb270dee460367739857f028f2f617e.webp"
+    alt="Enter API Key"
+  />
+</Frame>
+
+3. Enter your API key.
+4. Choose a version of the Anthropic Claude model that suits your needs from the available options:
+   - Claude 3 Opus: The most powerful model, ideal for complex video script generation.
+   - Claude 3.5 Sonnet: A balanced choice for performance and cost.
+   - Claude 3 Haiku: The fastest response time, suitable for quick creative brainstorming.
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/assets/4f9af602892219fa812b4321b1b2cdcd.webp"
+    alt="Select Anthropic Claude Model and Start Creating"
+  />
+</Frame>
+
+<Warning>
+  Using the API service incurs associated costs. Please refer to the official pricing policy of Anthropic Claude for specific pricing details. It is recommended to thoroughly understand the billing standards for each model before use.
+</Warning>
+
+### Step 3: Start Using
+
+Once the configuration is complete, you can leverage the powerful features of Anthropic Claude to:
+
+- Generate creative video scripts
+- Optimize video titles and descriptions
+- Get intelligent editing suggestions
+- Generate subtitles and voiceover text
+- Create content in multiple languages
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="How do I choose the right Claude model?">
+    - Claude 3 Opus: Suitable for projects requiring deep thinking and complex creativity.
+    - Claude 3.5 Sonnet: The best choice for everyday creation.
+    - Claude 3 Haiku: Ideal for quick iterations and simple tasks.
+  </Accordion>
+
+  <Accordion title="What should I do if my API key is not working?">
+    1. Confirm that your billing information is configured correctly.
+    2. Check if the API key has been activated.
+    3. Ensure that your account balance is sufficient.
+    4. Check for any regional restrictions.
+  </Accordion>
+
+  <Accordion title="How can I optimize API usage costs?">
+    1. Choose the model version wisely.
+    2. Use more precise prompts.
+    3. Batch process similar tasks.
+    4. Regularly monitor usage.
+  </Accordion>
+</AccordionGroup>

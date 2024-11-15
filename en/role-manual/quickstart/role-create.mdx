@@ -1,0 +1,118 @@
+---
+title: Create a Character
+description: Before creating a character, we need to prepare the relevant resources.
+keywords: character, resources, preparation
+icon: user-plus
+---
+
+# Create Your First Character
+
+Choose a character you would like to chat or interact with. It can be:
+
+- A character from an anime
+- A character from a game
+- A cute little animal or plant
+
+Imagine how the character would respond when you chat with them. For example:
+
+- Your houseplant might be very thirsty
+- Your dog suddenly gains the ability to talk
+
+## Steps to Create
+
+1. Click the `+` button on the character list page.
+2. Select the character's gender (Male/Female).
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/9c4f422919fcf2931f688fc827189018.webp" />
+</Frame>
+
+Once selected, the customized character will appear in the left character list, pre-filled with some information:
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/b43b5ab17deadecc90d772ed73398fa2.webp" />
+</Frame>
+
+# Character Settings
+
+## 3D Model File
+
+LobeVidol uses humanoid models in the `VRM` format as the 3D model for characters.
+
+Upload methods:
+
+- Click the upload button on the right side of the character to select a model.
+- Drag and drop the `.vrm` file onto an existing model to replace it.
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/cb762561ea67c9458efc2da47a5a3e98.webp" />
+</Frame>
+
+For detailed settings, refer to [3D Model](/role-manual/attributes/3d-model).
+
+<Tip>
+To create a .vrm model, you can use Vroid Studio or Vroid Hub, or convert an existing model to VRM format. References:
+
+- [How to Create or Obtain VRM Models Using Vroid Hub](/role-manual/faq/how-to-use-vroid-hub)
+- [How to Convert FBX Files to VRM Files?](/role-manual/faq/convert-fbx-to-vrm)
+- [Resource Recommendations](/role-manual/resources/vrm-resources)
+</Tip>
+
+## Basic Information
+
+The basic information of the character includes:
+
+- **Name**: Used to identify the character in the chat interface and discovery page.
+- **Avatar**: Displayed on the left side of the character; you can upload an image or choose an avatar from Vroid Hub.
+- **Description**: Appears below the character's name, providing more information about the character.
+- **Greeting**: The phrase the character uses to greet the user for the first time.
+- **Gender**: Used to initialize the character's voice and touch responses.
+- **Category**: Used for classification filtering on the discovery page.
+- **Character Notes**: Additional information about the character, such as model usage notes.
+
+For specific settings, refer to [Basic Information](/role-manual/attributes/basic).
+
+## Character Settings
+
+This is the most important part, determining the character's background and response style, including:
+
+- How to refer to themselves
+- The tone used to address the user
+- How to respond, etc.
+
+For specific settings, refer to [Character Settings](/role-manual/attributes/system-role).
+
+## Voice Synthesis
+
+Determines the experience of the character's voice responses; try to choose a voice that closely matches the character.
+
+For specific settings, refer to [Voice Synthesis](/role-manual/attributes/tts).
+
+## Touch Response
+
+Defines the character's reactions when specific parts (such as the head, chest, etc.) are touched, including expressions, actions, and text.
+
+For specific settings, refer to [Touch Response](/role-manual/attributes/touch).
+
+<Tip>
+You can enable "Custom Touch" in the upper left corner to customize the character's reactions.
+</Tip>
+
+## Language Model
+
+Can be understood as the character's brain, influencing the character's specific performance. If unsure how to set it, you can keep the default preset.
+
+For specific settings, refer to [Language Model](/role-manual/attributes/llm).
+
+# Local Preview
+
+Once the settings are complete, you can interact with the character locally to check if it meets your expectations.
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/c760c75a87ac75c7440aeb5026327ca4.webp" />
+</Frame>
+
+# Next Steps
+
+Upload the character file.
+

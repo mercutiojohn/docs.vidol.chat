@@ -1,0 +1,58 @@
+---
+title: Jeu de rôle
+description: Une expérience de dialogue fluide, une riche bibliothèque de mouvements et de poses, un design UI raffiné
+keywords: jeu de rôle, dialogue, mouvement, pose, UI
+---
+
+### Expérience de dialogue
+
+Les réponses fluides offrent une expérience de dialogue agréable, vous pouvez :
+
+- Définir les actions et les expressions des personnages entre parenthèses ()
+- Décrire ce qui se passe ou le décor entre crochets []
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/a53b58c2696eb2fd38c2053af4bab665.webp" />
+</Frame>
+
+### Réponse tactile
+
+En cliquant sur différentes parties du corps du personnage, celui-ci réagira de manière variée. Vous pouvez également personnaliser les réponses tactiles.
+
+<Frame>
+  <video 
+    src="https://img.rdmclin2.com/rdmclin2/2024/11/0b83fd31295608a31dc1b540f052010d.mp4"
+    controls
+    className="w-full aspect-video"
+  />
+</Frame>
+
+## Images de fond
+
+Les images de fond peuvent rendre les dialogues plus vivants et intéressants. Voici quelques scénarios d'utilisation recommandés :
+
+- Discuter de manière décontractée dans un café
+- Offrir un tutorat dans une salle de classe
+- Éprouver des dialogues poétiques en pleine nature
+- Discuter de questions professionnelles dans un bureau
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/28e22ca443d1b312f15e546f00a9afee.webp" alt="Exemple de configuration de fond" />
+</Frame>
+
+### Bibliothèque riche de mouvements et de poses
+
+La bibliothèque intégrée de mouvements et de poses de Mixamo permet aux personnages d'exprimer un langage corporel riche lors des dialogues :
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/66a2f5efa369cbd64cc50803198eaafd.webp" />
+</Frame>
+
+### Édition de personnage
+
+<Tip>Avec l'édition de personnage, vous pouvez créer votre propre idole virtuelle, définir des réponses tactiles, télécharger des modèles VRM et interagir avec eux.</Tip>
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/bf9659e122d124f2320714710d07f039.webp" />
+</Frame>
+

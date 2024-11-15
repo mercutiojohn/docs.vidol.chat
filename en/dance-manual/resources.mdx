@@ -1,0 +1,78 @@
+---
+title: MMD Resource Website Compilation
+description: 'An introduction to commonly used MMD resource websites, including models, scenes, actions, and more.'
+keywords: MMD, resource websites, models, scenes, actions
+icon: link
+---
+
+## Model House
+
+<Card title="Model House" icon="house" href="https://www.aplaybox.com/">
+  A model distribution sharing website powered by domestic enthusiasts.
+</Card>
+
+- **Introduction**: Well-established with professional distribution procedures (following authors, leaving comments, liking, blocking, etc.)
+- **Resources**: Most models come from domestic mobile game companies, such as "Arknights," "Punishing: Gray Raven," "Honkai Impact 3," etc. You can also find many in-game scenes.
+- **Advantages**:
+  - Supports action sharing
+  - Built-in model action preview
+  - Supports external links from Bilibili
+- **Disadvantages**: Lacks small objects like chairs, sofas, and televisions, and currently has low visibility, resulting in fewer contributors.
+
+## B Bowl (Requires VPN)
+
+<Card title="B Bowl" icon="bowl-food" href="https://bowlroll.net/file/index">
+  One of the oldest MMD model sharing websites in Japan.
+</Card>
+
+- **Introduction**: Although some authors have moved to other sites, there is still a large amount of resources, with most models coming from various anime characters, such as Touhou Project, Yu-Gi-Oh!, FGO, etc.
+- **Advantages**:
+  - Rich resources, including models, scenes, actions, small objects, and V-tuber voice sources.
+- **Disadvantages**:
+  - Most high-quality resources require distribution passwords, which can be found on authors' Twitter, NICO static images, or NICO distribution videos.
+  - Often requires a VPN to access.
+  - When searching for model resources, use the character's name in Japanese.
+- **Note**: This website also has an 18+ section that can assist with modeling and modification.
+
+## NICO3D (Requires VPN)
+
+<Card title="NICO3D" icon="n" href="https://3d.nicovideo.jp/?header">
+  A 3D model sharing website under niconico.
+</Card>
+
+- **Introduction**: Initially had a momentum to rival B Bowl, featuring revolutionary model previews.
+- **Advantages**: Offers newer types of resources, including popular V-tuber models, mobile game models, and animation models.
+- **Disadvantages**:
+  - Requires a VPN.
+  - Requires registration for a nico account.
+
+## D Station (Requires VPN)
+
+<Card title="DeviantArt" icon="d" href="https://www.deviantart.com/">
+  A commonly used sharing website for creators in Europe and America.
+</Card>
+
+- **Introduction**: Not strictly an MMD resource website; resources are diverse and include textures, 3DMAX models, Maya models, Blender models, etc.
+- **Advantages**:
+  - Models generally have a Western style and may come from various single-player masterpieces, such as Devil May Cry, Horizon, etc.
+  - Contains a large amount of non-human resources, such as various dragons; if you need monster models, this is a good place to check.
+- **Disadvantages**:
+  - MMD models are hard to find; it is recommended to add "MMD" as a suffix when searching.
+  - Model quality varies; some may be poorly rigged, requiring significant adjustments after download.
+
+## Special VPVP (Requires VPN)
+
+<Card title="VPVP Wiki" icon="v" href="https://w.atwiki.jp/vpvpwiki/pages/13.html">
+  More like an index website, it collects a large number of model URLs and acquisition methods shared by authors in Japan.
+</Card>
+
+- **Introduction**: Created a collection directory for series like Idolmaster, Touhou Project, V-tuber, etc., where you can find models of different styles created by various authors for different characters.
+- **Advantages**: Notes authors, distribution videos/static images, download addresses, and password acquisition methods.
+- **Disadvantages**: As it is a Japanese website, you may need to use Japanese translation software for indexing.
+
+## Other Resource Sites
+
+<Card title="Genshin Impact Models" icon="gamepad" href="https://www.hoyolab.com/article/118389">
+  MMD model resources for characters from the game Genshin Impact.
+</Card>
+

@@ -1,0 +1,100 @@
+---
+title: Télécharger des fichiers de danse
+description: 'Découvrez comment télécharger des fichiers de danse sur le marché de la danse'
+keywords: fichiers de danse, télécharger, marché de la danse
+icon: upload
+---
+
+Une fois que vous avez préparé les fichiers nécessaires, vous pouvez les télécharger via la fonction de téléchargement fournie sur le site pour qu'ils soient examinés en arrière-plan.
+
+## Étapes de téléchargement
+
+<Steps>
+  <Step title="Ouvrir l'interface de danse">
+   Après avoir ouvert l'interface Vidol, cliquez sur le bouton `Développer` à droite, passez à l'onglet `Danse`, puis cliquez sur le bouton `Marché de la danse`, comme indiqué dans l'image ci-dessous :
+
+![](https://oss.vidol.chat/dance-manual-step-1.png)
+
+  </Step>
+  <Step title="Cliquer sur Créer une danse">
+   Une fois sur le marché de la danse, cliquez sur le bouton `Créer une danse` pour ouvrir le formulaire de création de danse :
+
+```
+![](https://oss.vidol.chat/dance-manual-step-2.png)
+```
+
+  </Step>
+  <Step title="Remplir le formulaire de danse">
+    Ensuite, téléchargez le fichier de danse préparé à l'étape précédente, ajoutez l'ID de danse, le nom et la description correspondante. Pour des explications détaillées sur les champs de danse, consultez [Explication des paramètres de danse](/dance-manual/qucikstart/dance-fields). Une fois que vous avez terminé, cliquez sur le bouton `Télécharger et soumettre` ci-dessous :
+   ![](https://oss.vidol.chat/dance-manual-step-3.png)
+  </Step>
+</Steps>
+
+## Explication des paramètres
+
+<ParamField path="danceId" type="string" required>
+  ID utilisé pour identifier de manière unique la danse.
+</ParamField>
+
+<ParamField path="name" type="string" required>
+  Nom de la danse, ne dépassant pas 64 caractères.
+</ParamField>
+
+<ParamField path="src" type="string" required>
+  Adresse du fichier d'animation.
+</ParamField>
+
+<ParamField path="audio" type="string" required>
+  Adresse du fichier audio, actuellement supporte les formats `.mp3` et `.wav`.
+</ParamField>
+
+<ParamField path="cover" type="string" required>
+  Couverture de la danse, taille recommandée `512*512`.
+</ParamField>
+
+<ParamField path="thumb" type="string" >
+  Aperçu de la danse, généré automatiquement à partir de la couverture de la danse.
+</ParamField>
+
+<ParamField path="readme" type="string" >
+  Texte explicatif, comme l'adresse des ressources d'animation, les précautions d'utilisation, etc.
+</ParamField>
+
+<ParamField path="author" type="string">
+  Nom de l'auteur, ce champ sera automatiquement rempli avec le nom de compte Github après l'examen.
+</ParamField>
+
+<ParamField path="homepage" type="string">
+  Page d'accueil de l'auteur, ce champ sera automatiquement rempli avec l'adresse du compte Github après l'examen.
+</ParamField>
+
+<ParamField path="createAt" type="string">
+  Date de création, ce champ sera automatiquement rempli avec la date actuelle après l'examen.
+</ParamField>
+
+<RequestExample>
+
+```json Exemple de paramètres de danse
+{
+  "danceId": "suki-yuki-maji-magic",
+  "name": "のぶなが - 好き雪本気マジック",
+  "author": "rdmclin2",
+  "homepage": "https://github.com/rdmclin2",
+  "src": "https://r2.vidol.chat/files/2024/10/03/3a38ea2d-4ec9-493d-b49f-cf346b5f72d1.vmd",
+  "audio": "https://r2.vidol.chat/files/2024/10/03/bf8e8dcc-54b1-4038-820e-df97cb396ccf.mp3",
+  "cover": "https://r2.vidol.chat/files/2024/10/03/eee597e0-3ca1-46ad-8a1d-93768dc63601.webp",
+  "thumb": "https://r2.vidol.chat/files/2024/10/03/80ba70d0-4024-4b5b-b750-233dc145c752.webp",
+  "readme": "https://www.nicovideo.jp/watch/sm23692832",
+  "schemaVersion": 1,
+  "createAt": "2024-10-03"
+}
+```
+
+</RequestExample>
+
+## Étape suivante
+
+Après soumission, le système téléchargera les fichiers locaux sur le serveur distant. Veuillez patienter jusqu'à ce que le téléchargement soit terminé, puis passez à l'étape suivante :
+
+[Examen et fusion des fichiers](/dance-manual/qucikstart/dance-review)
+

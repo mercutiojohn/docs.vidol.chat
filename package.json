@@ -10,6 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mintlify dev --port 7001",
+    "docs:i18n": "lobe-i18n md && npm run moveFile",
+    "moveFile": "tsx scripts/i18nWorkflow/moveFile.ts",
     "workflow:cdn": "tsx scripts/mdxWorkflow/autoCDN.ts"
   },
   "repository": {
@@ -43,5 +45,8 @@
     "sharp": "^0.33.5",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@lobehub/i18n-cli": "^1.20.0"
   }
 }

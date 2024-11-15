@@ -1,0 +1,99 @@
+---
+title: 上传舞蹈文件
+description: "了解如何将舞蹈文件上传到舞蹈市场"
+keywords: 舞蹈文件, 上传, 舞蹈市场
+icon: upload
+---
+
+准备好相应的文件后，我们可以通过网站提供的上传功能将相关舞蹈文件上传到后台进行审核。
+
+## 上传步骤
+
+<Steps>
+  <Step title="打开舞蹈界面">
+   打开 Vidol 界面后点击右侧的 `展开` 按钮，切换到 `舞蹈` 选项卡，然后点击 `舞蹈市场` 按钮，如下图所示：
+
+![](https://oss.vidol.chat/dance-manual-step-1.png)
+
+  </Step>
+  <Step title="点击创建舞蹈">
+   打开舞蹈市场后，点击 `创建舞蹈` 按钮，可以打开创建舞蹈表单：
+
+```
+![](https://oss.vidol.chat/dance-manual-step-2.png)
+```
+
+  </Step>
+  <Step title="填写舞蹈表单">
+    然后我们上传上一步骤中准备的舞蹈文件，添加舞蹈 ID、名称和相应的说明，详细的舞蹈字段说明参考 [舞蹈参数说明](/dance-manual/qucikstart/dance-fields)，填写完成后点击下方的 `上传并提交` 按钮:
+   ![](https://oss.vidol.chat/dance-manual-step-3.png)
+  </Step>
+</Steps>
+
+## 参数说明
+
+<ParamField path="danceId" type="string" required>
+  用于标识舞蹈唯一性的 ID。
+</ParamField>
+
+<ParamField path="name" type="string" required>
+  舞蹈名称，不要超过 64 个字符。
+</ParamField>
+
+<ParamField path="src" type="string" required>
+  动画文件地址。
+</ParamField>
+
+<ParamField path="audio" type="string" required>
+  音频文件地址，当前支持 `.mp3` 和 `.wav` 格式。
+</ParamField>
+
+<ParamField path="cover" type="string" required>
+  舞蹈封面，推荐尺寸 `512*512`。
+</ParamField>
+
+<ParamField path="thumb" type="string">
+  舞蹈预览，通过舞蹈封面自动生成。
+</ParamField>
+
+<ParamField path="readme" type="string">
+  说明文案，比如动画资源地址、使用注意事项等。
+</ParamField>
+
+<ParamField path="author" type="string">
+  创作者名称，该字段在审核完成后会自动获取 GitHub 账户名。
+</ParamField>
+
+<ParamField path="homepage" type="string">
+  创作者主页，该字段在审核完成后会自动获取 GitHub 账户地址。
+</ParamField>
+
+<ParamField path="createAt" type="string">
+  创建日期，该字段会在审核完成后自动以当前日期生成。
+</ParamField>
+
+<RequestExample>
+
+```json
+{
+  "danceId": "suki-yuki-maji-magic",
+  "name": "のぶなが - 好き雪本気マジック",
+  "author": "rdmclin2",
+  "homepage": "https://github.com/rdmclin2",
+  "src": "https://r2.vidol.chat/files/2024/10/03/3a38ea2d-4ec9-493d-b49f-cf346b5f72d1.vmd",
+  "audio": "https://r2.vidol.chat/files/2024/10/03/bf8e8dcc-54b1-4038-820e-df97cb396ccf.mp3",
+  "cover": "https://r2.vidol.chat/files/2024/10/03/eee597e0-3ca1-46ad-8a1d-93768dc63601.webp",
+  "thumb": "https://r2.vidol.chat/files/2024/10/03/80ba70d0-4024-4b5b-b750-233dc145c752.webp",
+  "readme": "https://www.nicovideo.jp/watch/sm23692832",
+  "schemaVersion": 1,
+  "createAt": "2024-10-03"
+}
+```
+
+</RequestExample>
+
+## 下一步
+
+提交后系统会将本地文件上传到远程服务器，请耐心等待上传完成，完成后进入下一步：
+
+[文件审核与合并](/dance-manual/qucikstart/dance-review)

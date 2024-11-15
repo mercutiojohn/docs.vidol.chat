@@ -1,0 +1,124 @@
+---
+title: Using OpenRouter
+description: Learn how to register, create an API Key, recharge credit, and configure OpenRouter in LobeVidol to start using various excellent large language model APIs.
+keywords: OpenRouter, API, LobeVidol, language model, conversation, enhancement
+---
+
+<Frame>
+  <img src="https://oss.vidol.chat/docs/2024/11/e3701e1f3dffaf245196ed683ede29d0.png" alt="Using OpenRouter in LobeVidol" />
+</Frame>
+
+## Overview
+
+OpenRouter is a powerful AI model aggregation platform that supports a variety of top-tier models, including GPT-4, Claude 2, and LLaMA 2. With this guide, you can easily integrate these models into LobeVidol. OpenRouter, as a model aggregation service platform, offers users the following advantages:
+
+- Support for multiple top-tier AI models, including:
+  - OpenAI series (GPT-3.5/4)
+  - Anthropic series (Claude2, Claude Instant)
+  - Meta's LLaMA 2
+  - Google's PaLM series
+- Unified API interface
+- Flexible billing options
+- Some models offer free quotas
+
+## Configuration Steps
+
+### 1. Register for an OpenRouter Account and Log In
+
+- Visit [OpenRouter.ai](https://openrouter.ai/) and create an account.
+- Supports two login methods:
+  - Google account login
+  - MetaMask wallet login
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/4dc5f7b6823b2836c4e69dd692889a9d.webp" alt="Register OpenRouter" />
+</Frame>
+
+### 2. Create an API Key
+
+1. Go to the `Keys` menu or directly visit [OpenRouter Keys](https://openrouter.ai/keys).
+2. Click the `Create Key` button.
+3. In the pop-up window, set:
+   - Name the API key (e.g., "LobeVidol Key").
+   - Optionally fill in the `Credit limit` (leave blank for no limit).
+
+<Note type="warning">
+  Please copy and securely save the API key immediately after creation, as it will only be displayed once. If lost, you will need to create a new key.
+</Note>
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/914d26be0d8dd7e2bce85ecad8192a53.webp" alt="Create OpenRouter Key" />
+</Frame>
+
+### 3. Recharge Credit
+
+1. Go to the `Credit` menu or visit [OpenRouter Credit](https://openrouter.ai/credits).
+2. Click `Manage Credits` to recharge.
+3. Check the specific rates for each model on the [Model Pricing Page](https://openrouter.ai/models).
+
+<Note>
+  OpenRouter offers some free models that can be used without recharge. It is recommended to try the free models first and consider paid models after familiarizing yourself.
+</Note>
+
+<Frame>
+  <img src="https://oss.vidol.chat/assets/307d22deca37827f552eebe22bccb19b.webp" alt="Recharge OpenRouter Credit" />
+</Frame>
+
+### 4. Configure OpenRouter in LobeVidol
+
+<Note>
+  Currently, this project only supports OpenAI models; other models will be supported in future versions.
+</Note>
+
+1. Open settings:
+   - Access the `Settings` interface in LobeVidol.
+   - Find the `Language Model` section.
+   - Select the `OpenAI` setting.
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/65be98b535abfdf1de172f90f1f4d087.png"
+    alt="Enter API Key"
+  />
+</Frame>
+
+2. Configure the service:
+   - Enter your obtained API Key in the corresponding input box.
+   - Select the OpenAI model you wish to use.
+   - Set the custom API proxy address to `https://openrouter.ai/api/v1`.
+
+<Frame>
+  <img 
+    src="https://oss.vidol.chat/docs/2024/11/337b8df7091c4a261979de943d1474cf.png"
+    alt="Select OpenAI Model and Start Conversation"
+  />
+</Frame>
+
+<Warning>
+  Using OpenAI services incurs costs. Different models have different prices; please refer to the [OpenAI Pricing Page](https://openai.com/pricing) for details.
+</Warning>
+
+## Usage Recommendations
+
+### Model Selection
+
+- It is recommended to start with free models.
+- Choose the appropriate model based on specific needs.
+- Be aware of the billing standards for different models.
+
+### Cost Control
+
+- Set a reasonable credit limit.
+- Regularly check usage limits.
+- Monitor billing changes.
+
+### Performance Optimization
+
+- Choose models with lower latency.
+- Adjust context length appropriately.
+- Optimize prompts to improve efficiency.
+
+<Card>
+  If you encounter issues during use, you can refer to the [OpenRouter Documentation](https://openrouter.ai/docs) or contact customer support for assistance.
+</Card>
+
