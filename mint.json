@@ -17,27 +17,27 @@
   },
   "topbarLinks": [
     {
-      "name": "邮件咨询",
+      "name": "Mail",
       "url": "mailto:rdmclin2@gmail.com"
     },
     {
-      "name": "文档贡献",
+      "name": "Contribution",
       "url": "https://github.com/v-idol/docs.vidol.chat"
     }
   ],
   "topbarCtaButton": {
-    "name": "立即开始",
+    "name": "Get Started",
     "url": "https://vidol.lobehub.com/"
   },
   "versions": [
     {
-      "name": "中文",
-      "locale": "cn",
+      "name": "English",
+      "locale": "en",
       "default": true
     },
     {
-      "name": "English",
-      "locale": "en"
+      "name": "中文",
+      "locale": "cn"
     },
     {
       "name": "日本語",

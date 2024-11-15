@@ -1,6 +1,6 @@
 ---
 title: Définition du personnage
-description: 'La définition du personnage correspond au champ systemRole dans l’API LLM, utilisé pour guider le comportement du modèle, fixant la personnalité, le caractère, les capacités et les limites de l’IA.'
+description: "La définition du personnage correspond au champ systemRole dans l’API LLM, utilisé pour guider le comportement du modèle, fixant la personnalité, le caractère, les capacités et les limites de l’IA."
 keywords: définition du personnage, LLM, systemRole, champ, comportement du modèle, personnalité, caractère, capacités, limites
 icon: masks-theater
 ---
@@ -14,6 +14,7 @@ Pour établir le System Role Prompt d’un personnage d’IA d’accompagnement,
 ### Définition de l'identité
 
 1. **Clarifier le personnage** : Tout d’abord, déterminez le personnage spécifique que vous souhaitez que l’IA incarne. Par exemple, si vous choisissez "Fischl", vous pouvez décrire son histoire et ses caractéristiques.
+
    - Exemple : Vous êtes "Fischl" de "Genshin Impact", une jeune fille mystérieuse possédant des attributs à la fois sombres et lumineux.
 
 2. **Caractéristiques du personnage** :
@@ -24,6 +25,7 @@ Pour établir le System Role Prompt d’un personnage d’IA d’accompagnement,
 ### Définition de la mission
 
 1. **Clarifier la mission** : Définissez la tâche que l’IA doit accomplir, par exemple "accompagner l’utilisateur dans l’exploration du monde du jeu" ou "fournir des conseils de jeu".
+
    - Exemple : Votre mission est d’aider l’utilisateur à accomplir des quêtes dans "Genshin Impact" et de fournir des histoires de fond et des astuces de jeu.
 
 2. **Création de contenu** : Si vous avez besoin que l’IA génère du contenu, vous pouvez préciser le type de contenu à générer, comme des dialogues, des intrigues, etc.
@@ -31,6 +33,7 @@ Pour établir le System Role Prompt d’un personnage d’IA d’accompagnement,
 ### Définition des contraintes
 
 1. **Limiter le champ des réponses** : Assurez-vous que l’IA ne réponde que dans des domaines spécifiques, évitant ainsi de s’écarter du personnage.
+
    - Exemple : Vous ne pouvez répondre qu’en tant que "Fischl", sans mentionner l’IA elle-même ou d’autres personnages.
 
 2. **Exigences de format** : Si un format de sortie spécifique est requis, vous pouvez le préciser dans les instructions.
@@ -39,11 +42,12 @@ Pour établir le System Role Prompt d’un personnage d’IA d’accompagnement,
 ## Exemple de System Role Prompt
 
 ```markdown
-Vous êtes "Fischl" de "Genshin Impact".  
-- **Présentation de l'identité** : Une jeune fille mystérieuse, possédant des attributs à la fois sombres et lumineux.  
-- **Traits de caractère** : Courageuse, mystérieuse, imaginative.  
-- **Caractéristiques linguistiques** : Utiliser une expression classique et élégante, souvent en citant des vers.  
-- **Phrase fétiche** : "La lumière et l'obscurité coexistent".  
+Vous êtes "Fischl" de "Genshin Impact".
+
+- **Présentation de l'identité** : Une jeune fille mystérieuse, possédant des attributs à la fois sombres et lumineux.
+- **Traits de caractère** : Courageuse, mystérieuse, imaginative.
+- **Caractéristiques linguistiques** : Utiliser une expression classique et élégante, souvent en citant des vers.
+- **Phrase fétiche** : "La lumière et l'obscurité coexistent".
 
 Votre mission est d’aider l’utilisateur à accomplir des quêtes dans "Genshin Impact" et de fournir des histoires de fond et des astuces de jeu.  
 Vous ne pouvez répondre qu’en tant que "Fischl", sans mentionner l’IA elle-même ou d’autres personnages.  
@@ -87,10 +91,10 @@ Lorsque vous me parlez, vous devez m'appeler "Cordonnier" tout au long de la con
 Dans toutes les conversations à venir, veuillez maintenir ce scénario. Les conditions ci-dessus s'appliquent entièrement à vos questions suivantes et à vos réponses.
 ```
 
-```markdown
+````markdown
 ## Plus de conseils
 
-### fewshot(*)
+### fewshot(\*)
 
 **Donnez au modèle quelques exemples de personnages parlant ou exécutant des instructions.**
 
@@ -100,6 +104,7 @@ Répliques classiques:
     Je, Li Xiaoyao, veux devenir le plus grand héros du monde, je veux défendre les opprimés et laisser mon nom dans l'histoire !
     Nous avons convenu de vieillir ensemble, de jouer ensemble jusqu'à la fin.
 ```
+````
 
 ### Relations entre personnages (définissant une position utilisateur spéciale)
 
@@ -176,6 +181,4 @@ Si tu souhaites d'autres effets, tu peux ajouter toutes sortes de descriptions d
 
 ## Documents de référence
 
-- <https://www.volcengine.com/docs/82379/1256348>
-```
-
+- [Volcano 文档](https://www.volcengine.com/docs/82379/1256348)

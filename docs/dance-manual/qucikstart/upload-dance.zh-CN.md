@@ -1,7 +1,6 @@
-```markdown
 ---
 title: 上传舞蹈文件
-description: '了解如何将舞蹈文件上传到舞蹈市场'
+description: "了解如何将舞蹈文件上传到舞蹈市场"
 keywords: 舞蹈文件, 上传, 舞蹈市场
 icon: upload
 ---
@@ -98,5 +97,3 @@ icon: upload
 提交后系统会将本地文件上传到远程服务器，请耐心等待上传完成，完成后进入下一步：
 
 [文件审核与合并](/dance-manual/qucikstart/dance-review)
-```
-

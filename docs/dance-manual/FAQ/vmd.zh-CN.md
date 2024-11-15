@@ -1,4 +1,3 @@
-```markdown
 ---
 title: VMD 文件格式详解
 description: VMD（Vocaloid Motion Data）文件是 MikuMikuDance (MMD) 中用于存储动画数据的重要文件格式
@@ -81,4 +80,3 @@ VMD 文件格式是 MMD 动画制作中不可或缺的一部分。通过精确�
   访问 MMD Wiki 了解更多关于 VMD 文件格式的信息
 </Card>
 ```
-

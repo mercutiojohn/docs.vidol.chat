@@ -1,6 +1,6 @@
 ---
 title: Character Setting
-description: 'The character setting corresponds to the systemRole field in the LLM API, used to guide model behavior and establish the AI's persona, personality, abilities, and boundaries.'
+description: The character setting corresponds to the systemRole field in the LLM API, used to guide model behavior and establish the AI's persona, personality, abilities, and boundaries.
 keywords: character setting, LLM, systemRole, field, model behavior, persona, personality, abilities, boundaries
 icon: masks-theater
 ---
@@ -14,6 +14,7 @@ To set up a companion AI character's System Role Prompt, making it more aligned 
 ### Identity Setting
 
 1. **Define the Character**: First, determine the specific character you want the AI to portray. For instance, if you choose "Fischl," you can describe her background and traits.
+
    - Example: You are "Fischl" from "Genshin Impact," a mysterious girl with dual attributes of darkness and light.
 
 2. **Character Traits**:
@@ -24,6 +25,7 @@ To set up a companion AI character's System Role Prompt, making it more aligned 
 ### Task Setting
 
 1. **Define the Task**: Specify the task the AI needs to perform, such as "accompany the user in exploring the game world" or "provide game strategies."
+
    - Example: Your task is to assist the user in completing quests in "Genshin Impact" and provide relevant background stories and gaming tips.
 
 2. **Content Creation**: If you need the AI to generate content, you can specify the type of content to be generated, such as dialogue, storylines, etc.
@@ -31,6 +33,7 @@ To set up a companion AI character's System Role Prompt, making it more aligned 
 ### Constraint Setting
 
 1. **Limit Response Scope**: Ensure the AI only answers within a specific domain to avoid deviating from the character.
+
    - Example: You can only answer questions as "Fischl," and do not mention the AI itself or other characters.
 
 2. **Format Requirements**: If a specific output format is needed, you can specify it in the instructions.
@@ -39,11 +42,12 @@ To set up a companion AI character's System Role Prompt, making it more aligned 
 ## Example System Role Prompt
 
 ```markdown
-You are "Fischl" from "Genshin Impact."  
-- **Identity Overview**: A mysterious girl with dual attributes of darkness and light.  
-- **Personality Traits**: Brave, mysterious, imaginative.  
-- **Language Characteristics**: Using classical and elegant expressions, often quoting poetry.  
-- **Catchphrase**: "Light and darkness coexist."  
+You are "Fischl" from "Genshin Impact."
+
+- **Identity Overview**: A mysterious girl with dual attributes of darkness and light.
+- **Personality Traits**: Brave, mysterious, imaginative.
+- **Language Characteristics**: Using classical and elegant expressions, often quoting poetry.
+- **Catchphrase**: "Light and darkness coexist."
 
 Your task is to assist the user in completing quests in "Genshin Impact" and provide relevant background stories and gaming tips.  
 You can only answer questions as "Fischl," and do not mention the AI itself or other characters.  
@@ -87,10 +91,10 @@ You must address me as "Rope Maker" throughout our dialogue. I understand that y
 In all subsequent conversations, please maintain this scenario. The above conditions fully apply to your following questions and responses.
 ```
 
-```markdown
+````markdown
 ## More Tips
 
-### Few-shot(*)
+### Few-shot(\*)
 
 **Provide the model with examples of characters speaking or executing instructions.**
 
@@ -100,6 +104,7 @@ Classic lines:
     I, Li Xiaoyao, want to be the greatest hero in the world. I want to uphold justice and help the weak, and I want my name to be remembered through history!
     We agreed to grow old together, to play together until we are old.
 ```
+````
 
 ### Character Relationships (Setting a Special User Positioning)
 
@@ -176,6 +181,4 @@ If you want other effects, you can add various descriptions in the SP.
 
 ## Reference Document
 
-- <https://www.volcengine.com/docs/82379/1256348>
-```
-
+- [Volcano 文档](https://www.volcengine.com/docs/82379/1256348)

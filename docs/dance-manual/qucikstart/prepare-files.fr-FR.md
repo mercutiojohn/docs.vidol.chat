@@ -1,6 +1,6 @@
 ---
 title: Préparation des fichiers MMD
-description: 'Avant de télécharger une danse, nous devons d'abord préparer les ressources liées à MMD. Ce guide vous aidera à comprendre quels fichiers préparer et comment les obtenir.'
+description: Avant de télécharger une danse, nous devons d'abord préparer les ressources liées à MMD. Ce guide vous aidera à comprendre quels fichiers préparer et comment les obtenir.
 keywords: MMD, fichiers de danse, ressources, préparation
 icon: music
 ---
@@ -110,4 +110,3 @@ Une fois que vous avez préparé les fichiers nécessaires, la prochaine étape 
     En savoir plus sur les sites de ressources MMD
   </Card>
 </CardGroup>
-

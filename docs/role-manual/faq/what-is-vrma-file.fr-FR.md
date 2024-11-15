@@ -10,7 +10,8 @@ Un fichier `.vrma` est un format de fichier utilisé pour décrire les animation
 <Card title="Nouvelles fonctionnalités de VRoid Hub" icon="newspaper">
   VRoid Hub a introduit la fonctionnalité Photo Booth pour la lecture d'animations ! "VRM Animation (.vrma)" est désormais disponible sur BOOTH, avec 7 fichiers d'animation gratuits !
   
-[Lire l'article complet](https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW) </Card>
+[Lire l'article complet](https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW)
+</Card>
 
 <Frame>
   <img src="https://oss.vidol.chat/assets/edfe7d13f6f2edb342219ffeaf37a294.webp" alt="Exemple de fichier .vrma" />
@@ -19,12 +20,15 @@ Un fichier `.vrma` est un format de fichier utilisé pour décrire les animation
 ## Caractéristiques des fichiers .vrma
 
 1. **Description des animations** :
+
    - Les fichiers .vrma utilisent le format d'animation glTF, capable de décrire les informations d'animation associées aux modèles VRM, y compris l'animation par squelette, l'animation des expressions et le contrôle du regard.
 
 2. **Compatibilité multiplateforme** :
+
    - Ce format est conçu pour être utilisé entre plusieurs applications et plateformes, garantissant que les utilisateurs peuvent partager et appliquer les mêmes données d'animation dans différents environnements.
 
 3. **Mise en œuvre standardisée** :
+
    - Le plugin UniVRM fournit une solution standard pour l'importation et l'exportation de fichiers .vrma dans Unity, permettant aux développeurs d'intégrer facilement ces animations dans leurs projets.
 
 4. **Support des expressions personnalisées** :
@@ -42,4 +46,3 @@ En utilisant des fichiers .vrma, les utilisateurs peuvent facilement réaliser d
   [7] https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW  
   [8] https://developer.vive.com/resources/openxr/unreal/unreal-tutorials/facialexpressionmaker/vrm/?site=cn
 </Accordion>
-

@@ -14,10 +14,10 @@ keywords: Anthropic, Claude, API, LobeVidol, 会話, 強化
 
 ## 設定手順
 
-### 手順1：Anthropic Claude APIキーを取得する
+### 手順 1：Anthropic Claude API キーを取得する
 
 1. [Anthropic Claude API](https://www.anthropic.com/api)のアカウントを登録して作成します。
-2. コンソールで[APIキー](https://console.anthropic.com/settings/keys)を取得します。
+2. コンソールで[API キー](https://console.anthropic.com/settings/keys)を取得します。
 
 <Frame>
   <img 
@@ -31,7 +31,7 @@ keywords: Anthropic, Claude, API, LobeVidol, 会話, 強化
   利用できない場合は、他の支払い方法を検討することもできます。
 </Warning>
 
-3. <https://console.anthropic.com/settings/plans>で請求情報を設定します（「生成」プランを選択して従量課金モードを有効にします）。
+3. [https://console.anthropic.com/settings/plans](https://console.anthropic.com/settings/plans)で請求情報を設定します（「生成」プランを選択して従量課金モードを有効にします）。
 
 <Frame>
   <img 
@@ -40,9 +40,9 @@ keywords: Anthropic, Claude, API, LobeVidol, 会話, 強化
   />
 </Frame>
 
-### 手順2：LobeVidolでAnthropic Claudeを設定する
+### 手順 2：LobeVidol で Anthropic Claude を設定する
 
-1. LobeVidolの`設定`ページを開きます。
+1. LobeVidol の`設定`ページを開きます。
 2. `AIモデル設定`セクションの下にある`Anthropic Claude`の設定項目を見つけます。
 
 <Frame>
@@ -52,8 +52,8 @@ keywords: Anthropic, Claude, API, LobeVidol, 会話, 強化
   />
 </Frame>
 
-3. APIキーを入力します。
-4. 利用可能なAnthropic Claudeモデルから、ニーズに合ったバージョンを選択します：
+3. API キーを入力します。
+4. 利用可能な Anthropic Claude モデルから、ニーズに合ったバージョンを選択します：
    - Claude 3 Opus：最も強力なモデルで、複雑なビデオスクリプト生成に適しています。
    - Claude 3.5 Sonnet：パフォーマンスとコストのバランスが取れた理想的な選択です。
    - Claude 3 Haiku：最も応答速度が速く、迅速なアイデア構想に適しています。
@@ -69,9 +69,9 @@ keywords: Anthropic, Claude, API, LobeVidol, 会話, 強化
   APIサービスの利用には相応の料金が発生します。具体的な料金については、Anthropic Claudeの公式価格ポリシーを参照してください。使用前に各モデルの料金基準を詳しく理解することをお勧めします。
 </Warning>
 
-### 手順3：使用を開始する
+### 手順 3：使用を開始する
 
-設定が完了したら、Anthropic Claudeの強力な機能を使用して：
+設定が完了したら、Anthropic Claude の強力な機能を使用して：
 
 - 創造的なビデオスクリプトを生成する
 - ビデオのタイトルと説明を最適化する
@@ -102,4 +102,3 @@ keywords: Anthropic, Claude, API, LobeVidol, 会話, 強化
     4. 定期的に使用量を監視します。
   </Accordion>
 </AccordionGroup>
-

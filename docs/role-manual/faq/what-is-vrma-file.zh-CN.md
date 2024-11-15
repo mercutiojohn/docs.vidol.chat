@@ -10,7 +10,8 @@ icon: question
 <Card title="VRoid Hub 新功能发布" icon="newspaper">
   VRoid Hub 引入了用于动画播放的 Photo Booth 功能！"VRM Animation (.vrma)" 现已在 BOOTH 上架，并提供 7 个免费动画文件！
 
-[阅读完整新闻](https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW) </Card>
+[阅读完整新闻](https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW)
+</Card>
 
 <Frame>
   <img src="https://oss.vidol.chat/assets/edfe7d13f6f2edb342219ffeaf37a294.webp" alt=".vrma 文件示例" />
@@ -19,12 +20,15 @@ icon: question
 ## .vrma 文件的特点
 
 1. **动画描述**：
+
    - .vrma 文件使用 glTF 动画格式，能够描述与 VRM 模型相关联的动画信息，包括骨骼动画、表情动画和视线控制等。
 
 2. **跨平台兼容性**：
+
    - 该格式设计为可在多个应用程序和平台之间使用，确保用户能够在不同环境中共享和应用相同的动画数据。
 
 3. **标准化实现**：
+
    - UniVRM 插件为 Unity 提供了导入和导出 .vrma 文件的标准解决方案，使得开发者可以轻松集成这些动画到他们的项目中。
 
 4. **支持自定义表达**：
@@ -42,4 +46,3 @@ icon: question
   [7] https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW  
   [8] https://developer.vive.com/resources/openxr/unreal/unreal-tutorials/facialexpressionmaker/vrm/?site=cn
 </Accordion>
-

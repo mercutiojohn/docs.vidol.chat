@@ -10,7 +10,8 @@ A `.vrma` file is a file format used to describe animations for VRM (Virtual Rea
 <Card title="New Features Released on VRoid Hub" icon="newspaper">
   VRoid Hub has introduced the Photo Booth feature for animation playback! "VRM Animation (.vrma)" is now available on BOOTH, offering 7 free animation files!
 
-[Read the full news](https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW) </Card>
+[Read the full news](https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW)
+</Card>
 
 <Frame>
   <img src="https://oss.vidol.chat/assets/edfe7d13f6f2edb342219ffeaf37a294.webp" alt="Example of a .vrma file" />
@@ -19,12 +20,15 @@ A `.vrma` file is a file format used to describe animations for VRM (Virtual Rea
 ## Features of .vrma Files
 
 1. **Animation Description**:
+
    - .vrma files use the glTF animation format, capable of describing animation information associated with VRM models, including skeletal animations, facial expressions, and gaze control.
 
 2. **Cross-Platform Compatibility**:
+
    - This format is designed to be used across multiple applications and platforms, ensuring that users can share and apply the same animation data in different environments.
 
 3. **Standardized Implementation**:
+
    - The UniVRM plugin provides a standard solution for importing and exporting .vrma files in Unity, allowing developers to easily integrate these animations into their projects.
 
 4. **Support for Custom Expressions**:
@@ -42,4 +46,3 @@ By using .vrma files, users can conveniently implement complex character animati
   [7] https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW  
   [8] https://developer.vive.com/resources/openxr/unreal/unreal-tutorials/facialexpressionmaker/vrm/?site=cn
 </Accordion>
-

@@ -1,6 +1,6 @@
 ---
 title: Conception UI
-description: 'Notre conception d'interface utilisateur allie esthétique et fonctionnalité, offrant aux utilisateurs une expérience d'utilisation exceptionnelle.'
+description: Notre conception d'interface utilisateur allie esthétique et fonctionnalité, offrant aux utilisateurs une expérience d'utilisation exceptionnelle.
 keywords: UI, conception, esthétique, fonctionnalité, expérience utilisateur
 ---
 
@@ -72,4 +72,3 @@ Adapté aux appareils mobiles, offrant une expérience d'utilisation plus pratiq
     alt="Adaptation Mobile"
   />
 </Frame>
-

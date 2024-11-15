@@ -30,7 +30,7 @@ keywords: Anthropic, Claude, API, LobeVidol, conversation, enhancement
   The Claude API currently offers $5 in free credits, but this is only available in certain countries/regions. You can check if it applies to your area in Dashboard > Claim. If it does not apply, you may consider using other payment methods.
 </Warning>
 
-3. Set up your billing information at <https://console.anthropic.com/settings/plans> (select the "Generate" plan to enable pay-as-you-go mode).
+3. Set up your billing information at [https://console.anthropic.com/settings/plans](https://console.anthropic.com/settings/plans) (select the "Generate" plan to enable pay-as-you-go mode).
 
 <Frame>
   <img 
@@ -101,4 +101,3 @@ Once the configuration is complete, you can leverage the powerful features of An
     4. Regularly monitor usage.
   </Accordion>
 </AccordionGroup>
-

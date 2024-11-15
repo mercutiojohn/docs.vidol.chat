@@ -31,7 +31,7 @@ keywords: Anthropic, Claude, API, LobeVidol, conversation, amélioration
   Si ce n'est pas le cas, vous pouvez envisager d'autres méthodes de paiement.
 </Warning>
 
-3. Configurez vos informations de facturation sur <https://console.anthropic.com/settings/plans> (choisissez le plan "Génération" pour activer le mode de paiement à l'utilisation)
+3. Configurez vos informations de facturation sur https://console.anthropic.com/settings/plans choisissez le plan "Génération" pour activer le mode de paiement à l'utilisation
 
 <Frame>
   <img 
@@ -102,4 +102,3 @@ Une fois la configuration terminée, vous pouvez tirer parti des puissantes fonc
     4. Surveillez régulièrement votre consommation
   </Accordion>
 </AccordionGroup>
-
