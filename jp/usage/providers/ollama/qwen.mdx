@@ -1,0 +1,101 @@
+---
+title: 通義千問 Qwen モデルの使用
+description: LobeVidol と Ollama の統合により、ローカルにデプロイされた通義千問 Qwen モデルで簡単に対話できます。Qwen モデルのインストールと選択方法を学びましょう。
+---
+
+<img
+
+src="https://oss.vidol.chat/docs/2024/12/0b32bbfca6e2edf5b4510bcc8d5338a3.png"
+alt="LobeVidol での Qwen の使用"
+/>
+
+## はじめに
+
+[通義千問](https://github.com/QwenLM/Qwen1.5) は、アリババクラウドがオープンソースで提供する大規模言語モデル（LLM）で、公式には進化し続ける AI 大モデルと定義されており、より多くのトレーニングデータを通じて、より正確な中国語認識能力を達成しています。現在、7B、14B、72B など、異なるパラメータ規模の複数のモデルバージョンが提供されています。
+
+### 主な特徴
+
+- 🚀 強力な中国語理解と生成能力
+- 📚 豊富な知識と文脈理解
+- 💡 複数回の対話と複雑なタスクをサポート
+- ⚡ Ollama を通じて効率的なローカルデプロイを実現
+
+<video
+controls
+className="w-full aspect-video"
+src="https://oss.vidol.chat/assets/0ef5bde6eeea2e3f4ee49e691dea190d.mp4>"
+
+> </video>
+
+## 使用ガイド
+
+現在、LobeVidol と [Ollama](https://ollama.com/) の統合により、LobeVidol で通義千問を簡単に使用できます。以下は詳細な設定手順です：
+
+<Steps>
+  <Step title="Ollama のローカルインストール">
+    まず、Ollama をインストールする必要があります。Ollama は macOS、Windows、Linux システムをサポートしており、インストール手順については [Ollama 使用文書](/zh/docs/usage/providers/ollama) を参照してください。
+  </Step>
+
+  <Step title="Ollama を使用して Qwen モデルをローカルにプルする">
+    Ollama のインストールが完了したら、以下のコマンドを使用して Qwen モデルをインストールできます。現在、以下のバージョンがサポートされています：
+
+```
+| モデルバージョン | インストールコマンド | 特徴 |
+|---------|---------|------|
+| Qwen 7B | `ollama pull qwen:7b` | 軽量モデル、個人用コンピュータに適しています |
+| Qwen 14B | `ollama pull qwen:14b` | パフォーマンスとリソース使用のバランス |
+| Qwen 72B | `ollama pull qwen:72b` | 最強のパフォーマンス、高い構成が必要 |
+
+<img src="https://oss.vidol.chat/assets/c966f6c2a98cbe3c8e28b9c64880dec2.webp" alt="Ollama を使用して Qwen モデルをプルする" />
+```
+
+  </Step>
+
+  <Step title="Qwen モデルの選択">
+    LobeVidol のセッションページで、モデル選択パネルをクリックし、Ollama サービスプロバイダーの下でインストールした Qwen モデルを選択します。
+
+```
+<img src="https://oss.vidol.chat/assets/aeea96c21468b92e8f67715f521b8081.webp" alt="モデル選択パネルで Qwen モデルを選択" />
+
+<Note>
+  モデル選択パネルに Ollama サービスプロバイダーが表示されない場合は、[Ollama との統合](/zh/docs/self-hosting/examples/ollama) を参照して、LobeVidol で Ollama サービスプロバイダーを有効にする方法を確認してください。
+</Note>
+```
+
+  </Step>
+</Steps>
+
+## 高度な設定
+
+### モデルパラメータの調整
+
+以下のパラメータを調整することで、モデルの出力を最適化できます：
+
+- Temperature：出力のランダム性を制御
+- Top P：語彙選択の多様性を制御
+- Max Tokens：生成されるテキストの最大長を制限
+- Presence Penalty：重複コンテンツを避ける
+- Frequency Penalty：より多様な語彙の使用を促進
+
+### よくある質問
+
+<Accordion title="モデルの実行速度を向上させるには？">
+  1. より小さなパラメータのモデルバージョンを使用する
+  2. デバイスに十分な GPU メモリがあることを確認する
+  3. max_tokens パラメータを適切に下げる
+  4. システムリソースを十分に保つ
+</Accordion>
+
+<Accordion title="モデルはどの言語をサポートしていますか？">
+  通義千問は主に中国語と英語をサポートしていますが、他の言語の基本的なタスクも処理できます。中国語の能力は特に優れています。
+</Accordion>
+
+## ベストプラクティス
+
+1. デバイスの構成に応じて適切なモデルバージョンを選択する
+2. 明確で具体的なプロンプトを使用する
+3. 文脈の長さを適切に設定する
+4. より良いパフォーマンスを得るために定期的にモデルバージョンを更新する
+
+これで、すべての設定が完了しました。LobeVidol とローカルの Qwen モデルを使用して対話を開始できます！
+

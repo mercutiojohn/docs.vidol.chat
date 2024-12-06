@@ -1,0 +1,101 @@
+---
+title: Utiliser le modèle Qwen de Tongyi Qianwen
+description: Discutez facilement avec le modèle Qwen de Tongyi Qianwen déployé localement grâce à l'intégration de LobeVidol et Ollama. Apprenez à installer et à choisir le modèle Qwen.
+---
+
+<img
+
+src="https://oss.vidol.chat/docs/2024/12/0b32bbfca6e2edf5b4510bcc8d5338a3.png"
+alt="Utiliser Qwen dans LobeVidol"
+/>
+
+## Introduction
+
+[Tongyi Qianwen](https://github.com/QwenLM/Qwen1.5) est un modèle de langage (LLM) open source développé par Alibaba Cloud, défini officiellement comme un grand modèle d'IA en constante évolution, atteignant une capacité de reconnaissance du chinois plus précise grâce à un contenu d'ensemble d'entraînement plus riche. Plusieurs versions du modèle sont actuellement disponibles, y compris des tailles de paramètres de 7B, 14B et 72B.
+
+### Caractéristiques principales
+
+- 🚀 Puissante capacité de compréhension et de génération en chinois
+- 📚 Riche réserve de connaissances et compréhension du contexte
+- 💡 Prise en charge des dialogues multi-tours et des tâches complexes
+- ⚡ Déploiement local efficace via Ollama
+
+<video
+controls
+className="w-full aspect-video"
+src="https://oss.vidol.chat/assets/0ef5bde6eeea2e3f4ee49e691dea190d.mp4>"
+
+> </video>
+
+## Guide d'utilisation
+
+Maintenant, grâce à l'intégration de LobeVidol avec [Ollama](https://ollama.com/), vous pouvez facilement utiliser Tongyi Qianwen dans LobeVidol. Voici les étapes de configuration détaillées :
+
+<Steps>
+  <Step title="Installer Ollama localement">
+    Tout d'abord, vous devez installer Ollama. Ollama prend en charge les systèmes macOS, Windows et Linux, veuillez consulter la [documentation d'utilisation d'Ollama](/fr/docs/usage/providers/ollama) pour le processus d'installation.
+  </Step>
+
+  <Step title="Télécharger le modèle Qwen avec Ollama">
+    Une fois Ollama installé, vous pouvez installer le modèle Qwen avec la commande suivante. Les versions suivantes sont actuellement prises en charge :
+
+```
+| Version du modèle | Commande d'installation | Caractéristiques |
+|-------------------|------------------------|------------------|
+| Qwen 7B           | `ollama pull qwen:7b` | Modèle léger, adapté à un usage sur ordinateur personnel |
+| Qwen 14B          | `ollama pull qwen:14b`| Équilibre entre performance et utilisation des ressources |
+| Qwen 72B          | `ollama pull qwen:72b`| Performance maximale, nécessite une configuration élevée |
+
+<img src="https://oss.vidol.chat/assets/c966f6c2a98cbe3c8e28b9c64880dec2.webp" alt="Télécharger le modèle Qwen avec Ollama" />
+```
+
+  </Step>
+
+  <Step title="Choisir le modèle Qwen">
+    Sur la page de session de LobeVidol, cliquez sur le panneau de sélection de modèle, puis choisissez le modèle Qwen installé sous le fournisseur Ollama.
+
+```
+<img src="https://oss.vidol.chat/assets/aeea96c21468b92e8f67715f521b8081.webp" alt="Sélectionner le modèle Qwen dans le panneau de sélection de modèle" />
+
+<Note>
+  Si vous ne voyez pas le fournisseur Ollama dans le panneau de sélection de modèle, veuillez consulter [Intégration avec Ollama](/fr/docs/self-hosting/examples/ollama) pour savoir comment activer le fournisseur Ollama dans LobeVidol.
+</Note>
+```
+
+  </Step>
+</Steps>
+
+## Configuration avancée
+
+### Optimisation des paramètres du modèle
+
+Vous pouvez optimiser la sortie du modèle en ajustant les paramètres suivants :
+
+- Temperature : contrôle le caractère aléatoire de la sortie
+- Top P : contrôle la diversité des choix de vocabulaire
+- Max Tokens : limite la longueur maximale du texte généré
+- Presence Penalty : évite le contenu répétitif
+- Frequency Penalty : encourage l'utilisation d'un vocabulaire plus varié
+
+### Questions fréquentes
+
+<Accordion title="Comment améliorer la vitesse d'exécution du modèle ?">
+  1. Utiliser une version du modèle avec moins de paramètres
+  2. S'assurer que l'appareil dispose de suffisamment de mémoire GPU
+  3. Réduire le paramètre max_tokens si nécessaire
+  4. Maintenir des ressources système suffisantes
+</Accordion>
+
+<Accordion title="Quelles langues le modèle prend-il en charge ?">
+  Tongyi Qianwen prend principalement en charge le chinois et l'anglais, mais peut également traiter des tâches de base dans d'autres langues. Ses capacités en chinois sont particulièrement remarquables.
+</Accordion>
+
+## Meilleures pratiques
+
+1. Choisissez la version du modèle appropriée en fonction de la configuration de l'appareil
+2. Utilisez des invites claires et spécifiques
+3. Définissez raisonnablement la longueur du contexte
+4. Mettez régulièrement à jour la version du modèle pour de meilleures performances
+
+Maintenant que vous avez terminé toutes les configurations, vous pouvez commencer à discuter avec le modèle Qwen local via LobeVidol !
+

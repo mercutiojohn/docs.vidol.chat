@@ -1,0 +1,78 @@
+---
+title: GitHub モデルの使用
+description: LobeVidol で GitHub の API キーを設定して使用する方法を学び、対話とインタラクションを開始します。
+---
+
+<img
+
+src="https://oss.vidol.chat/docs/2024/12/46ac87ca6a047d8bf888a4764b9f1cb9.png"
+alt="GitHub モデルバナー"
+/>
+
+## 概要
+
+[GitHub モデル](https://github.com/marketplace/models) は、GitHub が最近導入した新機能で、開発者にさまざまな AI モデルにアクセスし、実験するための無料プラットフォームを提供します。GitHub モデルは、ユーザーが異なるモデルのパラメータやプロンプトをテストし、モデルの応答を観察できるインタラクティブなサンドボックス環境を提供します。このプラットフォームは、OpenAI の GPT-4o、Meta の Llama 3.1、Mistral の Large 2 など、さまざまな先進的な言語モデルをサポートしており、大規模な言語モデルから特定のタスクモデルまで幅広い用途をカバーしています。
+
+## GitHub モデルのレート制限
+
+現在、Playground と無料 API の使用は、1 分あたりのリクエスト数、1 日あたりのリクエスト数、各リクエストのトークン数、および同時リクエスト数に制限されています。レート制限に達した場合は、制限がリセットされるまでリクエストを続行できません。異なるモデル（低、中、高および埋め込みモデル）のレート制限は異なります。モデルタイプの情報については、GitHub Marketplace を参照してください。
+
+<img
+
+src="https://oss.vidol.chat/assets/50607dece1bbffe80fdcbe76324ff9b6.webp>"
+alt="GitHub モデルのレート制限"
+/>
+
+<Note>
+  これらの制限は随時変更される可能性があります。詳細については [GitHub の公式ドキュメント](https://docs.github.com/en/github-models/prototyping-with-ai-models#rate-limits) を参照してください。
+</Note>
+
+## 設定手順
+
+### 1. GitHub のアクセストークンを取得する
+
+1. GitHub にログインし、[アクセストークン](https://github.com/settings/tokens) ページを開きます。
+2. 新しいアクセストークンを作成し、設定します。
+
+<img
+
+src="https://oss.vidol.chat/assets/c376d2e9e97f9ea9d788589f0a9e23d6.webp>"
+alt="アクセストークンの作成"
+/>
+
+3. 返された結果から生成されたトークンをコピーして保存します。
+
+<img
+
+src="https://oss.vidol.chat/assets/9880145be3e52b8f9dcd8343cd34a6ca.webp>"
+alt="アクセストークンの保存"
+/>
+
+<Warning>
+  - GitHub モデルのテスト期間中、GitHub モデルを使用するには、[ウェイトリスト（waitlist）](https://github.com/marketplace/models/waitlist/join) に申し込む必要があります。承認されるとアクセス権が得られます。
+
+- アクセストークンは一度しか表示されないため、安全に保管してください。誤って失った場合は、新しいトークンを作成する必要があります。
+</Warning>
+
+### 2. LobeVidol に GitHub モデルを設定する
+
+1. LobeVidol の `設定` インターフェースにアクセスします。
+2. `言語モデル` の下にある `GitHub` の設定項目を見つけます。
+
+<img
+
+src="https://oss.vidol.chat/assets/e0d53ba2bfb6ba5bf33f2b8a547f4e41.webp>"
+alt="アクセストークンを入力"
+/>
+
+3. 取得したアクセストークンを入力します。
+4. AI アシスタントのために GitHub のモデルを選択し、対話を開始します。
+
+<img
+
+src="https://oss.vidol.chat/assets/b6959f725c38f86053e4b07c9188d825.webp>"
+alt="GitHub モデルを選択して対話を開始"
+/>
+
+これで、LobeVidol で GitHub が提供するモデルを使用して対話を行うことができるようになりました。
+

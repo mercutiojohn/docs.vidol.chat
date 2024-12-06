@@ -1,0 +1,93 @@
+---
+title: 使用通义千问 Qwen 模型
+description: 通过 LobeVidol 与 Ollama 的集成，轻松在本地部署的通义千问 Qwen 模型中进行对话。学习如何安装和选择 Qwen 模型。
+---
+
+<img
+
+  src="https://oss.vidol.chat/docs/2024/12/0b32bbfca6e2edf5b4510bcc8d5338a3.png"
+  alt="在 LobeVidol 中使用 Qwen"
+/>
+
+## 简介
+
+[通义千问](https://github.com/QwenLM/Qwen1.5) 是阿里云开源的一款大语言模型（LLM），官方定义是一个不断进化的 AI 大模型，并通过更多的训练集内容达到更精准的中文识别能力。目前提供了多个版本的模型，包括 7B、14B 和 72B 等不同参数规模。
+
+### 主要特点
+
+- 🚀 强大的中文理解和生成能力
+- 📚 丰富的知识储备和上下文理解
+- 💡 支持多轮对话和复杂任务
+- ⚡ 通过 Ollama 实现高效本地部署
+
+<video 
+  controls
+  className="w-full aspect-video"
+  src="https://oss.vidol.chat/assets/0ef5bde6eeea2e3f4ee49e691dea190d.mp4"
+></video>
+
+## 使用指南
+
+现在，通过 LobeVidol 与 [Ollama](https://ollama.com/) 的集成，你可以轻松地在 LobeVidol 中使用通义千问。以下是详细的配置步骤：
+
+<Steps>
+  <Step title="本地安装 Ollama">
+    首先，你需要安装 Ollama。Ollama 支持 macOS、Windows 和 Linux 系统，安装过程请查阅 [Ollama 使用文档](/zh/docs/usage/providers/ollama)。
+  </Step>
+
+  <Step title="用 Ollama 拉取 Qwen 模型到本地">
+    在安装完成 Ollama 后，你可以通过以下命令安装 Qwen 模型。目前支持以下版本：
+
+    | 模型版本 | 安装命令 | 特点 |
+    |---------|---------|------|
+    | Qwen 7B | `ollama pull qwen:7b` | 轻量级模型，适合个人电脑使用 |
+    | Qwen 14B | `ollama pull qwen:14b` | 平衡性能与资源占用 |
+    | Qwen 72B | `ollama pull qwen:72b` | 最强性能，需要较高配置 |
+
+    <img src="https://oss.vidol.chat/assets/c966f6c2a98cbe3c8e28b9c64880dec2.webp" alt="使用 Ollama 拉取 Qwen 模型" />
+  </Step>
+
+  <Step title="选择 Qwen 模型">
+    在 LobeVidol 会话页面中，点击模型选择面板，然后在 Ollama 服务商下选择已安装的 Qwen 模型。
+
+    <img src="https://oss.vidol.chat/assets/aeea96c21468b92e8f67715f521b8081.webp" alt="模型选择面板中选择 Qwen 模型" />
+
+    <Note>
+      如果你没有在模型选择面板中看到 Ollama 服务商，请查阅 [与 Ollama 集成](/zh/docs/self-hosting/examples/ollama) 了解如何在 LobeVidol 中开启 Ollama 服务商。
+    </Note>
+  </Step>
+</Steps>
+
+## 进阶配置
+
+### 模型参数调优
+
+你可以通过调整以下参数来优化模型输出：
+
+- Temperature：控制输出的随机性
+- Top P：控制词汇选择的多样性
+- Max Tokens：限制生成文本的最大长度
+- Presence Penalty：避免重复内容
+- Frequency Penalty：鼓励使用更多样的词汇
+
+### 常见问题解答
+
+<Accordion title="如何提升模型运行速度？">
+  1. 使用较小参数量的模型版本
+  2. 确保设备有足够的 GPU 内存
+  3. 适当调低 max_tokens 参数
+  4. 保持系统资源充足
+</Accordion>
+
+<Accordion title="模型支持哪些语言？">
+  通义千问主要支持中文和英文，但也可以处理其他语言的基本任务。中文能力特别出色。
+</Accordion>
+
+## 最佳实践
+
+1. 根据设备配置选择合适的模型版本
+2. 使用清晰、具体的提示语
+3. 合理设置上下文长度
+4. 定期更新模型版本以获得更好性能
+
+现在，你已经完成了所有配置，可以开始使用 LobeVidol 与本地 Qwen 模型进行对话了！

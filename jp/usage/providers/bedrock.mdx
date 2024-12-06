@@ -1,0 +1,87 @@
+---
+title: Amazon Bedrockの使用
+description: LobeVidolでAmazon Bedrockを設定し使用する方法を学び、対話を開始します。
+---
+
+<img
+
+src="https://oss.vidol.chat/docs/2024/12/2291cb8a7b9e239542744fa128996700.png"
+alt="LobeVidolでのAmazon Bedrockの使用"
+/>
+
+Amazon Bedrockは、ユーザーがAPIを通じてAI21 Labs、Anthropic、Cohere、Meta、Stability AIなどの主要なAI企業やAmazon自身の基盤モデルにアクセスできる、完全に管理された基盤モデルAPIサービスです。
+
+このドキュメントでは、LobeVidolでAmazon Bedrockを使用する方法を説明します。
+
+<Steps>
+  <Step title="AWSでAmazon Bedrockモデルのアクセスを有効にする">
+    - [AWS Console](https://console.aws.amazon.com/)にアクセスしてログインします。
+    - beckrockを検索し、`Amazon Bedrock`サービスに入ります。
+
+```
+<img src="https://oss.vidol.chat/assets/f998742923d75876fa8581980221d328.webp" alt="Amazon Bedrockサービスに入る" />
+
+- 左側のメニューから`Models access`を選択します。
+
+<img src="https://oss.vidol.chat/assets/b207fce147fc57659f598e661f6ba524.webp" alt="Amazon Bedrockモデルアクセスの有効化" />
+
+- 必要なモデルに応じて、モデルのアクセスを有効にします。
+
+<img src="https://oss.vidol.chat/assets/e4ec804fb79c0d620d5e45e3280a864a.webp" alt="モデルのアクセスを有効にする" />
+
+<Note>一部のモデルでは、追加情報の提供が必要な場合があります。</Note>
+```
+
+  </Step>
+
+  <Step title="APIアクセスキーを取得する">
+    - AWSコンソールでIAMを検索し、IAMサービスに入ります。
+
+```
+<img src="https://oss.vidol.chat/assets/4280687d84b383a89ff3aadce579eb11.webp" alt="IAMサービスに入る" />
+
+- `ユーザー`メニューで新しいIAMユーザーを作成します。
+
+<img src="https://oss.vidol.chat/assets/97951be397cba3bbff8eff5e0d1598b5.webp" alt="新しいIAMユーザーを作成する" />
+
+- ポップアップダイアログでユーザー名を入力します。
+
+<img src="https://oss.vidol.chat/assets/4fb296a2ef93a286978da5837718674d.webp" alt="ユーザー名を入力する" />
+
+- このユーザーに権限を追加するか、既存のユーザーグループに参加させ、ユーザーがAmazon Bedrockにアクセスできるようにします。
+
+<img src="https://oss.vidol.chat/assets/2f22c7b9811c845401fd6fa08922c94e.webp" alt="ユーザーに権限を追加する" />
+
+- 追加したユーザーのアクセスキーを作成します。
+
+<img src="https://oss.vidol.chat/assets/0502a7b69b0c12773229105aa331446c.webp" alt="アクセスキーを作成する" />
+
+- アクセスキーとシークレットアクセスキーをコピーして安全に保存します。後で使用します。
+
+<img src="https://oss.vidol.chat/assets/2d43082c42c30fd0b157b0173bae2cfa.webp" alt="IAMサービスに入る" />
+
+<Warning>キーは一度しか表示されないため、安全に保管してください。誤って失った場合は、新しいアクセスキーを作成する必要があります。</Warning>
+```
+
+  </Step>
+
+  <Step title="LobeVidolでAmazon Bedrockを設定する">
+    - LobeVidolの`設定`画面にアクセスします。
+    - `言語モデル`の下で`Amazon Bedrock`の設定項目を見つけて開きます。
+
+```
+<img src="https://oss.vidol.chat/assets/ea3ff6fef303aec9f5e32fc1b8d68f8d.webp" alt="LobeVidolでAmazon Bedrockキーを入力する" />
+
+- Amazon Bedrockを開き、取得したアクセスキーとシークレットアクセスキーを入力します。
+- アシスタントのためにAmazon Bedrockのモデルを選択し、対話を開始します。
+
+<img src="https://oss.vidol.chat/assets/7971d334dbd5ba7ddeaa31125777070b.webp" alt="Amazon Bedrockモデルを選択して使用する" />
+
+<Warning>使用中にAPIサービスプロバイダーに料金を支払う必要がある場合がありますので、Amazon Bedrockの料金ポリシーを参照してください。</Warning>
+```
+
+  </Step>
+</Steps>
+
+これで、LobeVidolでAmazon Bedrockが提供するモデルを使用して対話を行うことができるようになりました。
+

@@ -1,0 +1,125 @@
+---
+title: Azure OpenAIの使用
+description: LobeVidolでAzure OpenAIモデルを設定し、対話に使用する方法を学びます。APIキーの取得とモデルの選択を含みます。
+tags:
+  - Azure OpenAI
+  - APIキー
+  - Web UI
+---
+
+# LobeVidolでのAzure OpenAIの使用
+
+<img
+
+src="https://oss.vidol.chat/docs/2024/12/809a6bc94818a4dd3097abb1f127aaee.png"
+alt="LobeVidolでのAzure OpenAIの使用"
+/>
+
+このドキュメントでは、LobeVidolで[Azure OpenAI](https://oai.azure.com/)サービスを使用する方法を説明します。Azure OpenAIは、Microsoftが提供するエンタープライズ向けAIサービスで、OpenAIと同じ強力なモデルを提供しながら、より高い安全性と信頼性を保証します。
+
+## 準備
+
+始める前に、以下を確認してください：
+
+1. Azureアカウントを持っていること
+2. Azure OpenAIサービスへのアクセス権を取得していること
+3. 少なくとも1つのAIモデルをデプロイしていること
+
+## 詳細手順
+
+### 1. Azure OpenAI APIキーの取得
+
+まず、Azure OpenAIのAPIキーとエンドポイントを取得する必要があります：
+
+1. [Azure OpenAIサービスポータル](https://oai.azure.com/)にアクセスします。
+2. まだ登録していない場合は、登録プロセスを完了してください。
+
+<img
+src="https://oss.vidol.chat/assets/412a3a970d97699ef0fe709346cd21f6.webp"
+alt="Azure OpenAIアカウントの登録"
+/>
+
+3. `Deployments`ページに移動し、選択したモデルを使用して新しいデプロイを作成します。
+   - `gpt-4`または`gpt-35-turbo`モデルの使用を推奨します。
+   - デプロイ名を記録しておいてください。後の設定で必要になります。
+
+<img
+src="https://oss.vidol.chat/assets/8f8140c40d58b44111e27cf97659b94a.webp"
+alt="モデルを選択して新しいデプロイを作成"
+/>
+
+4. `Chat`ページに移動し、`View Code`をクリックして以下を取得します：
+   - APIエンドポイントURL
+   - APIキー
+
+<img
+src="https://oss.vidol.chat/assets/a7a03d42d127d877f471edb9598b2405.webp"
+alt="Chatページに移動"
+/>
+
+<img
+src="https://oss.vidol.chat/assets/be2355a354a84913b50e293f6415af16.webp"
+alt="エンドポイントとキーを取得"
+/>
+
+### 2. LobeVidolでの設定
+
+必要な情報を取得したら、以下の手順でLobeVidolで設定を完了します：
+
+1. LobeVidolを開き、`設定`ページに移動します。
+2. `言語モデル`セクションを見つけます。
+3. `Azure OpenAI`タブを選択します。
+4. 以下の情報を入力します：
+   - APIキー
+   - APIエンドポイント
+   - デプロイ名（オプション）
+
+<img
+src="https://oss.vidol.chat/assets/7fa84e955340bd6c35ec4f27bf6448f3.webp"
+alt="API設定を入力"
+/>
+
+5. 使用するAzure OpenAIモデルを選択します。
+6. 保存をクリックして設定を完了します。
+
+<img
+src="https://oss.vidol.chat/assets/b34b36850c021779d6b12179e3c53281.webp"
+alt="モデルを選択して対話を開始"
+/>
+
+## 注意事項
+
+<Warning>
+  Azure OpenAIサービスの使用には料金がかかります。具体的な料金については[Azure OpenAI料金ページ](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/)を参照してください。
+</Warning>
+
+- Azureサブスクリプションに十分なクォータがあることを確認してください。
+- 定期的にAPI使用量を確認し、予算を超えないようにしてください。
+- APIキーを適切に保管し、他人に漏らさないようにしてください。
+
+## よくある質問
+
+### API接続に失敗した場合はどうすればよいですか？
+
+1. APIキーが正しく入力されているか確認してください。
+2. エンドポイントURLの形式が正しいか確認してください。
+3. デプロイ名がAzureポータルのものと一致しているか確認してください。
+
+### 異なるモデルに切り替えるにはどうすればよいですか？
+
+設定ページのモデル選択ドロップダウンメニューから、いつでも他のデプロイ済みのAzure OpenAIモデルに切り替えることができます。
+
+### 課金方法はどのようになっていますか？
+
+Azure OpenAIは使用量に応じて課金され、具体的な料金は以下に依存します：
+
+- 選択したモデル
+- API呼び出し回数
+- 処理されたトークンの数
+
+## さらなるリソース
+
+- [Azure OpenAI公式ドキュメント](https://learn.microsoft.com/azure/cognitive-services/openai/)
+- [APIリファレンスガイド](https://learn.microsoft.com/azure/cognitive-services/openai/reference)
+- [ベストプラクティス](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/best-practices)
+

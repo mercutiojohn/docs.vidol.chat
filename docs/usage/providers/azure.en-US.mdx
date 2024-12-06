@@ -1,0 +1,124 @@
+---
+title: Using Azure OpenAI
+description: Learn how to configure and use Azure OpenAI models for conversation in LobeVidol, including obtaining an API key and selecting a model.
+tags:
+  - Azure OpenAI
+  - API Key
+  - Web UI
+---
+
+# Using Azure OpenAI in LobeVidol
+
+<img
+src="https://oss.vidol.chat/docs/2024/12/809a6bc94818a4dd3097abb1f127aaee.png"
+alt="Using Azure OpenAI in LobeVidol"
+/>
+
+This document will guide you on how to use the [Azure OpenAI](https://oai.azure.com/) service in LobeVidol. Azure OpenAI is an enterprise-level AI service provided by Microsoft, offering powerful models similar to OpenAI but with enhanced security and reliability guarantees.
+
+## Prerequisites
+
+Before you begin, please ensure that:
+
+1. You have an Azure account.
+2. You have obtained access to the Azure OpenAI service.
+3. You have deployed at least one AI model.
+
+## Detailed Steps
+
+### 1. Obtain Azure OpenAI API Key
+
+First, you need to obtain the API key and endpoint for Azure OpenAI:
+
+1. Visit the [Azure OpenAI Service Portal](https://oai.azure.com/).
+2. If you haven't registered yet, complete the registration process.
+
+<img
+src="https://oss.vidol.chat/assets/412a3a970d97699ef0fe709346cd21f6.webp"
+alt="Register Azure OpenAI Account"
+/>
+
+3. Go to the `Deployments` page and create a new deployment using your chosen model.
+   - It is recommended to use the `gpt-4` or `gpt-35-turbo` model.
+   - Note down the deployment name, as it will be needed for later configuration.
+
+<img
+src="https://oss.vidol.chat/assets/8f8140c40d58b44111e27cf97659b94a.webp"
+alt="Select Model to Create New Deployment"
+/>
+
+4. Navigate to the `Chat` page and click `View Code` to obtain:
+   - API endpoint URL
+   - API key
+
+<img
+src="https://oss.vidol.chat/assets/a7a03d42d127d877f471edb9598b2405.webp"
+alt="Go to Chat Page"
+/>
+
+<img
+src="https://oss.vidol.chat/assets/be2355a354a84913b50e293f6415af16.webp"
+alt="Obtain Endpoint and Key"
+/>
+
+### 2. Configure in LobeVidol
+
+Once you have the necessary information, follow these steps to complete the configuration in LobeVidol:
+
+1. Open LobeVidol and go to the `Settings` page.
+2. Find the `Language Model` section.
+3. Select the `Azure OpenAI` tab.
+4. Fill in the following information:
+   - API key
+   - API endpoint
+   - Deployment name (optional)
+
+<img
+src="https://oss.vidol.chat/assets/7fa84e955340bd6c35ec4f27bf6448f3.webp"
+alt="Enter API Configuration"
+/>
+
+5. Choose the Azure OpenAI model you want to use.
+6. Click save to complete the configuration.
+
+<img
+src="https://oss.vidol.chat/assets/b34b36850c021779d6b12179e3c53281.webp"
+alt="Select Model and Start Conversation"
+/>
+
+## Notes
+
+<Warning>
+  Using the Azure OpenAI service incurs costs. Please refer to the [Azure OpenAI Pricing Page](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/) for specific pricing details.
+</Warning>
+
+- Ensure your Azure subscription has sufficient quota.
+- Regularly check API usage to avoid exceeding your budget.
+- Keep your API key secure and do not disclose it to others.
+
+## Frequently Asked Questions
+
+### What should I do if the API connection fails?
+
+1. Check if the API key is entered correctly.
+2. Confirm that the endpoint URL format is correct.
+3. Verify that the deployment name matches what is in the Azure portal.
+
+### How can I switch between different models?
+
+In the model selection dropdown menu on the settings page, you can switch to other deployed Azure OpenAI models at any time.
+
+### How is billing handled?
+
+Azure OpenAI uses a pay-as-you-go billing model, with specific rates depending on:
+
+- The selected model
+- The number of API calls
+- The number of tokens processed
+
+## More Resources
+
+- [Azure OpenAI Official Documentation](https://learn.microsoft.com/azure/cognitive-services/openai/)
+- [API Reference Guide](https://learn.microsoft.com/azure/cognitive-services/openai/reference)
+- [Best Practices](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/best-practices)
+

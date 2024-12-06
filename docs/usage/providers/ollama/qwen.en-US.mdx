@@ -1,0 +1,99 @@
+---
+title: Using the Qwen Model
+description: Easily engage in conversations with the locally deployed Qwen model through the integration of LobeVidol and Ollama. Learn how to install and select the Qwen model.
+---
+
+<img
+src="https://oss.vidol.chat/docs/2024/12/0b32bbfca6e2edf5b4510bcc8d5338a3.png"
+alt="Using Qwen in LobeVidol"
+/>
+
+## Introduction
+
+[Qwen](https://github.com/QwenLM/Qwen1.5) is a large language model (LLM) open-sourced by Alibaba Cloud. It is officially defined as an evolving AI model that achieves more accurate Chinese recognition capabilities through a larger training dataset. Currently, multiple versions of the model are available, including different parameter sizes such as 7B, 14B, and 72B.
+
+### Key Features
+
+- 🚀 Powerful Chinese understanding and generation capabilities
+- 📚 Rich knowledge base and contextual understanding
+- 💡 Supports multi-turn conversations and complex tasks
+- ⚡ Efficient local deployment via Ollama
+
+<video
+controls
+className="w-full aspect-video"
+src="https://oss.vidol.chat/assets/0ef5bde6eeea2e3f4ee49e691dea190d.mp4>"
+> </video>
+
+## User Guide
+
+Now, with the integration of LobeVidol and [Ollama](https://ollama.com/), you can easily use Qwen in LobeVidol. Here are the detailed configuration steps:
+
+<Steps>
+  <Step title="Install Ollama Locally">
+    First, you need to install Ollama. Ollama supports macOS, Windows, and Linux systems. Please refer to the [Ollama usage documentation](/en/docs/usage/providers/ollama) for the installation process.
+  </Step>
+
+  <Step title="Pull the Qwen Model Locally with Ollama">
+    After installing Ollama, you can install the Qwen model using the following command. The following versions are currently supported:
+
+```
+| Model Version | Installation Command | Features |
+|---------------|----------------------|----------|
+| Qwen 7B      | `ollama pull qwen:7b` | Lightweight model suitable for personal computers |
+| Qwen 14B     | `ollama pull qwen:14b` | Balances performance and resource usage |
+| Qwen 72B     | `ollama pull qwen:72b` | Highest performance, requires higher configuration |
+
+<img src="https://oss.vidol.chat/assets/c966f6c2a98cbe3c8e28b9c64880dec2.webp" alt="Using Ollama to pull the Qwen model" />
+```
+
+  </Step>
+
+  <Step title="Select the Qwen Model">
+    In the LobeVidol session page, click on the model selection panel, and then choose the installed Qwen model under the Ollama provider.
+
+```
+<img src="https://oss.vidol.chat/assets/aeea96c21468b92e8f67715f521b8081.webp" alt="Selecting the Qwen model in the model selection panel" />
+
+<Note>
+  If you do not see the Ollama provider in the model selection panel, please refer to [Integrating with Ollama](/en/docs/self-hosting/examples/ollama) to learn how to enable the Ollama provider in LobeVidol.
+</Note>
+```
+
+  </Step>
+</Steps>
+
+## Advanced Configuration
+
+### Model Parameter Tuning
+
+You can optimize the model output by adjusting the following parameters:
+
+- Temperature: Controls the randomness of the output
+- Top P: Controls the diversity of vocabulary selection
+- Max Tokens: Limits the maximum length of generated text
+- Presence Penalty: Avoids repetitive content
+- Frequency Penalty: Encourages the use of more diverse vocabulary
+
+### Frequently Asked Questions
+
+<Accordion title="How to improve model running speed?">
+  1. Use a model version with a smaller parameter size
+  2. Ensure the device has sufficient GPU memory
+  3. Appropriately lower the max_tokens parameter
+  4. Keep system resources ample
+</Accordion>
+
+<Accordion title="What languages does the model support?">
+  Qwen primarily supports Chinese and English but can also handle basic tasks in other languages. Its Chinese capabilities are particularly outstanding.
+</Accordion>
+
+## Best Practices
+
+1. Choose the appropriate model version based on device configuration
+2. Use clear and specific prompts
+3. Set context length reasonably
+4. Regularly update the model version for better performance
+
+Now that you have completed all configurations, you can start engaging in conversations with the local Qwen model using LobeVidol!
+

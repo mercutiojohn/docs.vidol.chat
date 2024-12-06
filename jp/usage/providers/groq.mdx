@@ -1,0 +1,62 @@
+---
+title: Groqの使用
+description: GroqCloud APIキーの取得方法とLobeVidolでのGroqの設定方法を学び、Groqの強力な性能を体験しましょう。
+---
+
+# LobeVidolでのGroqの使用
+
+<img
+src="https://oss.vidol.chat/docs/2024/12/6af40a89ea246f366da332f5f76fec2d.png"
+alt="LobeVidolでのGroqの使用"
+className="w-full"
+/>
+
+Groqの [LPU推論エンジン](https://wow.groq.com/news_press/groq-lpu-inference-engine-leads-in-first-independent-llm-benchmark/) は、最新の独立した大規模言語モデル（LLM）ベンチマークテストで優れたパフォーマンスを発揮し、その驚異的な速度と効率でAIソリューションの基準を再定義しました。LobeVidolとGroq Cloudの統合により、Groqの技術を活用してLobeVidolで大規模言語モデルの実行を簡単に加速できます。
+
+<Info>
+  Groq LPU推論エンジンは、内部ベンチマークテストで毎秒300トークンの速度を達成し、ArtificialAnalysis.aiのベンチマークテストによって、Groqはスループット（毎秒241トークン）と100トークンの出力を受け取るための総時間（0.8秒）で他のプロバイダーを上回ることが確認されています。
+</Info>
+
+このドキュメントでは、LobeVidolでGroqを使用する方法を説明します。
+
+## ステップ1: GroqCloud APIキーの取得
+
+まず、[GroqCloud Console](https://console.groq.com/)にアクセスしてAPIキーを取得する必要があります。
+
+<img
+src="https://oss.vidol.chat/assets/c8b38f398295e004a813b8e364854684.webp"
+alt="GroqCloud APIキーの取得"
+className="w-full"
+/>
+
+コンソールの`API Keys`メニューでAPIキーを作成します。
+
+<img
+src="https://oss.vidol.chat/assets/bb6382ba61219fd34cccbcf88c7098ba.webp"
+alt="GroqCloud APIキーの保存"
+className="w-full"
+/>
+
+<Warning>
+  ポップアップに表示されるキーを適切に保存してください。これは一度しか表示されず、誤って失った場合は新しいキーを再作成する必要があります。
+</Warning>
+
+## ステップ2: LobeVidolでのGroqの設定
+
+`設定` -> `言語モデル`の中にGroqの設定オプションがありますので、先ほど取得したAPIキーを入力してください。
+
+<img
+src="https://oss.vidol.chat/assets/855a339f0d2163b8928169fac5eca86c.webp"
+alt="Groqサービスプロバイダーの設定"
+className="w-full"
+/>
+
+次に、アシスタントのモデルオプションでGroqがサポートするモデルを選択すると、LobeVidolでGroqの強力な性能を体験できます。
+
+<video
+controls
+className="w-full"
+src="https://oss.vidol.chat/assets/3c99d6a43f83cee5fba11a6db7cd9fe8.mp4>"
+>
+</video>
+

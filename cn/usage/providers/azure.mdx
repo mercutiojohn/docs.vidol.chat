@@ -1,0 +1,123 @@
+---
+title: 使用 Azure OpenAI
+description: 学习如何在 LobeVidol中配置和使用 Azure OpenAI 模型进行对话，包括获取 API 密钥和选择模型。
+tags:
+  - Azure OpenAI
+  - API Key
+  - Web UI
+---
+
+# 在 LobeVidol中使用 Azure OpenAI
+
+<img
+  
+  src="https://oss.vidol.chat/docs/2024/12/809a6bc94818a4dd3097abb1f127aaee.png"
+  alt="在 LobeVidol中使用 Azure OpenAI"
+/>
+
+本文档将指导你如何在 LobeVidol中使用 [Azure OpenAI](https://oai.azure.com/) 服务。Azure OpenAI 是微软提供的企业级 AI 服务，它提供了与 OpenAI 相同的强大模型，但具有更好的安全性和可靠性保证。
+
+## 准备工作
+
+在开始之前，请确保：
+
+1. 你已经拥有一个 Azure 账户
+2. 你已经获得了 Azure OpenAI 服务的访问权限
+3. 你已经部署了至少一个 AI 模型
+
+## 详细步骤
+
+### 1. 获取 Azure OpenAI API 密钥
+
+首先，你需要获取 Azure OpenAI 的 API 密钥和终结点：
+
+1. 访问 [Azure OpenAI 服务门户](https://oai.azure.com/)
+2. 如果尚未注册，请先完成注册流程
+
+<img
+  src="https://oss.vidol.chat/assets/412a3a970d97699ef0fe709346cd21f6.webp"
+  alt="注册 Azure OpenAI 帐户"
+/>
+
+3. 进入 `Deployments` 页面，使用你选择的模型创建新部署
+   - 推荐使用 `gpt-4` 或 `gpt-35-turbo` 模型
+   - 记录下部署名称，后续配置需要用到
+
+<img
+  src="https://oss.vidol.chat/assets/8f8140c40d58b44111e27cf97659b94a.webp"
+  alt="选择模型创建新部署"
+/>
+
+4. 转到 `Chat` 页面，点击 `View Code` 获取：
+   - API 终结点 URL
+   - API 密钥
+
+<img
+  src="https://oss.vidol.chat/assets/a7a03d42d127d877f471edb9598b2405.webp"
+  alt="转到 Chat 页面"
+/>
+
+<img
+  src="https://oss.vidol.chat/assets/be2355a354a84913b50e293f6415af16.webp"
+  alt="获取终结点和密钥"
+/>
+
+### 2. 在 LobeVidol中配置
+
+获取到必要信息后，按照以下步骤在 LobeVidol中完成配置：
+
+1. 打开 LobeVidol，进入`设置`页面
+2. 找到`语言模型`部分
+3. 选择 `Azure OpenAI` 选项卡
+4. 填入以下信息：
+   - API 密钥
+   - API 终结点
+   - 部署名称（可选）
+
+<img
+  src="https://oss.vidol.chat/assets/7fa84e955340bd6c35ec4f27bf6448f3.webp"
+  alt="填入 API 配置"
+/>
+
+5. 选择要使用的 Azure OpenAI 模型
+6. 点击保存完成配置
+
+<img
+  src="https://oss.vidol.chat/assets/b34b36850c021779d6b12179e3c53281.webp"
+  alt="选择模型并开始对话"
+/>
+
+## 注意事项
+
+<Warning>
+  使用 Azure OpenAI 服务需要付费。具体费用请参考 [Azure OpenAI 定价页面](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/)。
+</Warning>
+
+- 确保你的 Azure 订阅有足够的配额
+- 定期检查 API 使用量，避免超出预算
+- 妥善保管你的 API 密钥，不要泄露给他人
+
+## 常见问题
+
+### API 连接失败怎么办？
+
+1. 检查 API 密钥是否正确填写
+2. 确认终结点 URL 格式是否正确
+3. 验证部署名称是否与 Azure 门户中的一致
+
+### 如何切换不同的模型？
+
+在设置页面的模型选择下拉菜单中，你可以随时切换到其他已部署的 Azure OpenAI 模型。
+
+### 计费方式是怎样的？
+
+Azure OpenAI 采用按使用量计费的方式，具体费率取决于：
+- 选用的模型
+- API 调用次数
+- 处理的标记数量
+
+## 更多资源
+
+- [Azure OpenAI 官方文档](https://learn.microsoft.com/azure/cognitive-services/openai/)
+- [API 参考指南](https://learn.microsoft.com/azure/cognitive-services/openai/reference)
+- [最佳实践](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/best-practices)
