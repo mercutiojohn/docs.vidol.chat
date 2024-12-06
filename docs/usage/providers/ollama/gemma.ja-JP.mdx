@@ -1,0 +1,102 @@
+---
+title: Google Gemma モデルの使用
+description: LobeVidol と Ollama の統合により、Google Gemma モデルを自然言語処理タスクに簡単に使用できます。Ollama をインストールし、Gemma モデルをプルし、モデルパネルから Gemma モデルを選択して対話を開始します。
+---
+
+# Google Gemma モデルの使用
+
+<img
+src="https://oss.vidol.chat/docs/2024/12/56d06a68955858385bd51dc590eb5156.png"
+alt="LobeVidol で Gemma を使用"
+className="rounded-lg"
+/>
+
+[Gemma](https://blog.google/technology/developers/gemma-open-models/) は、Google がオープンソースで提供する大規模言語モデル（LLM）で、さまざまな自然言語処理タスクに対応するための、より汎用的で柔軟なモデルを提供することを目的としています。現在、LobeVidol と [Ollama](https://ollama.com/) の統合により、LobeVidol で Google Gemma を簡単に使用できます。
+
+## モデルの概要
+
+Gemma は Google が提供するオープンソースの大規模言語モデルシリーズで、2B と 7B の2つのサイズがあります。これらのモデルには以下の特徴があります：
+
+- Gemini 技術に基づいて構築
+- 多言語処理能力をサポート
+- 厳格なセキュリティテストを実施
+- 様々な自然言語処理タスクに適用可能
+
+## 使用ガイド
+
+このドキュメントでは、LobeVidol で Google Gemma を使用する方法を説明します：
+
+### ステップ 1: Ollama をローカルにインストール
+
+まず、Ollama をインストールする必要があります。インストール手順については [Ollama 使用文書](/zh/docs/usage/providers/ollama) を参照してください。
+
+### ステップ 2: Ollama を使用して Google Gemma モデルをローカルにプル
+
+Ollama のインストールが完了したら、以下のコマンドを使用して Google Gemma モデルをインストールできます：
+
+```bash
+# 7B モデルをインストール
+ollama pull gemma
+
+# または 2B モデルをインストール
+ollama pull gemma:2b
+```
+
+<img
+src="https://oss.vidol.chat/assets/a913a0827535d10e79a2f2c2593d6ac2.webp"
+alt="Ollama を使用して Gemma モデルをプル"
+className="rounded-lg"
+/>
+
+### ステップ 3: Gemma モデルを選択
+
+セッションページで、モデルパネルを開き、Gemma モデルを選択します。
+
+<img
+src="https://oss.vidol.chat/assets/78deb22856ec7b50ae7cc782c743598f.webp"
+alt="モデル選択パネルで Gemma モデルを選択"
+className="rounded-lg"
+/>
+
+<Note>
+  モデル選択パネルに Ollama サービスプロバイダーが表示されない場合は、[Ollama と統合する](/zh/docs/self-hosting/examples/ollama) を参照して、LobeVidol で Ollama サービスプロバイダーを有効にする方法を確認してください。
+</Note>
+
+## 高度な設定
+
+モデルのパラメータを変更することで、Gemma のパフォーマンスを最適化できます：
+
+| パラメータ名        | 説明       | 推奨値  |
+| ----------- | -------- | ---- |
+| temperature | 出力のランダム性を制御 | 0.7  |
+| top\_p      | 出力の多様性を制御 | 0.9  |
+| max\_tokens | 一度の応答の最大長 | 4096 |
+
+## 使用シーン
+
+Gemma モデルはさまざまなシーンで使用できます：
+
+- 💬 日常会話や質問応答
+- 📝 テキスト生成や創作
+- 🔍 情報抽出や要約
+- 🎯 特定分野の知識に関する質問応答
+
+## よくある質問
+
+<Accordion title="Gemma モデルはどのくらいのストレージを占有しますか？">
+  - Gemma 7B モデルは約 4GB のストレージを占有します
+  - Gemma 2B モデルは約 1.5GB のストレージを占有します
+</Accordion>
+
+<Accordion title="モデルの応答速度を向上させるにはどうすればよいですか？">
+  - 新しい GPU を使用すると推論速度が大幅に向上します
+  - max_tokens パラメータを適切に下げる
+  - より小さなモデルバージョン（例：2B）を選択する
+</Accordion>
+
+## 関連リソース
+
+- [Gemma 公式ドキュメント](https://blog.google/technology/developers/gemma-open-models/)
+- [Ollama 公式サイト](https://ollama.com/)
+- [LobeVidol ドキュメントセンター](/zh/docs)
+

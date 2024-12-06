@@ -1,0 +1,116 @@
+---
+title: Utiliser Azure OpenAI
+---
+
+# Utiliser Azure OpenAI dans LobeVidol
+
+<img src="https://oss.vidol.chat/docs/2024/12/809a6bc94818a4dd3097abb1f127aaee.png" alt="Utiliser Azure OpenAI dans LobeVidol" />
+
+Ce document vous guidera sur la façon d'utiliser le service [Azure OpenAI](https://oai.azure.com/) dans LobeVidol. Azure OpenAI est un service d'IA de niveau entreprise proposé par Microsoft, qui fournit des modèles puissants similaires à ceux d'OpenAI, mais avec de meilleures garanties de sécurité et de fiabilité.
+
+## Pré-requis
+
+Avant de commencer, assurez-vous que :
+
+1. Vous avez un compte Azure
+2. Vous avez obtenu l'accès au service Azure OpenAI
+3. Vous avez déployé au moins un modèle d'IA
+
+## Étapes détaillées
+
+### 1. Obtenir la clé API Azure OpenAI
+
+Tout d'abord, vous devez obtenir la clé API et le point de terminaison d'Azure OpenAI :
+
+1. Accédez au [portail des services Azure OpenAI](https://oai.azure.com/)
+2. Si vous n'êtes pas encore inscrit, complétez d'abord le processus d'inscription
+
+<img
+src="https://oss.vidol.chat/assets/412a3a970d97699ef0fe709346cd21f6.webp"
+alt="Inscription au compte Azure OpenAI"
+/>
+
+3. Allez à la page `Déploiements`, et créez un nouveau déploiement avec le modèle de votre choix
+   - Il est recommandé d'utiliser le modèle `gpt-4` ou `gpt-35-turbo`
+   - Notez le nom du déploiement, car il sera nécessaire pour la configuration ultérieure
+
+<img
+src="https://oss.vidol.chat/assets/8f8140c40d58b44111e27cf97659b94a.webp"
+alt="Choisir un modèle pour créer un nouveau déploiement"
+/>
+
+4. Allez à la page `Chat`, cliquez sur `Voir le code` pour obtenir :
+   - L'URL du point de terminaison API
+   - La clé API
+
+<img
+src="https://oss.vidol.chat/assets/a7a03d42d127d877f471edb9598b2405.webp"
+alt="Accéder à la page Chat"
+/>
+
+<img
+src="https://oss.vidol.chat/assets/be2355a354a84913b50e293f6415af16.webp"
+alt="Obtenir le point de terminaison et la clé"
+/>
+
+### 2. Configurer dans LobeVidol
+
+Une fois que vous avez les informations nécessaires, suivez les étapes ci-dessous pour configurer LobeVidol :
+
+1. Ouvrez LobeVidol et accédez à la page `Paramètres`
+2. Trouvez la section `Modèle de langage`
+3. Sélectionnez l'onglet `Azure OpenAI`
+4. Remplissez les informations suivantes :
+   - Clé API
+   - Point de terminaison API
+   - Nom du déploiement (facultatif)
+
+<img
+src="https://oss.vidol.chat/assets/7fa84e955340bd6c35ec4f27bf6448f3.webp"
+alt="Remplir la configuration API"
+/>
+
+5. Choisissez le modèle Azure OpenAI que vous souhaitez utiliser
+6. Cliquez sur enregistrer pour finaliser la configuration
+
+<img
+src="https://oss.vidol.chat/assets/b34b36850c021779d6b12179e3c53281.webp"
+alt="Choisir un modèle et commencer la conversation"
+/>
+
+## Remarques
+
+<Warning>
+  L'utilisation du service Azure OpenAI est payante. Pour les tarifs spécifiques, veuillez consulter la [page de tarification Azure OpenAI](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/) .
+</Warning>
+
+- Assurez-vous que votre abonnement Azure dispose d'un quota suffisant
+- Vérifiez régulièrement l'utilisation de l'API pour éviter de dépasser votre budget
+- Conservez votre clé API en sécurité et ne la divulguez pas à d'autres
+
+## Questions fréquentes
+
+### Que faire si la connexion API échoue ?
+
+1. Vérifiez que la clé API est correctement saisie
+2. Assurez-vous que le format de l'URL du point de terminaison est correct
+3. Vérifiez que le nom du déploiement correspond à celui du portail Azure
+
+### Comment changer de modèle ?
+
+Dans le menu déroulant de sélection de modèle sur la page des paramètres, vous pouvez changer à tout moment pour d'autres modèles Azure OpenAI déjà déployés.
+
+### Quel est le mode de facturation ?
+
+Azure OpenAI fonctionne sur un modèle de facturation à l'utilisation, les tarifs spécifiques dépendent de :
+
+- Le modèle choisi
+- Le nombre d'appels API
+- Le nombre de jetons traités
+
+## Ressources supplémentaires
+
+- [Documentation officielle Azure OpenAI](https://learn.microsoft.com/azure/cognitive-services/openai/)
+- [Guide de référence API](https://learn.microsoft.com/azure/cognitive-services/openai/reference)
+- [Meilleures pratiques](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/best-practices)
+

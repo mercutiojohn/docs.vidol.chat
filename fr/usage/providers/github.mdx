@@ -1,0 +1,78 @@
+---
+title: Utiliser les modèles GitHub
+description: Apprenez à configurer et à utiliser la clé API de GitHub dans LobeVidol pour commencer à dialoguer et interagir.
+---
+
+<img
+
+src="https://oss.vidol.chat/docs/2024/12/46ac87ca6a047d8bf888a4764b9f1cb9.png"
+alt="Bannière des modèles GitHub"
+/>
+
+## Aperçu
+
+[Modèles GitHub](https://github.com/marketplace/models) est une nouvelle fonctionnalité récemment lancée par GitHub, visant à offrir aux développeurs une plateforme gratuite pour accéder et expérimenter divers modèles d'IA. Les modèles GitHub fournissent un environnement de bac à sable interactif où les utilisateurs peuvent tester différents paramètres de modèle et invites, et observer les réponses du modèle. La plateforme prend en charge plusieurs modèles de langage avancés, y compris GPT-4o d'OpenAI, Llama 3.1 de Meta et Large 2 de Mistral, couvrant une large gamme d'applications allant des modèles de langage à grande échelle aux modèles spécifiques à des tâches.
+
+## Limites de taux des modèles GitHub
+
+L'utilisation actuelle du Playground et de l'API gratuite est soumise à des limites concernant le nombre de requêtes par minute, le nombre de requêtes par jour, le nombre de jetons par requête et le nombre de requêtes simultanées. Si la limite de taux est atteinte, il faut attendre le rétablissement de la limite avant de pouvoir continuer à envoyer des requêtes. Les limites de taux varient selon les modèles (modèles bas, hauts et d'intégration). Pour des informations sur les types de modèles, veuillez consulter le GitHub Marketplace.
+
+<img
+
+src="https://oss.vidol.chat/assets/50607dece1bbffe80fdcbe76324ff9b6.webp>"
+alt="Limites de taux des modèles GitHub"
+/>
+
+<Note>
+  Ces limites peuvent changer à tout moment, pour des informations spécifiques, veuillez consulter la [documentation officielle de GitHub](https://docs.github.com/en/github-models/prototyping-with-ai-models#rate-limits).
+</Note>
+
+## Étapes de configuration
+
+### 1. Obtenir un jeton d'accès GitHub
+
+1. Connectez-vous à GitHub et ouvrez la page [Jetons d'accès](https://github.com/settings/tokens)
+2. Créez et configurez un nouveau jeton d'accès
+
+<img
+
+src="https://oss.vidol.chat/assets/c376d2e9e97f9ea9d788589f0a9e23d6.webp>"
+alt="Créer un jeton d'accès"
+/>
+
+3. Copiez et enregistrez le jeton généré dans les résultats retournés
+
+<img
+
+src="https://oss.vidol.chat/assets/9880145be3e52b8f9dcd8343cd34a6ca.webp>"
+alt="Enregistrer le jeton d'accès"
+/>
+
+<Warning>
+  - Pendant la période de test des modèles GitHub, les utilisateurs doivent demander à rejoindre la [liste d'attente](https://github.com/marketplace/models/waitlist/join) pour obtenir un accès.
+
+- Veuillez stocker le jeton d'accès en toute sécurité, car il n'apparaîtra qu'une seule fois. Si vous le perdez accidentellement, vous devrez créer un nouveau jeton.
+</Warning>
+
+### 2. Configurer les modèles GitHub dans LobeVidol
+
+1. Accédez à l'interface de `paramètres` de LobeVidol
+2. Sous `modèles de langage`, trouvez l'option de configuration pour `GitHub`
+
+<img
+
+src="https://oss.vidol.chat/assets/e0d53ba2bfb6ba5bf33f2b8a547f4e41.webp>"
+alt="Entrer le jeton d'accès"
+/>
+
+3. Saisissez le jeton d'accès obtenu
+4. Choisissez un modèle GitHub pour votre assistant IA afin de commencer à dialoguer
+
+<img
+
+src="https://oss.vidol.chat/assets/b6959f725c38f86053e4b07c9188d825.webp>"
+alt="Choisir un modèle GitHub et commencer à dialoguer"
+/>
+
+Vous pouvez maintenant utiliser les modèles fournis par GitHub pour dialoguer dans LobeVidol.
+

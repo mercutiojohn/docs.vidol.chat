@@ -1,0 +1,102 @@
+---
+title: Utiliser le modèle Google Gemma
+description: Utilisez facilement le modèle Google Gemma pour des tâches de traitement du langage naturel grâce à l’intégration de LobeVidol avec Ollama. Installez Ollama, tirez le modèle Gemma, sélectionnez le modèle Gemma dans le panneau des modèles et commencez la conversation.
+---
+
+# Utiliser le modèle Google Gemma
+
+<img
+src="https://oss.vidol.chat/docs/2024/12/56d06a68955858385bd51dc590eb5156.png"
+alt="Utiliser Gemma dans LobeVidol"
+className="rounded-lg"
+/>
+
+[Gemma](https://blog.google/technology/developers/gemma-open-models/) est un grand modèle de langage (LLM) open source développé par Google, conçu pour fournir un modèle plus général et flexible pour diverses tâches de traitement du langage naturel. Maintenant, grâce à l’intégration de LobeVidol avec [Ollama](https://ollama.com/), vous pouvez facilement utiliser Google Gemma dans LobeVidol.
+
+## Introduction au modèle
+
+Gemma est une série de grands modèles de langage open source lancée par Google, comprenant des tailles de 2B et 7B. Ces modèles présentent les caractéristiques suivantes :
+
+- Construit sur la technologie Gemini
+- Prend en charge des capacités de traitement multilingue
+- Testé rigoureusement pour la sécurité
+- Adapté à divers types de tâches de traitement du langage naturel
+
+## Guide d'utilisation
+
+Ce document vous guidera sur la façon d'utiliser Google Gemma dans LobeVidol :
+
+### Étape 1 : Installer Ollama localement
+
+Tout d'abord, vous devez installer Ollama. Pour le processus d'installation, veuillez consulter la [documentation d'utilisation d'Ollama](/fr/docs/usage/providers/ollama).
+
+### Étape 2 : Tirer le modèle Google Gemma localement avec Ollama
+
+Une fois Ollama installé, vous pouvez installer le modèle Google Gemma avec la commande suivante :
+
+```bash
+# Installer le modèle 7B
+ollama pull gemma
+
+# Ou installer le modèle 2B
+ollama pull gemma:2b
+```
+
+<img
+src="https://oss.vidol.chat/assets/a913a0827535d10e79a2f2c2593d6ac2.webp"
+alt="Tirer le modèle Gemma avec Ollama"
+className="rounded-lg"
+/>
+
+### Étape 3 : Sélectionner le modèle Gemma
+
+Dans la page de session, ouvrez le panneau des modèles, puis sélectionnez le modèle Gemma.
+
+<img
+src="https://oss.vidol.chat/assets/78deb22856ec7b50ae7cc782c743598f.webp"
+alt="Sélectionner le modèle Gemma dans le panneau de sélection des modèles"
+className="rounded-lg"
+/>
+
+<Note>
+  Si vous ne voyez pas le fournisseur Ollama dans le panneau de sélection des modèles, veuillez consulter [Intégration avec Ollama](/fr/docs/self-hosting/examples/ollama) pour savoir comment activer le fournisseur Ollama dans LobeVidol.
+</Note>
+
+## Configuration avancée
+
+Vous pouvez optimiser les performances de Gemma en modifiant les paramètres du modèle :
+
+| Nom du paramètre | Description                | Valeur recommandée |
+| ---------------- | -------------------------- | ------------------ |
+| temperature      | Contrôle la randomisation de la sortie | 0.7                |
+| top\_p           | Contrôle la diversité de la sortie      | 0.9                |
+| max\_tokens      | Longueur maximale de la réponse         | 4096               |
+
+## Cas d'utilisation
+
+Le modèle Gemma est adapté à divers scénarios :
+
+- 💬 Conversations quotidiennes et questions-réponses
+- 📝 Génération et création de texte
+- 🔍 Extraction et résumé d'informations
+- 🎯 Questions-réponses sur des connaissances spécifiques
+
+## Questions fréquentes
+
+<Accordion title="Combien d'espace de stockage le modèle Gemma occupe-t-il ?">
+  - Le modèle Gemma 7B occupe environ 4 Go d'espace de stockage
+  - Le modèle Gemma 2B occupe environ 1,5 Go d'espace de stockage
+</Accordion>
+
+<Accordion title="Comment améliorer la vitesse de réponse du modèle ?">
+  - Utiliser un GPU plus récent peut considérablement améliorer la vitesse d'inférence
+  - Réduire légèrement le paramètre max_tokens
+  - Choisir une version de modèle plus petite (comme 2B)
+</Accordion>
+
+## Ressources connexes
+
+- [Documentation officielle de Gemma](https://blog.google/technology/developers/gemma-open-models/)
+- [Site officiel d'Ollama](https://ollama.com/)
+- [Centre de documentation de LobeVidol](/fr/docs)
+

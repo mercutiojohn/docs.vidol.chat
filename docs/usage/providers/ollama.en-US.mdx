@@ -1,0 +1,194 @@
+---
+title: Using Ollama
+description: Learn how to use Ollama in LobeVidol to run large language models locally and experience cutting-edge AI.
+---
+
+<img
+src="https://oss.vidol.chat/docs/2024/12/0f160cc1e55e34f5584eb06ea5e45562.png"
+alt="Using Ollama in LobeVidol"
+className="w-full"
+/>
+
+Ollama is a powerful framework for running large language models (LLMs) locally, supporting various models including Llama 2, Mistral, and more. Now, LobeVidol has integrated with Ollama, which means you can easily use the language models provided by Ollama in LobeVidol to enhance your applications.
+
+This document will guide you on how to use Ollama in LobeVidol:
+
+<video 
+src="https://oss.vidol.chat/assets/559f37829d94092c1615607e7c5837b5.mp4"
+className="w-full"
+controls
+/>
+
+## Using Ollama on macOS
+
+<Steps>
+  <Step title="Install Ollama Locally">
+    [Download Ollama for macOS](https://ollama.com/download?utm_source=lobehub&utm_medium=docs&utm_campaign=download-macos) and unzip it to install.
+  </Step>
+
+  <Step title="Configure Ollama for Cross-Origin Access">
+    Due to Ollama's default configuration, it is set to allow local access only at startup, so cross-origin access and port listening require additional environment variable settings for `OLLAMA_ORIGINS`. Use `launchctl` to set the environment variable:
+
+```bash
+launchctl setenv OLLAMA_ORIGINS "*"
+```
+
+After completing the setup, you need to restart the Ollama application.
+  </Step>
+
+  <Step title="Interact with Local LLM in LobeVidol">
+    Next, you can start interacting with the local LLM using LobeVidol.
+
+<img
+  src="https://oss.vidol.chat/assets/9cc8ac00cfe1eb7397e7206755c79f0a.webp"
+  alt="Interact with llama3 in LobeVidol"
+  className="w-full"
+/>
+
+  </Step>
+</Steps>
+
+## Using Ollama on Windows
+
+<Steps>
+
+### Install Ollama Locally
+
+[Download Ollama for Windows](https://ollama.com/download?utm_source=lobehub&utm_medium=docs&utm_campaign=download-windows) and install it.
+
+### Configure Ollama for Cross-Origin Access
+
+Due to Ollama's default configuration, it is set to allow local access only at startup, so cross-origin access and port listening require additional environment variable settings for `OLLAMA_ORIGINS`.
+
+On Windows, Ollama inherits your user and system environment variables.
+
+1. First, exit the Ollama application by clicking on it in the Windows taskbar.
+2. Edit the system environment variables from the Control Panel.
+3. Edit or create the environment variable `OLLAMA_ORIGINS` for your user account, setting the value to `*`.
+4. Click `OK/Apply` to save and then restart your system.
+5. Relaunch `Ollama`.
+
+### Interact with Local LLM in LobeVidol
+
+Next, you can start interacting with the local LLM using LobeVidol.
+
+</Steps>
+
+## Using Ollama on Linux
+
+<Steps>
+
+### Install Ollama Locally
+
+Install using the following command:
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Alternatively, you can refer to the [Linux Manual Installation Guide](https://github.com/ollama/ollama/blob/main/docs/linux.md).
+
+### Configure Ollama for Cross-Origin Access
+
+Due to Ollama's default configuration, it is set to allow local access only at startup, so cross-origin access and port listening require additional environment variable settings for `OLLAMA_ORIGINS`. If Ollama is running as a systemd service, you should set the environment variables using `systemctl`:
+
+1. Edit the systemd service by calling `sudo systemctl edit ollama.service`.
+
+```bash
+sudo systemctl edit ollama.service
+```
+
+2. For each environment variable, add `Environment` under the `[Service]` section:
+
+```bash
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0"
+Environment="OLLAMA_ORIGINS=*"
+```
+
+3. Save and exit.
+4. Reload `systemd` and restart Ollama:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ollama
+```
+
+### Interact with Local LLM in LobeVidol
+
+Next, you can start interacting with the local LLM using LobeVidol.
+
+</Steps>
+
+## Deploying Ollama Using Docker
+
+<Steps>
+
+### Pull the Ollama Image
+
+If you prefer to use Docker, Ollama also provides an official Docker image, which you can pull using the following command:
+
+```bash
+docker pull ollama/ollama
+```
+
+### Configure Ollama for Cross-Origin Access
+
+Due to Ollama's default configuration, it is set to allow local access only at startup, so cross-origin access and port listening require additional environment variable settings for `OLLAMA_ORIGINS`.
+
+If Ollama is running as a Docker container, you can add the environment variable to the `docker run` command.
+
+```bash
+docker run -d --gpus=all -v ollama:/root/.ollama -e OLLAMA_ORIGINS="*" -p 11434:11434 --name ollama ollama/ollama
+```
+
+### Interact with Local LLM in LobeVidol
+
+Next, you can start interacting with the local LLM using LobeVidol.
+
+</Steps>
+
+## Installing Ollama Models
+
+Ollama supports various models, and you can view the list of available models in the [Ollama Library](https://ollama.com/library) and choose the appropriate model based on your needs.
+
+### Installing in LobeVidol
+
+In LobeVidol, we have enabled some commonly used large language models by default, such as llama3, Gemma, Mistral, etc. When you select a model for interaction, we will prompt you to download that model.
+
+<img
+src="https://oss.vidol.chat/assets/ff4103dcb1454facaed4152031f3c1f1.webp"
+alt="LobeVidol prompts to install Ollama model"
+className="w-full"
+/>
+
+Once the download is complete, you can start the conversation.
+
+### Pulling Models Locally with Ollama
+
+Of course, you can also install models by executing the following command in the terminal, using llama3 as an example:
+
+```bash
+ollama pull llama3
+```
+
+<video
+src="https://oss.vidol.chat/assets/4766a319ab3a0c0d8a5683c646f1b25d.mp4"
+className="w-full"
+controls
+/>
+
+## Custom Configuration
+
+You can find the configuration options for Ollama in `Settings` -> `Language Models`, where you can configure Ollama's proxy, model name, and more.
+
+<img
+src="https://oss.vidol.chat/assets/4ba8d404c0e4c8875235a115ccf59621.webp"
+alt="Ollama service provider settings"
+className="w-full"
+/>
+
+<Note>
+  You can visit [Integrating with Ollama](/zh/docs/self-hosting/examples/ollama) to learn how to deploy LobeVidol to meet the integration requirements with Ollama.
+</Note>
+

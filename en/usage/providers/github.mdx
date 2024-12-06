@@ -1,0 +1,78 @@
+---
+title: Using GitHub Models
+description: Learn how to configure and use GitHubs API Key in LobeVidol to start conversations and interactions.'
+---
+
+<img
+
+src="https://oss.vidol.chat/docs/2024/12/46ac87ca6a047d8bf888a4764b9f1cb9.png"
+alt="GitHub Models Banner"
+/>
+
+## Overview
+
+[GitHub Models](https://github.com/marketplace/models) is a new feature recently launched by GitHub, designed to provide developers with a free platform to access and experiment with various AI models. GitHub Models offers an interactive sandbox environment where users can test different model parameters and prompts, observing the model's responses. The platform supports a range of advanced language models, including OpenAI's GPT-4o, Meta's Llama 3.1, and Mistral's Large 2, covering a wide array of applications from large-scale language models to task-specific models.
+
+## GitHub Models Rate Limits
+
+Currently, the usage of the Playground and free API is subject to limits on the number of requests per minute, daily requests, tokens per request, and concurrent requests. If the rate limit is reached, you will need to wait for the limit to reset before continuing to make requests. Different models (low, high, and embedding models) have different rate limits. For information on model types, please refer to the GitHub Marketplace.
+
+<img
+
+src="https://oss.vidol.chat/assets/50607dece1bbffe80fdcbe76324ff9b6.webp>"
+alt="GitHub Models Rate Limits"
+/>
+
+<Note>
+  These limits are subject to change at any time. For specific information, please refer to the [GitHub Official Documentation](https://docs.github.com/en/github-models/prototyping-with-ai-models#rate-limits).
+</Note>
+
+## Configuration Steps
+
+### 1. Obtain a GitHub Access Token
+
+1. Log in to GitHub and open the [Access Tokens](https://github.com/settings/tokens) page.
+2. Create and set a new access token.
+
+<img
+
+src="https://oss.vidol.chat/assets/c376d2e9e97f9ea9d788589f0a9e23d6.webp>"
+alt="Create Access Token"
+/>
+
+3. Copy and save the generated token from the returned results.
+
+<img
+
+src="https://oss.vidol.chat/assets/9880145be3e52b8f9dcd8343cd34a6ca.webp>"
+alt="Save Access Token"
+/>
+
+<Warning>
+  - During the testing period of GitHub Models, users need to apply to join the [waitlist](https://github.com/marketplace/models/waitlist/join) to gain access.
+
+- Please store the access token securely, as it will only appear once. If you accidentally lose it, you will need to create a new token.
+</Warning>
+
+### 2. Configure GitHub Models in LobeVidol
+
+1. Go to the `Settings` interface in LobeVidol.
+2. Under `Language Models`, find the settings for `GitHub`.
+
+<img
+
+src="https://oss.vidol.chat/assets/e0d53ba2bfb6ba5bf33f2b8a547f4e41.webp>"
+alt="Enter Access Token"
+/>
+
+3. Enter the obtained access token.
+4. Choose a GitHub model for your AI assistant to start the conversation.
+
+<img
+
+src="https://oss.vidol.chat/assets/b6959f725c38f86053e4b07c9188d825.webp>"
+alt="Select GitHub Model and Start Conversation"
+/>
+
+You can now use the models provided by GitHub for conversations in LobeVidol.
+

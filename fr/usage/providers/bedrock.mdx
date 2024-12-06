@@ -1,0 +1,87 @@
+---
+title: Utiliser Amazon Bedrock
+description: Apprenez à configurer et à utiliser Amazon Bedrock dans LobeVidol, un service dAPI de modèle de base entièrement géré, pour commencer à dialoguer.'
+---
+
+<img
+
+src="https://oss.vidol.chat/docs/2024/12/2291cb8a7b9e239542744fa128996700.png"
+alt="Utiliser Amazon Bedrock dans LobeVidol"
+/>
+
+Amazon Bedrock est un service d'API de modèle de base entièrement géré, permettant aux utilisateurs d'accéder via API à des modèles de base provenant de sociétés d'IA de premier plan (telles que AI21 Labs, Anthropic, Cohere, Meta, Stability AI) ainsi qu'aux modèles de base d'Amazon.
+
+Ce document vous guidera sur la façon d'utiliser Amazon Bedrock dans LobeVidol :
+
+<Steps>
+  <Step title="Ouvrir l'accès aux modèles Amazon Bedrock dans AWS">
+    - Accédez et connectez-vous à la [Console AWS](https://console.aws.amazon.com/)
+    - Recherchez bedrock et accédez au service `Amazon Bedrock`
+
+```
+<img src="https://oss.vidol.chat/assets/f998742923d75876fa8581980221d328.webp" alt="Accéder au service Amazon Bedrock" />
+
+- Dans le menu de gauche, sélectionnez `Accès aux modèles`
+
+<img src="https://oss.vidol.chat/assets/b207fce147fc57659f598e661f6ba524.webp" alt="Accéder à l'accès aux modèles Amazon Bedrock" />
+
+- Ouvrez l'accès aux modèles selon vos besoins
+
+<img src="https://oss.vidol.chat/assets/e4ec804fb79c0d620d5e45e3280a864a.webp" alt="Ouvrir l'accès aux modèles" />
+
+<Note>Certains modèles peuvent nécessiter des informations supplémentaires de votre part</Note>
+```
+
+  </Step>
+
+  <Step title="Obtenir la clé d'accès API">
+    - Continuez à rechercher IAM dans la console AWS, accédez au service IAM
+
+```
+<img src="https://oss.vidol.chat/assets/4280687d84b383a89ff3aadce579eb11.webp" alt="Accéder au service IAM" />
+
+- Dans le menu `Utilisateurs`, créez un nouvel utilisateur IAM
+
+<img src="https://oss.vidol.chat/assets/97951be397cba3bbff8eff5e0d1598b5.webp" alt="Créer un nouvel utilisateur IAM" />
+
+- Dans la boîte de dialogue qui s'ouvre, saisissez le nom de l'utilisateur
+
+<img src="https://oss.vidol.chat/assets/4fb296a2ef93a286978da5837718674d.webp" alt="Saisir le nom de l'utilisateur" />
+
+- Ajoutez des autorisations à cet utilisateur ou rejoignez un groupe d'utilisateurs existant, en vous assurant que l'utilisateur a accès à Amazon Bedrock
+
+<img src="https://oss.vidol.chat/assets/2f22c7b9811c845401fd6fa08922c94e.webp" alt="Ajouter des autorisations à l'utilisateur" />
+
+- Créez une clé d'accès pour l'utilisateur ajouté
+
+<img src="https://oss.vidol.chat/assets/0502a7b69b0c12773229105aa331446c.webp" alt="Créer une clé d'accès" />
+
+- Copiez et conservez en toute sécurité la clé d'accès ainsi que la clé d'accès secrète, car elles seront nécessaires par la suite
+
+<img src="https://oss.vidol.chat/assets/2d43082c42c30fd0b157b0173bae2cfa.webp" alt="Accéder au service IAM" />
+
+<Warning>Veuillez stocker les clés en toute sécurité, car elles ne s'afficheront qu'une seule fois. Si vous les perdez accidentellement, vous devrez créer une nouvelle clé d'accès.</Warning>
+```
+
+  </Step>
+
+  <Step title="Configurer Amazon Bedrock dans LobeVidol">
+    - Accédez à l'interface `Paramètres` de LobeVidol
+    - Sous `Modèles de langage`, trouvez l'option de configuration pour `Amazon Bedrock` et ouvrez-la
+
+```
+<img src="https://oss.vidol.chat/assets/ea3ff6fef303aec9f5e32fc1b8d68f8d.webp" alt="Remplir la clé Amazon Bedrock dans LobeVidol" />
+
+- Ouvrez Amazon Bedrock et saisissez la clé d'accès et la clé d'accès secrète obtenues
+- Choisissez un modèle Amazon Bedrock pour votre assistant afin de commencer à dialoguer
+
+<img src="https://oss.vidol.chat/assets/7971d334dbd5ba7ddeaa31125777070b.webp" alt="Choisir et utiliser un modèle Amazon Bedrock" />
+
+<Warning>Vous pourriez avoir à payer des frais au fournisseur de services API pendant l'utilisation, veuillez consulter la politique tarifaire d'Amazon Bedrock.</Warning>
+```
+
+  </Step>
+</Steps>
+
+Vous pouvez maintenant utiliser les modèles fournis par Amazon Bedrock pour dialoguer dans LobeVidol.
+

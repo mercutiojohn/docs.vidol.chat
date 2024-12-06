@@ -1,0 +1,77 @@
+---
+title: Using Amazon Bedrock
+description: Learn how to configure and use Amazon Bedrock in LobeVidol, a fully managed foundation model API service, to start conversations.
+---
+
+<img src="https://oss.vidol.chat/docs/2024/12/2291cb8a7b9e239542744fa128996700.png" alt="Using Amazon Bedrock in LobeVidol" />
+
+Amazon Bedrock is a fully managed foundation model API service that allows users to access models from leading AI companies (such as AI21 Labs, Anthropic, Cohere, Meta, Stability AI) and Amazon's own foundation models via API.
+
+This document will guide you on how to use Amazon Bedrock in LobeVidol:
+
+<Steps>
+  <Step title="Enable Access to Amazon Bedrock Models in AWS">
+    - Access and log in to the [AWS Console](https://console.aws.amazon.com/)
+    - Search for Bedrock and navigate to the `Amazon Bedrock` service
+
+<img src="https://oss.vidol.chat/assets/f998742923d75876fa8581980221d328.webp" alt="Accessing Amazon Bedrock Service" />
+
+- In the left menu, select `Models access`
+
+<img src="https://oss.vidol.chat/assets/b207fce147fc57659f598e661f6ba524.webp" alt="Accessing Amazon Bedrock Model Access" />
+
+- Enable model access based on the models you need
+
+<img src="https://oss.vidol.chat/assets/e4ec804fb79c0d620d5e45e3280a864a.webp" alt="Enabling Model Access" />
+
+<Note>Some models may require you to provide additional information</Note>
+
+  </Step>
+
+  <Step title="Obtain API Access Keys">
+    - Continue searching for IAM in the AWS console and navigate to the IAM service
+
+<img src="https://oss.vidol.chat/assets/4280687d84b383a89ff3aadce579eb11.webp" alt="Accessing IAM Service" />
+
+- In the `Users` menu, create a new IAM user
+
+<img src="https://oss.vidol.chat/assets/97951be397cba3bbff8eff5e0d1598b5.webp" alt="Creating a New IAM User" />
+
+- In the pop-up dialog, enter the user name
+
+<img src="https://oss.vidol.chat/assets/4fb296a2ef93a286978da5837718674d.webp" alt="Entering User Name" />
+
+- Add permissions for this user or join an existing user group, ensuring the user has access to Amazon Bedrock
+
+<img src="https://oss.vidol.chat/assets/2f22c7b9811c845401fd6fa08922c94e.webp" alt="Adding Permissions for User" />
+
+- Create access keys for the added user
+
+<img src="https://oss.vidol.chat/assets/0502a7b69b0c12773229105aa331446c.webp" alt="Creating Access Keys" />
+
+- Copy and securely store the access key and secret access key, as you will need them later
+
+<img src="https://oss.vidol.chat/assets/2d43082c42c30fd0b157b0173bae2cfa.webp" alt="Accessing IAM Service" />
+
+<Warning>Please store the keys securely, as they will only appear once. If you accidentally lose them, you will need to create a new access key.</Warning>
+
+  </Step>
+
+  <Step title="Configure Amazon Bedrock in LobeVidol">
+    - Access the `Settings` interface in LobeVidol
+    - Find the `Amazon Bedrock` settings under `Language Models` and enable it
+
+<img src="https://oss.vidol.chat/assets/ea3ff6fef303aec9f5e32fc1b8d68f8d.webp" alt="Filling in Amazon Bedrock Keys in LobeVidol" />
+
+- Enable Amazon Bedrock and enter the access key and secret access key you obtained
+- Choose an Amazon Bedrock model for your assistant to start the conversation
+
+<img src="https://oss.vidol.chat/assets/7971d334dbd5ba7ddeaa31125777070b.webp" alt="Selecting and Using Amazon Bedrock Model" />
+
+<Warning>You may need to pay the API service provider during use; please refer to Amazon Bedrock's pricing policy.</Warning>
+
+  </Step>
+</Steps>
+
+You can now use the models provided by Amazon Bedrock for conversations in LobeVidol.
+

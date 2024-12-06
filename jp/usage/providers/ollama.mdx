@@ -1,0 +1,199 @@
+---
+title: Ollamaの使用
+description: LobeVidolでOllamaを使用して、ローカルで大規模言語モデルを実行し、最先端のAI体験を得る方法を学びましょう。
+---
+
+<img
+src="https://oss.vidol.chat/docs/2024/12/0f160cc1e55e34f5584eb06ea5e45562.png"
+alt="LobeVidolでOllamaを使用"
+className="w-full"
+/>
+
+Ollamaは、Llama 2やMistralなど、さまざまな言語モデルをサポートする強力なローカル実行の大規模言語モデル（LLM）フレームワークです。現在、LobeVidolはOllamaとの統合をサポートしており、LobeVidol内でOllamaが提供する言語モデルを簡単に使用してアプリケーションを強化できます。
+
+このドキュメントでは、LobeVidolでOllamaを使用する方法を説明します：
+
+<video 
+src="https://oss.vidol.chat/assets/559f37829d94092c1615607e7c5837b5.mp4"
+className="w-full"
+controls
+/>
+
+## macOSでOllamaを使用する
+
+<Steps>
+  <Step title="Ollamaをローカルにインストール">
+    [macOS用Ollamaをダウンロード](https://ollama.com/download?utm_source=lobehub&utm_medium=docs&utm_campaign=download-macos)し、解凍してインストールします。
+  </Step>
+
+  <Step title="Ollamaのクロスオリジンアクセスを許可する設定">
+    Ollamaのデフォルト設定では、起動時にローカルアクセスのみが設定されているため、クロスオリジンアクセスとポートリスニングには追加の環境変数設定`OLLAMA_ORIGINS`が必要です。`launchctl`を使用して環境変数を設定します：
+
+````
+```bash
+launchctl setenv OLLAMA_ORIGINS "*"
+```
+
+設定が完了したら、Ollamaアプリケーションを再起動する必要があります。
+````
+
+  </Step>
+
+  <Step title="LobeVidolでローカル大規模モデルと対話する">
+    次に、LobeVidolを使用してローカルLLMと対話できます。
+
+```
+<img
+  src="https://oss.vidol.chat/assets/9cc8ac00cfe1eb7397e7206755c79f0a.webp"
+  alt="LobeVidolでllama3と対話"
+  className="w-full"
+/>
+```
+
+  </Step>
+</Steps>
+
+## WindowsでOllamaを使用する
+
+<Steps>
+
+### Ollamaをローカルにインストール
+
+[Windows用Ollamaをダウンロード](https://ollama.com/download?utm_source=lobehub\&utm_medium=docs\&utm_campaign=download-windows)し、インストールします。
+
+### Ollamaのクロスオリジンアクセスを許可する設定
+
+Ollamaのデフォルト設定では、起動時にローカルアクセスのみが設定されているため、クロスオリジンアクセスとポートリスニングには追加の環境変数設定`OLLAMA_ORIGINS`が必要です。
+
+Windowsでは、Ollamaはユーザーおよびシステムの環境変数を継承します。
+
+1. まず、WindowsタスクバーからOllamaを終了します。
+2. コントロールパネルからシステム環境変数を編集します。
+3. ユーザーアカウントのためにOllamaの環境変数`OLLAMA_ORIGINS`を編集または新規作成し、値を`*`に設定します。
+4. `OK/適用`をクリックして保存し、システムを再起動します。
+5. `Ollama`を再実行します。
+
+### LobeVidolでローカル大規模モデルと対話する
+
+次に、LobeVidolを使用してローカルLLMと対話できます。
+
+</Steps>
+
+## LinuxでOllamaを使用する
+
+<Steps>
+
+### Ollamaをローカルにインストール
+
+以下のコマンドでインストールします：
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+または、[Linux手動インストールガイド](https://github.com/ollama/ollama/blob/main/docs/linux.md)を参照することもできます。
+
+### Ollamaのクロスオリジンアクセスを許可する設定
+
+Ollamaのデフォルト設定では、起動時にローカルアクセスのみが設定されているため、クロスオリジンアクセスとポートリスニングには追加の環境変数設定`OLLAMA_ORIGINS`が必要です。Ollamaがsystemdサービスとして実行されている場合、`systemctl`を使用して環境変数を設定する必要があります：
+
+1. `sudo systemctl edit ollama.service`を呼び出してsystemdサービスを編集します。
+
+```bash
+sudo systemctl edit ollama.service
+```
+
+2. 各環境変数について、`[Service]`セクションの下に`Environment`を追加します：
+
+```bash
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0"
+Environment="OLLAMA_ORIGINS=*"
+```
+
+3. 保存して終了します。
+4. `systemd`をリロードし、Ollamaを再起動します：
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ollama
+```
+
+### LobeVidolでローカル大規模モデルと対話する
+
+次に、LobeVidolを使用してローカルLLMと対話できます。
+
+</Steps>
+
+## Dockerを使用してOllamaをデプロイする
+
+<Steps>
+
+### Ollamaイメージをプルする
+
+Dockerを使用することを好む場合、Ollamaは公式のDockerイメージも提供しており、以下のコマンドでプルできます：
+
+```bash
+docker pull ollama/ollama
+```
+
+### Ollamaのクロスオリジンアクセスを許可する設定
+
+Ollamaのデフォルト設定では、起動時にローカルアクセスのみが設定されているため、クロスオリジンアクセスとポートリスニングには追加の環境変数設定`OLLAMA_ORIGINS`が必要です。
+
+OllamaがDockerコンテナとして実行されている場合、環境変数を`docker run`コマンドに追加できます。
+
+```bash
+docker run -d --gpus=all -v ollama:/root/.ollama -e OLLAMA_ORIGINS="*" -p 11434:11434 --name ollama ollama/ollama
+```
+
+### LobeVidolでローカル大規模モデルと対話する
+
+次に、LobeVidolを使用してローカルLLMと対話できます。
+
+</Steps>
+
+## Ollamaモデルのインストール
+
+Ollamaはさまざまなモデルをサポートしており、[Ollamaライブラリ](https://ollama.com/library)で利用可能なモデルのリストを確認し、ニーズに合ったモデルを選択できます。
+
+### LobeVidolでのインストール
+
+LobeVidolでは、llama3、Gemma、Mistralなどの一般的な大規模言語モデルがデフォルトで有効になっています。モデルを選択して対話を開始すると、そのモデルをダウンロードする必要があることを通知します。
+
+<img
+src="https://oss.vidol.chat/assets/ff4103dcb1454facaed4152031f3c1f1.webp"
+alt="LobeVidolがOllamaモデルのインストールを促す"
+className="w-full"
+/>
+
+ダウンロードが完了したら、対話を開始できます。
+
+### Ollamaを使用してモデルをローカルにプルする
+
+もちろん、ターミナルで以下のコマンドを実行してモデルをインストールすることもできます。llama3の例：
+
+```bash
+ollama pull llama3
+```
+
+<video
+src="https://oss.vidol.chat/assets/4766a319ab3a0c0d8a5683c646f1b25d.mp4"
+className="w-full"
+controls
+/>
+
+## カスタム設定
+
+`設定` -> `言語モデル`でOllamaの設定オプションを見つけることができ、ここでOllamaのプロキシ、モデル名などを設定できます。
+
+<img
+src="https://oss.vidol.chat/assets/4ba8d404c0e4c8875235a115ccf59621.webp"
+alt="Ollamaサービスプロバイダーの設定"
+className="w-full"
+/>
+
+<Note>
+  [Ollamaとの統合](/zh/docs/self-hosting/examples/ollama)にアクセスして、Ollamaとの統合要件を満たすためにLobeVidolをデプロイする方法を学ぶことができます。
+</Note>
+

@@ -46,8 +46,7 @@
     {
       "name": "Français",
       "locale": "fr"
-    },
-    "本地预览"
+    }
   ],
   "tabs": [
     {
@@ -184,50 +183,6 @@
   ],
   "navigation": [
     {
-      "group": "功能特性",
-      "pages": [
-        "docs/usage/introduction.zh-CN",
-        "docs/usage/features/role-play.zh-CN",
-        "docs/usage/features/dance-play.zh-CN",
-        "docs/usage/features/ui-design.zh-CN",
-        "docs/usage/features/tts.zh-CN",
-        "docs/usage/features/role-market.zh-CN",
-        "docs/usage/features/dance-market.zh-CN"
-      ],
-      "version": "本地预览"
-    },
-    {
-      "group": "模型支持",
-      "pages": [
-        "docs/usage/providers/openai.zh-CN",
-        "docs/usage/providers/anthropic.zh-CN",
-        "docs/usage/providers/azure.zh-CN",
-        "docs/usage/providers/baichuan.zh-CN",
-        "docs/usage/providers/bedrock.zh-CN",
-        "docs/usage/providers/cloudflare.zh-CN",
-        "docs/usage/providers/deepseek.zh-CN",
-        "docs/usage/providers/fireworks.zh-CN",
-        "docs/usage/providers/gemini.zh-CN",
-        "docs/usage/providers/github.zh-CN",
-        "docs/usage/providers/groq.zh-CN",
-        "docs/usage/providers/hunyuan.zh-CN",
-        "docs/usage/providers/minimax.zh-CN",
-        "docs/usage/providers/moonshot.zh-CN",
-        "docs/usage/providers/ollama.zh-CN",
-        "docs/usage/providers/openrouter.zh-CN",
-        "docs/usage/providers/perplexity.zh-CN",
-        "docs/usage/providers/qwen.zh-CN",
-        "docs/usage/providers/siliconcloud.zh-CN",
-        "docs/usage/providers/spark.zh-CN",
-        "docs/usage/providers/stepfun.zh-CN",
-        "docs/usage/providers/togetherai.zh-CN",
-        "docs/usage/providers/wenxin.zh-CN",
-        "docs/usage/providers/zhipu.zh-CN"
-      ],
-      "version": "本地预览"
-    },
-
-    {
       "group": "Features",
       "pages": [
         "en/usage/introduction",
@@ -244,8 +199,28 @@
       "group": "Model Support",
       "pages": [
         "en/usage/providers/openai",
+        "en/usage/providers/anthropic",
+        "en/usage/providers/azure",
+        "en/usage/providers/baichuan",
+        "en/usage/providers/bedrock",
+        "en/usage/providers/deepseek",
+        "en/usage/providers/fireworksai",
+        "en/usage/providers/gemini",
+        "en/usage/providers/github",
+        "en/usage/providers/groq",
+        "en/usage/providers/hunyuan",
+        "en/usage/providers/minimax",
+        "en/usage/providers/moonshot",
+        "en/usage/providers/ollama",
         "en/usage/providers/openrouter",
-        "en/usage/providers/ai360"
+        "en/usage/providers/perplexity",
+        "en/usage/providers/qwen",
+        "en/usage/providers/siliconcloud",
+        "en/usage/providers/spark",
+        "en/usage/providers/stepfun",
+        "en/usage/providers/togetherai",
+        "en/usage/providers/wenxin",
+        "en/usage/providers/zhipu"
       ],
       "version": "English"
     },
@@ -328,8 +303,28 @@
       "group": "モデルサポート",
       "pages": [
         "jp/usage/providers/openai",
+        "jp/usage/providers/anthropic",
+        "jp/usage/providers/azure",
+        "jp/usage/providers/baichuan",
+        "jp/usage/providers/bedrock",
+        "jp/usage/providers/deepseek",
+        "jp/usage/providers/fireworksai",
+        "jp/usage/providers/gemini",
+        "jp/usage/providers/github",
+        "jp/usage/providers/groq",
+        "jp/usage/providers/hunyuan",
+        "jp/usage/providers/minimax",
+        "jp/usage/providers/moonshot",
+        "jp/usage/providers/ollama",
         "jp/usage/providers/openrouter",
-        "jp/usage/providers/ai360"
+        "jp/usage/providers/perplexity",
+        "jp/usage/providers/qwen",
+        "jp/usage/providers/siliconcloud",
+        "jp/usage/providers/spark",
+        "jp/usage/providers/stepfun",
+        "jp/usage/providers/togetherai",
+        "jp/usage/providers/wenxin",
+        "jp/usage/providers/zhipu"
       ],
       "version": "日本語"
     },
@@ -412,8 +407,28 @@
       "group": "Support des modèles",
       "pages": [
         "fr/usage/providers/openai",
+        "fr/usage/providers/anthropic",
+        "fr/usage/providers/azure",
+        "fr/usage/providers/baichuan",
+        "fr/usage/providers/bedrock",
+        "fr/usage/providers/deepseek",
+        "fr/usage/providers/fireworksai",
+        "fr/usage/providers/gemini",
+        "fr/usage/providers/github",
+        "fr/usage/providers/groq",
+        "fr/usage/providers/hunyuan",
+        "fr/usage/providers/minimax",
+        "fr/usage/providers/moonshot",
+        "fr/usage/providers/ollama",
         "fr/usage/providers/openrouter",
-        "fr/usage/providers/ai360"
+        "fr/usage/providers/perplexity",
+        "fr/usage/providers/qwen",
+        "fr/usage/providers/siliconcloud",
+        "fr/usage/providers/spark",
+        "fr/usage/providers/stepfun",
+        "fr/usage/providers/togetherai",
+        "fr/usage/providers/wenxin",
+        "fr/usage/providers/zhipu"
       ],
       "version": "Français"
     },
@@ -496,8 +511,28 @@
       "group": "模型支持",
       "pages": [
         "cn/usage/providers/openai",
+        "cn/usage/providers/anthropic",
+        "cn/usage/providers/azure",
+        "cn/usage/providers/baichuan",
+        "cn/usage/providers/bedrock",
+        "cn/usage/providers/deepseek",
+        "cn/usage/providers/fireworksai",
+        "cn/usage/providers/gemini",
+        "cn/usage/providers/github",
+        "cn/usage/providers/groq",
+        "cn/usage/providers/hunyuan",
+        "cn/usage/providers/minimax",
+        "cn/usage/providers/moonshot",
+        "cn/usage/providers/ollama",
         "cn/usage/providers/openrouter",
-        "cn/usage/providers/ai360"
+        "cn/usage/providers/perplexity",
+        "cn/usage/providers/qwen",
+        "cn/usage/providers/siliconcloud",
+        "cn/usage/providers/spark",
+        "cn/usage/providers/stepfun",
+        "cn/usage/providers/togetherai",
+        "cn/usage/providers/wenxin",
+        "cn/usage/providers/zhipu"
       ],
       "version": "中文"
     },
