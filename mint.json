@@ -46,9 +46,25 @@
     {
       "name": "Français",
       "locale": "fr"
-    }
+    },
+    "本地预览"
   ],
   "tabs": [
+    {
+      "name": "用户指南",
+      "url": "docs/usage",
+      "version": "本地预览"
+    },
+    {
+      "name": "舞蹈创作",
+      "url": "docs/dance-manual",
+      "version": "本地预览"
+    },
+    {
+      "name": "角色创作",
+      "url": "docs/role-manual",
+      "version": "本地预览"
+    },
     {
       "name": "用户指南",
       "url": "cn/usage",
@@ -167,6 +183,50 @@
     }
   ],
   "navigation": [
+    {
+      "group": "功能特性",
+      "pages": [
+        "docs/usage/introduction.zh-CN",
+        "docs/usage/features/role-play.zh-CN",
+        "docs/usage/features/dance-play.zh-CN",
+        "docs/usage/features/ui-design.zh-CN",
+        "docs/usage/features/tts.zh-CN",
+        "docs/usage/features/role-market.zh-CN",
+        "docs/usage/features/dance-market.zh-CN"
+      ],
+      "version": "本地预览"
+    },
+    {
+      "group": "模型支持",
+      "pages": [
+        "docs/usage/providers/openai.zh-CN",
+        "docs/usage/providers/anthropic.zh-CN",
+        "docs/usage/providers/azure.zh-CN",
+        "docs/usage/providers/baichuan.zh-CN",
+        "docs/usage/providers/bedrock.zh-CN",
+        "docs/usage/providers/cloudflare.zh-CN",
+        "docs/usage/providers/deepseek.zh-CN",
+        "docs/usage/providers/fireworks.zh-CN",
+        "docs/usage/providers/gemini.zh-CN",
+        "docs/usage/providers/github.zh-CN",
+        "docs/usage/providers/groq.zh-CN",
+        "docs/usage/providers/hunyuan.zh-CN",
+        "docs/usage/providers/minimax.zh-CN",
+        "docs/usage/providers/moonshot.zh-CN",
+        "docs/usage/providers/ollama.zh-CN",
+        "docs/usage/providers/openrouter.zh-CN",
+        "docs/usage/providers/perplexity.zh-CN",
+        "docs/usage/providers/qwen.zh-CN",
+        "docs/usage/providers/siliconcloud.zh-CN",
+        "docs/usage/providers/spark.zh-CN",
+        "docs/usage/providers/stepfun.zh-CN",
+        "docs/usage/providers/togetherai.zh-CN",
+        "docs/usage/providers/wenxin.zh-CN",
+        "docs/usage/providers/zhipu.zh-CN"
+      ],
+      "version": "本地预览"
+    },
+
     {
       "group": "Features",
       "pages": [
