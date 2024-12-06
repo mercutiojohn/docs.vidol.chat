@@ -1,0 +1,77 @@
+---
+title: '在 LobeVidol中使用 Amazon Bedrock API Key'
+description: '学习如何在 LobeVidol中配置和使用 Amazon Bedrock，一个完全托管的基础模型API服务，以便开始对话。'
+---
+
+<img
+ 
+  src="https://oss.vidol.chat/docs/2024/12/2291cb8a7b9e239542744fa128996700.png"
+  alt="在 LobeVidol中使用 Amazon Bedrock"
+/>
+
+Amazon Bedrock 是一个完全托管的基础模型API服务,允许用户通过API访问来自领先AI公司(如AI21 Labs、Anthropic、Cohere、Meta、Stability AI)和Amazon自家的基础模型。
+
+本文档将指导你如何在 LobeVidol中使用 Amazon Bedrock:
+
+<Steps>
+  <Step title="在 AWS 中打开 Amazon Bedrock 模型的访问权限">
+    - 访问并登录 [AWS Console](https://console.aws.amazon.com/)
+    - 搜索 beckrock 并进入 `Amazon Bedrock` 服务
+
+    <img src="https://oss.vidol.chat/assets/f998742923d75876fa8581980221d328.webp" alt="进入 Amazon Bedrock 服务" />
+
+    - 在左侧菜单中选择 `Models acess`
+
+    <img src="https://oss.vidol.chat/assets/b207fce147fc57659f598e661f6ba524.webp" alt="进入 Amazon Bedrock 模型访问权限" />
+
+    - 根据你所需要的模型，打开模型访问权限
+
+    <img src="https://oss.vidol.chat/assets/e4ec804fb79c0d620d5e45e3280a864a.webp" alt="打开模型访问权限" />
+
+    <Note>某些模型可能需要你提供额外的信息</Note>
+  </Step>
+
+  <Step title="获取 API 访问密钥">
+    - 继续在 AWS console 中搜索 IAM，进入 IAM 服务
+
+    <img src="https://oss.vidol.chat/assets/4280687d84b383a89ff3aadce579eb11.webp" alt="进入 IAM 服务" />
+
+    - 在 `用户` 菜单中，创建一个新的 IAM 用户
+
+    <img src="https://oss.vidol.chat/assets/97951be397cba3bbff8eff5e0d1598b5.webp" alt="创建一个新的 IAM 用户" />
+
+    - 在弹出的对话框中，输入用户名称
+
+    <img src="https://oss.vidol.chat/assets/4fb296a2ef93a286978da5837718674d.webp" alt="输入用户名称" />
+
+    - 为这个用户添加权限，或者加入一个已有的用户组，确保用户拥有 Amazon Bedrock 的访问权限
+
+    <img src="https://oss.vidol.chat/assets/2f22c7b9811c845401fd6fa08922c94e.webp" alt="为用户添加权限" />
+
+    - 为已添加的用户创建访问密钥
+
+    <img src="https://oss.vidol.chat/assets/0502a7b69b0c12773229105aa331446c.webp" alt="创建访问密钥" />
+
+    - 复制并妥善保存访问密钥以及秘密访问密钥，后续将会用到
+
+    <img src="https://oss.vidol.chat/assets/2d43082c42c30fd0b157b0173bae2cfa.webp" alt="进入 IAM 服务" />
+
+    <Warning>请安全地存储密钥，因为它只会出现一次。如果您意外丢失它，您将需要创建一个新访问密钥。</Warning>
+  </Step>
+
+  <Step title="在 LobeVidol中配置 Amazon Bedrock">
+    - 访问LobeVidol的`设置`界面
+    - 在`语言模型`下找到`Amazon Bedrock`的设置项并打开
+
+    <img src="https://oss.vidol.chat/assets/ea3ff6fef303aec9f5e32fc1b8d68f8d.webp" alt="LobeVidol中填写 Amazon Bedrock 密钥" />
+
+    - 打开 Amazon Bedrock 并填入获得的访问密钥与秘密访问密钥
+    - 为你的助手选择一个 Amazone Bedrock 的模型即可开始对话
+
+    <img src="https://oss.vidol.chat/assets/7971d334dbd5ba7ddeaa31125777070b.webp" alt="选择并使用 Amazon Bedrock 模型" />
+
+    <Warning>在使用过程中你可能需要向 API 服务提供商付费，请参考 Amazon Bedrock 的费用政策。</Warning>
+  </Step>
+</Steps>
+
+至此你已经可以在 LobeVidol中使用 Amazone Bedrock 提供的模型进行对话了。

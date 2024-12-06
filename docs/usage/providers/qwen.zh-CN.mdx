@@ -1,0 +1,72 @@
+---
+title: '在 LobeVidol中使用通义千问 API Key'
+description: '学习如何在 LobeVidol中配置和使用阿里云的通义千问模型，提供强大的自然语言理解和生成能力。'
+---
+
+# 在 LobeVidol中使用通义千问
+
+<img
+  src="https://oss.vidol.chat/docs/2024/12/83156a545234ce9264a97bb2991cfbbb.png"
+  alt="在 LobeVidol中使用通义千问"
+/>
+
+[通义千问](https://tongyi.aliyun.com/)是阿里云自主研发的超大规模语言模型,具有强大的自然语言理解和生成能力。它可以回答各种问题、创作文字内容、表达观点看法、撰写代码等,在多个领域发挥作用。
+
+本文档将指导你如何在 LobeVidol中使用通义千问:
+
+<Steps>
+  <Step title="开通 DashScope 模型服务">
+    - 访问并登录阿里云 [DashScope](https://dashscope.console.aliyun.com/) 平台
+    - 初次进入时需要开通 DashScope 服务
+    - 若你已开通，可跳过该步骤
+
+    <img
+      src="https://oss.vidol.chat/assets/297d1f46136e9fe181e980e1f6cb4019.webp"
+      alt="开通 DashScope 服务"
+    />
+  </Step>
+
+  <Step title="获取 DashScope API 密钥">
+    - 进入`API-KEY` 界面，并创建一个 API 密钥
+
+    <img
+      src="https://oss.vidol.chat/assets/2bdda9c970582f6ea4dfe30a66fef60d.webp"
+      alt="创建通义千问 API 密钥"
+    />
+
+    - 在弹出的对话框中复制 API 密钥，并妥善保存
+
+    <img
+      src="https://oss.vidol.chat/assets/8b2e4629c9fa2b75d08b00de30490b59.webp"
+      alt="复制通义千问 API 密钥"
+    />
+
+    <Warning>
+      请安全地存储密钥，因为它只会出现一次。如果您意外丢失它，您将需要创建一个新密钥。
+    </Warning>
+  </Step>
+
+  <Step title="在LobeVidol中配置通义千问">
+    - 访问 LobeVidol的`设置`界面
+    - 在`语言模型`下找到`通义千问`的设置项
+
+    <img
+      src="https://oss.vidol.chat/assets/ac3a3b2102f961ccc5b4d081a056cde3.webp"
+      alt="填写 API 密钥"
+    />
+
+    - 打开通义千问并填入获得的 API 密钥
+    - 为你的 AI 助手选择一个 Qwen 的模型即可开始对话
+
+    <img
+      src="https://oss.vidol.chat/assets/16e02355939ef75e9dc361050f2b7d5b.webp"
+      alt="选择 Qwen 模型并开始对话"
+    />
+
+    <Warning>
+      在使用过程中你可能需要向 API 服务提供商付费，请参考通义千问的相关费用政策。
+    </Warning>
+  </Step>
+</Steps>
+
+至此你已经可以在 LobeVidol中使用通义千问提供的模型进行对话了。

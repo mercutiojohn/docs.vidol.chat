@@ -1,0 +1,101 @@
+---
+title: '在 LobeVidol中使用 Google Gemma 模型'
+description: '通过 LobeVidol与 Ollama 的集成，轻松使用 Google Gemma 模型进行自然语言处理任务。安装 Ollama，拉取 Gemma 模型，选择模型面板中的 Gemma 模型，开始对话。'
+---
+
+# 使用 Google Gemma 模型
+
+<img
+  src="https://oss.vidol.chat/docs/2024/12/56d06a68955858385bd51dc590eb5156.png"
+  alt="在 LobeVidol中使用 Gemma"
+  className="rounded-lg"
+/>
+
+[Gemma](https://blog.google/technology/developers/gemma-open-models/) 是 Google 开源的一款大语言模型（LLM），旨在提供一个更加通用、灵活的模型用于各种自然语言处理任务。现在，通过 LobeVidol与 [Ollama](https://ollama.com/) 的集成，你可以轻松地在 LobeVidol中使用 Google Gemma。
+
+## 模型简介
+
+Gemma 是 Google 推出的开源大语言模型系列，包含了 2B 和 7B 两种尺寸。这些模型具有以下特点：
+
+- 基于 Gemini 技术构建
+- 支持多语言处理能力
+- 经过严格的安全性测试
+- 适用于各类自然语言处理任务
+
+## 使用指南
+
+本文档将指导你如何在 LobeVidol中使用 Google Gemma：
+
+### 步骤 1: 本地安装 Ollama
+
+首先，你需要安装 Ollama，安装过程请查阅 [Ollama 使用文档](/zh/docs/usage/providers/ollama)。
+
+### 步骤 2: 用 Ollama 拉取 Google Gemma 模型到本地
+
+在安装完成 Ollama 后，你可以通过以下命令安装 Google Gemma 模型：
+
+```bash
+# 安装 7B 模型
+ollama pull gemma
+
+# 或安装 2B 模型
+ollama pull gemma:2b
+```
+
+<img
+  src="https://oss.vidol.chat/assets/a913a0827535d10e79a2f2c2593d6ac2.webp"
+  alt="使用 Ollama 拉取 Gemma 模型"
+  className="rounded-lg"
+/>
+
+### 步骤 3: 选择 Gemma 模型
+
+在会话页面中，选择模型面板打开，然后选择 Gemma 模型。
+
+<img
+  src="https://oss.vidol.chat/assets/78deb22856ec7b50ae7cc782c743598f.webp"
+  alt="模型选择面板中选择 Gemma 模型"
+  className="rounded-lg"
+/>
+
+<Note>
+  如果你没有在模型选择面板中看到 Ollama 服务商，请查阅 [与 Ollama 集成](/zh/docs/self-hosting/examples/ollama) 了解如何在 LobeVidol中开启 Ollama 服务商。
+</Note>
+
+## 高级配置
+
+你可以通过修改模型参数来优化 Gemma 的表现：
+
+| 参数名称 | 说明 | 推荐值 |
+|---------|------|--------|
+| temperature | 控制输出的随机性 | 0.7 |
+| top_p | 控制输出的多样性 | 0.9 |
+| max_tokens | 单次回复最大长度 | 4096 |
+
+## 使用场景
+
+Gemma 模型适用于多种场景：
+
+- 💬 日常对话和问答
+- 📝 文本生成和创作
+- 🔍 信息提取和总结
+- 🎯 特定领域的知识问答
+
+## 常见问题
+
+<Accordion title="Gemma 模型占用多少存储空间？">
+  - Gemma 7B 模型约占用 4GB 存储空间
+  - Gemma 2B 模型约占用 1.5GB 存储空间
+</Accordion>
+
+<Accordion title="如何提升模型响应速度？">
+  - 使用较新的 GPU 可以显著提升推理速度
+  - 适当降低 max_tokens 参数
+  - 选择较小的模型版本（如 2B）
+</Accordion>
+
+## 相关资源
+
+- [Gemma 官方文档](https://blog.google/technology/developers/gemma-open-models/)
+- [Ollama 官方网站](https://ollama.com/)
+- [LobeVidol文档中心](/zh/docs)

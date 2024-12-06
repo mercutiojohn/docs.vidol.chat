@@ -1,0 +1,77 @@
+---
+title: '在 LobeVidol中使用 GitHub Models'
+description: '学习如何在 LobeVidol中配置和使用 GitHub 的 API Key，以便开始对话和交互。'
+---
+
+<img
+ 
+  src="https://oss.vidol.chat/docs/2024/12/46ac87ca6a047d8bf888a4764b9f1cb9.png"
+  alt="GitHub Models Banner"
+/>
+
+## 概述
+
+[GitHub Models](https://github.com/marketplace/models) 是 GitHub 最近推出的一项新功能，旨在为开发者提供一个免费的平台来访问和实验多种 AI 模型。GitHub Models 提供了一个互动沙盒环境，用户可以在此测试不同的模型参数和提示语，观察模型的响应。该平台支持多种先进的语言模型，包括 OpenAI 的 GPT-4o、Meta 的 Llama 3.1 和 Mistral 的 Large 2 等，覆盖了从大规模语言模型到特定任务模型的广泛应用。
+
+## GitHub Models 速率限制
+
+当前 Playground 和免费 API 的使用受到每分钟请求数、每日请求数、每个请求的令牌数以及并发请求数的限制。若达到速率限制，则需等待限制重置后方可继续发出请求。不同模型（低、高及嵌入模型）的速率限制有所不同。模型类型信息请参阅 GitHub Marketplace。
+
+<img
+ 
+  src="https://oss.vidol.chat/assets/50607dece1bbffe80fdcbe76324ff9b6.webp"
+  alt="GitHub Models 速率限制"
+/>
+
+<Note>
+  这些限制可能随时更改，具体信息请参考 [GitHub 官方文档](https://docs.github.com/en/github-models/prototyping-with-ai-models#rate-limits)。
+</Note>
+
+## 配置步骤
+
+### 1. 获得 GitHub 的访问令牌
+
+1. 登录 GitHub 并打开 [访问令牌](https://github.com/settings/tokens) 页面
+2. 创建并设置一个新的访问令牌
+
+<img
+ 
+  src="https://oss.vidol.chat/assets/c376d2e9e97f9ea9d788589f0a9e23d6.webp"
+  alt="创建访问令牌"
+/>
+
+3. 在返回的结果中复制并保存生成的令牌
+
+<img
+ 
+  src="https://oss.vidol.chat/assets/9880145be3e52b8f9dcd8343cd34a6ca.webp"
+  alt="保存访问令牌"
+/>
+
+<Warning>
+  - GitHub Models 测试期间，要使用 GitHub Models，用户需要申请加入[等待名单（waitlist）](https://github.com/marketplace/models/waitlist/join) 通过后才能获得访问权限。
+
+  - 请安全地存储访问令牌，因为它只会出现一次。如果您意外丢失它，您将需要创建一个新令牌。
+</Warning>
+
+### 2. 在 LobeVidol中配置 GitHub Models
+
+1. 访问 LobeVidol的`设置`界面
+2. 在`语言模型`下找到 `GitHub` 的设置项
+
+<img
+ 
+  src="https://oss.vidol.chat/assets/e0d53ba2bfb6ba5bf33f2b8a547f4e41.webp"
+  alt="填入访问令牌"
+/>
+
+3. 填入获得的访问令牌
+4. 为你的 AI 助手选择一个 GitHub 的模型即可开始对话
+
+<img
+ 
+  src="https://oss.vidol.chat/assets/b6959f725c38f86053e4b07c9188d825.webp"
+  alt="选择 GitHub 模型并开始对话"
+/>
+
+至此你已经可以在 LobeVidol中使用 GitHub 提供的模型进行对话了。
