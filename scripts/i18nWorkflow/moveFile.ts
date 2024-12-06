@@ -28,10 +28,10 @@ export const moveFiles = () => {
 
       if (stat.isDirectory()) {
         walkDir(filePath, locale);
-      } else if (file.endsWith(`.${locale}.md`)) {
+      } else if (file.endsWith(`.${locale}.mdx`)) {
         const relativePath = path.relative("docs", dir);
         const targetDir = path.join(localeMap[locale], relativePath);
-        const newFileName = file.replace(`.${locale}.md`, ".mdx");
+        const newFileName = file.replace(`.${locale}.mdx`, ".mdx");
         const targetPath = path.join(targetDir, newFileName);
 
         // 创建目标目录

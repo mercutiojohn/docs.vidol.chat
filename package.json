@@ -10,9 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mintlify dev --port 7001",
-    "docs:i18n": "lobe-i18n md && npm run moveFile",
-    "moveFile": "tsx scripts/i18nWorkflow/moveFile.ts",
-    "workflow:cdn": "tsx scripts/mdxWorkflow/autoCDN.ts"
+    "i18n": "lobe-i18n md && tsx scripts/i18nWorkflow/moveFile.ts",
+    "cdn": "tsx scripts/mdxWorkflow/autoCDN.ts"
   },
   "repository": {
     "type": "git",

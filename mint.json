@@ -182,7 +182,11 @@
     },
     {
       "group": "Model Support",
-      "pages": ["en/usage/providers/openai", "en/usage/providers/openrouter"],
+      "pages": [
+        "en/usage/providers/openai",
+        "en/usage/providers/openrouter",
+        "en/usage/providers/ai360"
+      ],
       "version": "English"
     },
     {
@@ -262,7 +266,11 @@
     },
     {
       "group": "モデルサポート",
-      "pages": ["jp/usage/providers/openai", "jp/usage/providers/openrouter"],
+      "pages": [
+        "jp/usage/providers/openai",
+        "jp/usage/providers/openrouter",
+        "jp/usage/providers/ai360"
+      ],
       "version": "日本語"
     },
     {
@@ -342,7 +350,11 @@
     },
     {
       "group": "Support des modèles",
-      "pages": ["fr/usage/providers/openai", "fr/usage/providers/openrouter"],
+      "pages": [
+        "fr/usage/providers/openai",
+        "fr/usage/providers/openrouter",
+        "fr/usage/providers/ai360"
+      ],
       "version": "Français"
     },
     {
@@ -422,7 +434,11 @@
     },
     {
       "group": "模型支持",
-      "pages": ["cn/usage/providers/openai", "cn/usage/providers/openrouter"],
+      "pages": [
+        "cn/usage/providers/openai",
+        "cn/usage/providers/openrouter",
+        "cn/usage/providers/ai360"
+      ],
       "version": "中文"
     },
     {
